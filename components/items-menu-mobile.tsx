@@ -25,7 +25,7 @@ const ItemsMenuMobile = () => {
     <Sheet>
       <SheetTrigger asChild>
         <Button variant="outline">
-          <Menu width={20} />
+          <Menu width={20} color="black" />
         </Button>
       </SheetTrigger>
       <SheetContent className="z-1000">
@@ -35,34 +35,36 @@ const ItemsMenuMobile = () => {
         <div className="px-4 flex flex-col gap-y-4">
           <Collapsible onOpenChange={setIsOpen}>
             <CollapsibleTrigger className="flex w-full justify-between font-semibold">
-              Canyons
+              Particulares
               {isOpen ? <ChevronUp width={20} /> : <ChevronDown width={20} />}
             </CollapsibleTrigger>
-            <CollapsibleContent>Canyons in Málaga</CollapsibleContent>
-            <CollapsibleContent>Canyons in Granada</CollapsibleContent>
-            <CollapsibleContent>More canyons</CollapsibleContent>
+            <CollapsibleContent>Seguros de salud</CollapsibleContent>
+            <CollapsibleContent>Seguros dentales</CollapsibleContent>
+            <CollapsibleContent>Seguros de decesos</CollapsibleContent>
+            <CollapsibleContent>Seguros de vida</CollapsibleContent>
+            <CollapsibleContent>Seguros de hogar</CollapsibleContent>
+            <CollapsibleContent>Seguros de viajes</CollapsibleContent>
           </Collapsible>
           <Separator />
           <Collapsible onOpenChange={setIsOpen}>
             <CollapsibleTrigger className="flex w-full justify-between font-semibold">
-              Marbella experiences
+              Autónomos y Empresas
               {isOpen ? <ChevronUp width={20} /> : <ChevronDown width={20} />}
             </CollapsibleTrigger>
-            <CollapsibleContent>Lorem ipsum</CollapsibleContent>
-            <CollapsibleContent>Lorem ipsum</CollapsibleContent>
-            <CollapsibleContent>Lorem ipsum</CollapsibleContent>
-            <CollapsibleContent>Lorem ipsum</CollapsibleContent>
-            <CollapsibleContent>Lorem ipsum</CollapsibleContent>
-            <CollapsibleContent>Lorem ipsum</CollapsibleContent>
+            <CollapsibleContent>Seguros para autónomos</CollapsibleContent>
+            <CollapsibleContent>Seguros para empresas</CollapsibleContent>
+            <CollapsibleContent>
+              Mutualistas y asegurados públicos
+            </CollapsibleContent>
           </Collapsible>
           <Separator />
           <Link href="/" className="font-semibold">
-            Team building
+            Blog
           </Link>
           <Separator />
           <Collapsible onOpenChange={setIsOpen}>
             <CollapsibleTrigger className="flex w-full justify-between font-semibold">
-              About us
+              Sobre Nosotros
               {isOpen ? <ChevronUp width={20} /> : <ChevronDown width={20} />}
             </CollapsibleTrigger>
             <CollapsibleContent>Blog</CollapsibleContent>
@@ -75,7 +77,7 @@ const ItemsMenuMobile = () => {
           </Collapsible>
           <Separator />
           <Link href="/" className="font-semibold">
-            Contact us
+            Contacto
           </Link>
           <Separator />
         </div>

@@ -21,11 +21,11 @@ const Hero = () => {
         </div>
       </div>
       <Image
-        src="/family.jpg"
+        src="/family.webp"
         width={1000}
         height={1000}
         alt="Imagen de un pediatra"
-        className="w-full object-cover max-h-[50vh] sm:max-h-[70vh] lg:max-h-[80vh] lg:w-1/2"
+        className="w-full object-cover h-auto max-h-[50vh] sm:max-h-[90vh] lg:max-h-[90vh]"
       />
     </div>
   );

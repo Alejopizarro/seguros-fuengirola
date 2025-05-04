@@ -6,7 +6,7 @@ const Empresas = () => {
   return (
     <div className="flex flex-col-reverse sm:flex-row p-8 gap-8 sm:px-20 sm:py-18">
       <Image
-        src="/office.jpg"
+        src="/office.webp"
         width={500}
         height={500}
         alt="Imagen de un pediatra"

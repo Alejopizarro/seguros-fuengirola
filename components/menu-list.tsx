@@ -17,27 +17,17 @@ import {
 export const experiences = [
   {
     id: 1,
-    title: "Lorem ipsum",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    id: 4,
-    title: "Lorem ipsum",
+    title: "Seguros para empresas",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
     id: 2,
-    title: "Lorem ipsum",
+    title: "Seguros para autonomos",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
     id: 3,
-    title: "Lorem ipsum",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    id: 4,
-    title: "Lorem ipsum",
+    title: "Mutualistas y asegurados publicos",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
 ];
@@ -48,42 +38,29 @@ const MenuList = () => {
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="text-md bg-transparent">
-            Canyons
+            Particulares
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <li className="row-span-3">
-                <NavigationMenuLink asChild>
-                  <a
-                    className="relative flex h-full w-full select-none flex-col justify-end rounded-md p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
-                  >
-                    <div
-                      className="absolute inset-0 rounded-md"
-                      style={{
-                        backgroundImage: "url(/header-canyoning.jpg)",
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                        opacity: 0.4,
-                        zIndex: 0,
-                      }}
-                    />
-                    <div className="relative mb-2 mt-4 text-lg font-medium z-10">
-                      TUUR Canyoning
-                    </div>
-                    <p className="relative text-sm leading-tight text-muted-foreground z-10">
-                      The best canyons experiences in Andalucia.
-                    </p>
-                  </a>
-                </NavigationMenuLink>
-              </li>
-              <ListItem href="/category" title="Canyons in Málaga">
+              <ListItem href="/category" title="Seguros de salud">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </ListItem>
-              <ListItem href="/offers" title="Canyons in Granada">
+              <ListItem href="/offers" title="Seguros dentales">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </ListItem>
-              <ListItem href="/accesories" title="More canyons">
+              <ListItem href="/accesories" title="Seguros de decesos">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </ListItem>
+              <ListItem href="/category" title="Seguros de vida">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </ListItem>
+              <ListItem href="/offers" title="Seguros de hogar">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </ListItem>
+              <ListItem href="/accesories" title="Seguros de accidentes">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </ListItem>
+              <ListItem href="/accesories" title="Seguros de viajes">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </ListItem>
             </ul>
@@ -91,7 +68,7 @@ const MenuList = () => {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="text-md bg-transparent">
-            Marbella experiences
+            Autónomos y Empresas
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
@@ -111,13 +88,13 @@ const MenuList = () => {
         <NavigationMenuItem>
           <Link href="/docs" passHref>
             <NavigationMenuLink className="text-md bg-transparent">
-              Team Building
+              Blog
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="text-md bg-transparent">
-            About us
+            Sobre Nosotros
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
