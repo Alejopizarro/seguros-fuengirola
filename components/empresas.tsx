@@ -4,7 +4,7 @@ import { MoveRight } from "lucide-react";
 
 const Empresas = () => {
   return (
-    <div className="flex p-8 gap-8 sm:px-20 sm:py-18">
+    <div className="flex flex-col-reverse sm:flex-row p-8 gap-8 sm:px-20 sm:py-18">
       <Image
         src="/office.jpg"
         width={500}
@@ -21,7 +21,7 @@ const Empresas = () => {
           coberturas y servicios. Nos adaptamos a tus necesidades y las de tu
           empresa.
         </p>
-        <span className="bg-green-500 rounded-xl py-1 px-2 text-sm mb-4 text-center font-medium">
+        <span className="bg-green-500 rounded-xl py-2 px-4 text-lg sm:py-1 sm:px-4 sm:text-sm font-semibold mb-4 text-center text-slate-50">
           Deducción en el Impuesto de Sociedades al 100% del gasto
         </span>
         <Separator />

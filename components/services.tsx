@@ -54,7 +54,7 @@ const Services = () => {
       <h2 className="text-2xl font-semibold mb-4 text-gray-800">
         Nuestros Servicios
       </h2>
-      <p className="text-lg mb-8">
+      <p className="text-lg mb-8 text-center">
         Ofrecemos una amplia gama de servicios para satisfacer todas tus
         necesidades de seguros.
       </p>

@@ -31,7 +31,7 @@ const Differential = () => {
         siguientes coberturas y servicios, disfruta del seguro más completo y de
         la mejor asistencia sanitaria.
       </p>
-      <ul className="flex items-center justify-center gap-4 text-lg text-gray-700">
+      <ul className="flex flex-col sm:flex-row items-center justify-center gap-4 text-lg text-gray-700">
         {differentials.map((differential) => (
           <li
             key={differential.id}

@@ -5,7 +5,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <div className="flex flex-col bg-green-400 min-h-[90vh] pt-18 lg:flex-row justify-end lg:justify-between items-center">
-      <div className="p-4 lg:px-12 ">
+      <div className="flex flex-col p-4 lg:px-12 min-h-[43vh] lg:min-h-[90vh] justify-center">
         <h1 className="text-lg font-semibold text-green-800 mb-4">
           Seguros Fuengirola
         </h1>
@@ -25,7 +25,7 @@ const Hero = () => {
         width={1000}
         height={1000}
         alt="Imagen de un pediatra"
-        className="w-full object-cover max-h-[90vh]"
+        className="w-full object-cover max-h-[50vh] sm:max-h-[70vh] lg:max-h-[80vh] lg:w-1/2"
       />
     </div>
   );
