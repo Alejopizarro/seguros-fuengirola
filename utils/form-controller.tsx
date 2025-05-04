@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -40,7 +41,7 @@ export function FormController() {
     },
   });
 
-  const onSubmit = async (data) => {
+  const onSubmit = async (data: any) => {
     try {
       const response = await fetch(
         "https://script.google.com/macros/s/AKfycbzcpdep1PW6SpJspFjPJpcaXinuPeI3-35uJbnorzfe1oZBsnrr1BcwJRl8t19ms22P/exec",
@@ -54,7 +55,7 @@ export function FormController() {
         }
       );
 
-      console.log("Formulario enviado:", data);
+      console.log("Formulario enviado:", response.json, data);
       alert("¡Formulario enviado correctamente!");
     } catch (error) {
       console.error("Error al enviar el formulario:", error);
