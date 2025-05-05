@@ -18,7 +18,7 @@ export default function Home() {
         <Services />
         <Particulares />
         <Differential />
-        <Separator className="my-8" />
+        <Separator />
         <Empresas />
         <Dental />
         <Faqs />

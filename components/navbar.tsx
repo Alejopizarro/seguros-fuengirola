@@ -18,7 +18,7 @@ const Navbar = () => {
         <ItemsMenuMobile />
       </div>
       <div className="hidden lg:flex items-center">
-        <Button className="ml-4 bg-green-600 hover:bg-green-700">
+        <Button variant="outline" className="ml-4 text-black">
           <Phone /> Contactar
         </Button>
       </div>

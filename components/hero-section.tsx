@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="flex flex-col bg-green-400 min-h-[90vh] pt-18 lg:flex-row justify-end lg:justify-between items-center">
       <div className="flex flex-col p-4 lg:px-12 min-h-[43vh] lg:min-h-[90vh] justify-center">
-        <h1 className="text-lg font-semibold text-green-800 mb-4">
+        <h1 className="text-lg font-semibold text-gray-800 mb-4">
           Seguros Fuengirola
         </h1>
         <p className="text-4xl font-bold mb-8 tracking-tight leading-none">
