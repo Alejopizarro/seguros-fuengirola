@@ -7,6 +7,7 @@ import LeadForm from "@/components/lead-form";
 import Particulares from "@/components/particulares";
 import Services from "@/components/services";
 import StatsDisplay from "@/components/stats-display";
+import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Services />
         <Particulares />
         <Differential />
+        <Separator className="my-8" />
         <Empresas />
         <Dental />
         <Faqs />

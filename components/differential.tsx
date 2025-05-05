@@ -1,4 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
+
 export const differentials = [
   {
     id: 1,
@@ -37,15 +38,17 @@ const Differential = () => {
             key={differential.id}
             className="flex flex-col items-center text-center gap-4 mb-4 p-4"
           >
-            <img
+            <Image
+              width={200}
+              height={200}
               src={differential.img}
               alt={differential.title}
               className="w-48 h-auto"
             />
             <div>
-              <h3 className="text-xl mb-4 font-semibold">
+              <h4 className="text-xl mb-4 font-semibold">
                 {differential.title}
-              </h3>
+              </h4>
               <p className="text-md text-gray-600">
                 {differential.description}
               </p>

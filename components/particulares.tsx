@@ -39,7 +39,9 @@ const Particulares = () => {
             height={300}
             className=" shadow-lg"
           />
-          <img
+          <Image
+            width={300}
+            height={300}
             className="absolute -top-4 -left-12"
             src="https://cdn.rareblocks.xyz/collection/celebration/images/features/1/wavey-lines.svg"
             alt=""

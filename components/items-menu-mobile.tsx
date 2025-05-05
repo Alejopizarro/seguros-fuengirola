@@ -24,7 +24,10 @@ const ItemsMenuMobile = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="outline" className="flex items-center">
+        <Button
+          variant="outline"
+          className="flex items-center gap-x-2 text-gray-950 text-sm font-semibold"
+        >
           <Menu width={20} color="black" /> Menú
         </Button>
       </SheetTrigger>

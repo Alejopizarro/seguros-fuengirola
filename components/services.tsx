@@ -75,7 +75,7 @@ const Services = () => {
               </div>
             </CardHeader>
             <CardContent>
-              <h3 className="font-semibold text-xl mb-2">{service.title}</h3>
+              <h4 className="font-semibold text-xl mb-2">{service.title}</h4>
               <p className="text-sm font-light">{service.description}</p>
             </CardContent>
             <CardFooter>
