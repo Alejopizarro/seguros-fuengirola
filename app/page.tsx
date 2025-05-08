@@ -3,7 +3,6 @@ import Differential from "@/components/differential";
 import Empresas from "@/components/empresas";
 import Faqs from "@/components/faqs";
 import Hero from "@/components/hero-section";
-import LeadForm from "@/components/lead-form";
 import Particulares from "@/components/particulares";
 import Services from "@/components/services";
 import StatsDisplay from "@/components/stats-display";
@@ -22,7 +21,6 @@ export default function Home() {
         <Empresas />
         <Dental />
         <Faqs />
-        <LeadForm />
       </div>
     </div>
   );

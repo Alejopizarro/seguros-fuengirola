@@ -51,8 +51,8 @@ export const services = [
 const Services = () => {
   return (
     <div className="p-8 sm:px-20 sm:py-18  flex flex-col items-center">
-      <h2 className="text-2xl font-semibold mb-4 text-gray-800">
-        Nuestros Servicios
+      <h2 className="text-4xl font-semibold mb-4 text-gray-800">
+        Seguros pensados para tí
       </h2>
       <p className="text-lg mb-8 text-center">
         Ofrecemos una amplia gama de servicios para satisfacer todas tus

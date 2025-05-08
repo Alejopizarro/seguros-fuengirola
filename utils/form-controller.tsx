@@ -65,7 +65,7 @@ export function FormController() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
         <FormField
           control={form.control}
           name="name"
@@ -111,7 +111,8 @@ export function FormController() {
         />
         <Button
           type="submit"
-          className="bg-green-600 hover:bg-green-700 w-full"
+          variant="outline"
+          className="w-full text-gray-950 animate-bounce"
         >
           Quiero recibir más información <MoveRight />
         </Button>

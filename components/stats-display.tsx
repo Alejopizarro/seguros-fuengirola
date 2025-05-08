@@ -124,16 +124,16 @@ export default function StatsDisplay({
 }: StatsDisplayProps) {
   // Definir los stats por defecto dentro del componente
   const defaultStats: StatItemProps[] = [
-    { value: 10, label: "años de experiencia", color: "text-green-300" },
-    { value: 1000, label: "clientes asegurados", color: "text-green-400" },
-    { value: 200, label: "empresas aseguradas", color: "text-green-500" },
+    { value: 10, label: "años de experiencia", color: "text-blue-300" },
+    { value: 1000, label: "clientes asegurados", color: "text-blue-400" },
+    { value: 200, label: "empresas aseguradas", color: "text-blue-500" },
   ];
 
   // Usar los stats proporcionados o los predeterminados
   const displayStats = stats || defaultStats;
   return (
     <div
-      className={`flex flex-col items-center p-8 bg-gray-900 ${className}`}
+      className={`flex flex-col items-center relative z-100 p-8 bg-gray-900 ${className}`}
       aria-labelledby="stats-heading"
     >
       <div className="flex flex-col w-full items-center sm:flex-row sm:justify-around">

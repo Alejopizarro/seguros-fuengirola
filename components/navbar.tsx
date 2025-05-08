@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 const Navbar = () => {
   return (
-    <nav className="flex bg-gray-900 text-slate-50 justify-between items-center p-4 absolute z-1000 w-full">
+    <nav className="flex justify-between items-center p-4 absolute z-1000 w-full">
       <div>
         <h1 className="text-md font-extralight">
           Seguros <span className="text-md font-semibold">Fuengirola</span>
@@ -18,7 +18,7 @@ const Navbar = () => {
         <ItemsMenuMobile />
       </div>
       <div className="hidden lg:flex items-center">
-        <Button variant="outline" className="ml-4 text-black">
+        <Button className="ml-4">
           <Phone /> Contactar
         </Button>
       </div>
