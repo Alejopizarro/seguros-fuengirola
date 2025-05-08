@@ -1,17 +1,12 @@
 import LeadForm from "./lead-form";
-import Image from "next/image";
 
 const Hero = () => {
   return (
     <div className="relative flex flex-col sm:flex-row min-h-[90vh] pt-18 justify-end lg:justify-between items-center">
       <div className="flex flex-col sm:px-20 px-8 min-h-[43vh] lg:min-h-[90vh] justify-center">
-        <Image
-          width={300}
-          height={300}
-          src="/logo-agente-horizontal.png"
-          alt="Logo"
-          className="mb-4"
-        />
+        <h1 className="text-md font-semibold mb-4 text-gray-800">
+          Seguros de Salud, Hogar, Vida y Más
+        </h1>
         <p className="text-4xl sm:text-5xl font-bold mb-8 tracking-tight leading-none">
           Contrata tu{" "}
           <span className="bg-gradient-to-r from-blue-500 to-violet-500 bg-clip-text text-4xl sm:text-5xl font-extrabold text-transparent">
@@ -32,7 +27,7 @@ const Hero = () => {
         <LeadForm />
       </div>
       <div
-        className="absolute hidden sm:flex -top-0 -right-0 w-100 h-100 bg-blue-300 opacity-80 z-0"
+        className="absolute hidden sm:flex -right-0 w-120 h-120 bg-blue-300 opacity-80 z-0 top-18"
         style={{ clipPath: "circle(52% at 76% 38%)" }}
       ></div>
       <div
