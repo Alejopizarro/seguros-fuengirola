@@ -6,7 +6,7 @@ const Particulares = () => {
   return (
     <div className="flex flex-col sm:flex-row p-8 sm:px-20 sm:py-18 items-center justify-between bg-gray-900">
       <div className="flex flex-col gap-4 max-w-2xl mb-4 sm:mb-0">
-        <h2 className="text-md font-semibold text-green-600">
+        <h2 className="text-md font-semibold text-blue-600">
           Seguros de salud para particulares
         </h2>
         <p className="font-bold text-3xl sm:text-4xl leading-none tracking-tight sm:w-3/4 text-slate-50">
@@ -26,18 +26,18 @@ const Particulares = () => {
             Te facilitaremos todos los procesos y gestiones.
           </li>
         </ul>
-        <Button className="mt-4 sm:w-1/2 bg-green-600 text-white hover:bg-green-700 transition duration-300 ease-in-out">
+        <Button className="mt-4 sm:w-1/2 bg-blue-600 text-white hover:bg-blue-700 transition duration-300 ease-in-out">
           Contrata tu seguro <MoveRight />
         </Button>
       </div>
-      <div className="relative pl-20 pr-6 sm:pl-6 md:px-0">
-        <div className="relative w-full max-w-xs mt-4 mb-10 ml-auto">
+      <div className="relative p-8">
+        <div className="relative w-full">
           <Image
             src="/happy.webp"
             alt="Imagen de un pediatra"
-            width={300}
+            width={500}
             height={300}
-            className=" shadow-lg"
+            className="max-h-[80vh] object-cover rounded-lg shadow-lg"
           />
           <Image
             width={300}
@@ -47,14 +47,20 @@ const Particulares = () => {
             alt=""
           />
 
-          <div className="absolute -bottom-10 -left-16 shadow-lg">
-            <div className="bg-green-500">
-              <div className="px-8 py-10">
-                <span className="block text-gray-700 ">Hasta un</span>
-                <span className="block tracking-tight leading-none text-4xl font-extrabold text-gray-950 lg:text-5xl">
+          <div className="absolute -bottom-10 -right-16 shadow-lg">
+            <div
+              className="bg-gradient-to-br from-red-400 to-red-600 rounded-lg shadow-lg text-right"
+              style={{
+                clipPath:
+                  "polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%)",
+              }}
+            >
+              <div className="pl-12 pr-4 py-4">
+                <span className="block text-gray-700 text-sm">Hasta un</span>
+                <span className="block tracking-tight leading-none text-4xl font-extrabold text-gray-950">
                   35%
                 </span>
-                <span className="block mt-2 text-base leading-none text-gray-700">
+                <span className="block mt-2 leading-none text-sm text-gray-700">
                   de descuento <br /> durante 6 años
                 </span>
               </div>

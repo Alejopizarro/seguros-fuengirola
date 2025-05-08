@@ -14,7 +14,7 @@ const Hero = () => {
         />
         <p className="text-4xl sm:text-5xl font-bold mb-8 tracking-tight leading-none">
           Contrata tu{" "}
-          <span className="bg-gradient-to-r from-blue-500 to-violet-500 bg-clip-text text-5xl font-extrabold text-transparent">
+          <span className="bg-gradient-to-r from-blue-500 to-violet-500 bg-clip-text text-4xl sm:text-5xl font-extrabold text-transparent">
             Seguro en Fuengirola
           </span>{" "}
           con DKV, compañía líder en el sector asegurador.
@@ -36,7 +36,7 @@ const Hero = () => {
         style={{ clipPath: "circle(52% at 76% 38%)" }}
       ></div>
       <div
-        className="absolute hidden sm:flex -bottom-0 -right-0 w-150 h-150 bg-blue-500 z-0"
+        className="absolute -bottom-0 -right-0 w-150 h-150 bg-blue-500 z-0"
         style={{
           clipPath:
             "polygon(100% 33%, 100% 100%, 0% 100%, 14% 74%, 34% 59%, 57% 55%, 68% 42%, 83% 37%)",
