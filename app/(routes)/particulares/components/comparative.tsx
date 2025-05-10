@@ -1,5 +1,3 @@
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
 import { Check } from "lucide-react";
 
 interface Tratamiento {
@@ -22,17 +20,17 @@ const Comparative = (props: ComparativeProps) => {
   const { title, comparatives } = props;
   return (
     <div className="flex flex-col items-center gap-y-8">
-      <h1 className="text-3xl lg:text-4xl font-semibold text-center">
-        {title}
-      </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8">
+      <h1 className="text-2xl lg:text-3xl text-center">{title}</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         {comparatives.map((comparative, index) => (
-          <Card key={index}>
-            <CardHeader className="text-2xl font-semibold ">
+          <div
+            key={index}
+            className="flex flex-col bg-white rounded-xl shadow-lg"
+          >
+            <div className="text-2xl font-medium bg-blue-200/40 rounded-t-xl p-8">
               {comparative.title}
-            </CardHeader>
-            <Separator className="mx-4 max-w-3/4" />
-            <CardContent className="space-y-4">
+            </div>
+            <div className="space-y-4 p-8">
               <p>{comparative.description}</p>
               <ul>
                 {comparative.list.map((li, i) => (
@@ -48,8 +46,8 @@ const Comparative = (props: ComparativeProps) => {
                   </li>
                 ))}
               </ul>
-            </CardContent>
-          </Card>
+            </div>
+          </div>
         ))}
       </div>
     </div>

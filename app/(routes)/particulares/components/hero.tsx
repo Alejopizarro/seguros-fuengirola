@@ -24,7 +24,7 @@ const Hero = (props: HeroProps) => {
   } = props;
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 min-h-[90vh] mt-18 bg-gray-900 justify-end lg:justify-between items-center">
+    <div className="grid grid-cols-1 sm:grid-cols-2 min-h-[90vh] pt-18 bg-gray-900 justify-end lg:justify-between items-center">
       <div className="flex flex-col sm:px-20 px-8 min-h-[43vh] lg:min-h-[90vh] justify-center text-slate-50 space-y-4">
         <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-none">
           {title}

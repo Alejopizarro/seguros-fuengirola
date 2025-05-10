@@ -10,6 +10,11 @@ import Recomendations from "../components/recomendations";
 import { useRef } from "react";
 import ScrollSection from "../components/scroll-section";
 
+interface RefButtons {
+  title: string;
+  ref: React.RefObject<HTMLDivElement | null>;
+}
+
 const Page = () => {
   const ventajasRef = useRef<HTMLDivElement>(null);
   const serviciosRef = useRef<HTMLDivElement>(null);
@@ -17,6 +22,15 @@ const Page = () => {
   const faqsRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
   const otrosRef = useRef<HTMLDivElement>(null);
+
+  const refButtons: RefButtons[] = [
+    { title: "Ventajas", ref: ventajasRef },
+    { title: "Servicios", ref: serviciosRef },
+    { title: "Información adicional", ref: informacionRef },
+    { title: "FAQs", ref: faqsRef },
+    { title: "Contacto", ref: contactRef },
+    { title: "Otros seguros", ref: otrosRef },
+  ];
 
   return (
     <div>
@@ -29,15 +43,8 @@ const Page = () => {
         imageSrc="/family.webp"
         imageAlt="Seguros dentales para particulares"
       />
-      <ScrollSection
-        ventajasRef={ventajasRef}
-        serviciosRef={serviciosRef}
-        informacionRef={informacionRef}
-        otrosRef={otrosRef}
-        contactRef={contactRef}
-        faqsRef={faqsRef}
-      />
-      <div className="flex flex-col space-y-8 items-center p-8 sm:py-16 sm:px-20 bg-gradient-to-br from-gray-50 to-gray-100">
+      <ScrollSection refs={refButtons} />
+      <div className="flex flex-col space-y-8 sm:space-y-16 items-center p-8 sm:py-16 sm:px-20 bg-gradient-to-br from-gray-50 to-gray-100">
         <div ref={ventajasRef}>
           <Features title="seguro dental" features={features} />
         </div>
@@ -46,7 +53,7 @@ const Page = () => {
         </div>
         <div ref={informacionRef}>
           <Comparative
-            title="¿Cuál es el coste de los prin  cipales tratamientos dentales?"
+            title="¿Cuál es el coste de los principales tratamientos dentales?"
             comparatives={comparatives}
           />
         </div>
