@@ -32,7 +32,7 @@ const Empresas = () => {
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Consequatur repudiandae magnam corrupti incidunt, numquam.
             </p>
-            <span className="font-medium text-sm text-green-700 flex items-center gap-2 cursor-pointer">
+            <span className="font-medium text-sm text-blue-700 flex items-center gap-2 cursor-pointer">
               Más información <MoveRight />
             </span>
           </div>
@@ -42,7 +42,7 @@ const Empresas = () => {
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Consequatur repudiandae magnam corrupti incidunt, numquam.
             </p>
-            <span className="font-medium text-sm text-green-700 flex items-center gap-2 cursor-pointer">
+            <span className="font-medium text-sm text-blue-700 flex items-center gap-2 cursor-pointer">
               Más información <MoveRight />
             </span>
           </div>

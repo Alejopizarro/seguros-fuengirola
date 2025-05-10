@@ -15,14 +15,14 @@ const Footer = () => {
         </div>
         <div className="w-full items-start p-4 flex flex-col gap-4 mx-auto sm:py-16 sm:px-24 text-left">
           <h5 className="font-bold text-xl">Contact us</h5>
-          <p className="text-md flex items-center gap-x-2 ml-4">
-            <Mail className="ml-4" size={14} /> oficina@segurosfuengirola.es
+          <p className="text-md flex items-center gap-x-2">
+            <Mail size={14} /> oficina@segurosfuengirola.es
           </p>
           <p className="text-md gap-x-2 flex items-center">
-            <Phone className="ml-4" size={14} /> 951 68 13 83
+            <Phone size={14} /> 951 68 13 83
           </p>
           <p className="text-md flex gap-x-2 items-center">
-            <Smartphone className="ml-4" size={14} /> 633 10 60 25
+            <Smartphone size={14} /> 633 10 60 25
           </p>
         </div>
         <div className="w-full items-start p-4 flex flex-col gap-4 mx-auto sm:py-16 sm:px-24 text-left">

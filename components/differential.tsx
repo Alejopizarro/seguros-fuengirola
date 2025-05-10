@@ -23,9 +23,9 @@ export const differentials = [
 
 const Differential = () => {
   return (
-    <div className="p-8 sm:px-20 sm:py-18 flex flex-col items-center">
+    <div className="p-8 sm:px-20 sm:py-14 flex flex-col items-center">
       <h2 className="text-2xl font-semibold mb-4 text-gray-800">
-        ¿Por qué elegirnos?
+        ¿Por qué elegir un seguro de salud con DKV?
       </h2>
       <p className="text-lg mb-8 text-center max-w-4xl">
         El seguro salud de cuadro médico DKV Integral tiene incluidas las

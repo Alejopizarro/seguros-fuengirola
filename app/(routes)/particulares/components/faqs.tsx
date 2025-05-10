@@ -1,0 +1,35 @@
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+interface Faqs {
+  question: string;
+  answer: string;
+}
+
+interface FaqsProps {
+  faqs: Faqs[];
+}
+
+const Faqs = (props: FaqsProps) => {
+  const { faqs } = props;
+  return (
+    <div className="p-8 sm:px-20 sm:py-18 flex flex-col items-center w-full max-w-4xl">
+      <h2 className="text-4xl">Preguntas frecuentes</h2>
+      <div className="mt-8 w-full">
+        {faqs.map((faq, index) => (
+          <Accordion key={index} type="single" collapsible className="w-full">
+            <AccordionItem className="w-full" value={`item-${index}`}>
+              <AccordionTrigger>{faq.question}</AccordionTrigger>
+              <AccordionContent>{faq.answer}</AccordionContent>
+            </AccordionItem>
+          </Accordion>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Faqs;
