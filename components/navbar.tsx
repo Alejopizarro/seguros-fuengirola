@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center p-4 absolute z-1000 w-full">
+    <nav className="flex justify-between bg-white items-center p-4 absolute z-1000 w-full">
       <div>
         <h1 className="text-md font-extralight">
           Seguros <span className="text-md font-semibold">Fuengirola</span>

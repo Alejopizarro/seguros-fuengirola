@@ -27,10 +27,10 @@ const Comparative = (props: ComparativeProps) => {
             key={index}
             className="flex flex-col bg-white rounded-xl shadow-lg"
           >
-            <div className="text-2xl font-medium bg-blue-200/40 rounded-t-xl p-8">
+            <div className="text-2xl font-medium bg-blue-200/40 rounded-xl m-3 p-8">
               {comparative.title}
             </div>
-            <div className="space-y-4 p-8">
+            <div className="space-y-4 p-6">
               <p>{comparative.description}</p>
               <ul>
                 {comparative.list.map((li, i) => (

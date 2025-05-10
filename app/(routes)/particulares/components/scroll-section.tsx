@@ -17,7 +17,7 @@ const ScrollSection = (props: RefProps) => {
         <button
           key={index}
           onClick={() => scrollToSection(ref.ref)}
-          className="cursor-pointer transition duration-300 ease-in-out hover:scale-110 hover:shadow-lg rounded-lg"
+          className="cursor-pointer py-2 transition duration-300 ease-in-out hover:scale-110 hover:shadow-lg rounded-lg"
         >
           {ref.title}
         </button>
