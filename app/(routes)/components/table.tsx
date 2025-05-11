@@ -18,7 +18,7 @@ const Table = (props: TableProps) => {
   const { title, description, tables } = props;
 
   return (
-    <div className="flex flex-col items-center gap-y-8  p-8">
+    <div className="flex flex-col items-center gap-y-8">
       <h2 className="text-2xl lg:text-3xl text-center">{title}</h2>
       <p className="text-md font-light text-gray-500 text-center">
         {description}
@@ -33,7 +33,7 @@ const Table = (props: TableProps) => {
               {table.bullet.map((bullet, i) => (
                 <li key={i}>
                   <p className="text-lg lg:text-xl flex items-center gap-x-2 mb-4 font-medium text-gray-950">
-                    <Check color="green" />
+                    <Check color="green" className="hidden sm:flex" />
                     {bullet.title}
                   </p>
                   <p className="text-sm font-light text-gray-500">

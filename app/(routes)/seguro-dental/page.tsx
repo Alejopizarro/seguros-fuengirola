@@ -51,14 +51,14 @@ const Page = () => {
         <div ref={serviciosRef}>
           <Pricing products={products} />
         </div>
-        <div ref={informacionRef}>
+        <div ref={informacionRef} className="w-full">
           <Comparative
             title="¿Cuál es el coste de los principales tratamientos dentales?"
             description=""
             comparatives={comparatives}
           />
         </div>
-        <div ref={faqsRef}>
+        <div ref={faqsRef} className="w-full max-w-4xl">
           <Faqs faqs={faqs} />
         </div>
         <div ref={contactRef}>

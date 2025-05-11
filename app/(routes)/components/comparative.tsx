@@ -31,7 +31,7 @@ const Comparative = (props: ComparativeProps) => {
             <div className="text-2xl font-semibold bg-blue-200/40 rounded-xl m-3 p-8">
               <h4>{comparative.title}</h4>
             </div>
-            <div className="space-y-4 px-3 pt-1 pb-4">
+            <div className="space-y-4 px-6 pt-1 pb-4">
               <p>{comparative.description}</p>
               <ul className="space-y-4">
                 {comparative.list.map((li, i) => (

@@ -63,10 +63,10 @@ const Page = () => {
             comparatives={comparatives}
           />
         </div>
-        <div ref={faqsRef}>
+        <div ref={faqsRef} className="max-w-4xl">
           <Faqs faqs={faqs} />
         </div>
-        <div ref={contactRef}>
+        <div ref={contactRef} className="max-w-4xl">
           <LeadForm />
         </div>
         <div ref={otrosRef}>

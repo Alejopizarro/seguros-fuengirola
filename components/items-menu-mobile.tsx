@@ -9,19 +9,17 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { ChevronDown, ChevronUp, Menu, PanelRightClose } from "lucide-react";
-import {
-  Collapsible,
-  CollapsibleContent,
-  CollapsibleTrigger,
-} from "./ui/collapsible";
-import { Separator } from "./ui/separator";
-import { useState } from "react";
-import Link from "next/link";
+import { Menu, PanelRightClose } from "lucide-react";
 import { useRouter } from "next/navigation";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "./ui/accordion";
+import { particulares } from "@/lib/data";
 
 const ItemsMenuMobile = () => {
-  const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   return (
     <Sheet>
@@ -38,55 +36,24 @@ const ItemsMenuMobile = () => {
           <SheetTitle>Menu</SheetTitle>
         </SheetHeader>
         <div className="px-4 flex flex-col gap-y-4">
-          <Collapsible onOpenChange={setIsOpen}>
-            <CollapsibleTrigger className="flex w-full justify-between font-semibold">
-              Particulares
-              {isOpen ? <ChevronUp width={20} /> : <ChevronDown width={20} />}
-            </CollapsibleTrigger>
-            <CollapsibleContent onClick={() => router.push("/seguro-de-salud")}>
-              Seguros de salud
-            </CollapsibleContent>
-            <CollapsibleContent>Seguros dentales</CollapsibleContent>
-            <CollapsibleContent>Seguros de decesos</CollapsibleContent>
-            <CollapsibleContent>Seguros de vida</CollapsibleContent>
-            <CollapsibleContent>Seguros de hogar</CollapsibleContent>
-            <CollapsibleContent>Seguros de viajes</CollapsibleContent>
-          </Collapsible>
-          <Separator />
-          <Collapsible onOpenChange={setIsOpen}>
-            <CollapsibleTrigger className="flex w-full justify-between font-semibold">
-              Autónomos y Empresas
-              {isOpen ? <ChevronUp width={20} /> : <ChevronDown width={20} />}
-            </CollapsibleTrigger>
-            <CollapsibleContent>Seguros para autónomos</CollapsibleContent>
-            <CollapsibleContent>Seguros para empresas</CollapsibleContent>
-            <CollapsibleContent>
-              Mutualistas y asegurados públicos
-            </CollapsibleContent>
-          </Collapsible>
-          <Separator />
-          <Link href="/" className="font-semibold">
-            Blog
-          </Link>
-          <Separator />
-          <Collapsible onOpenChange={setIsOpen}>
-            <CollapsibleTrigger className="flex w-full justify-between font-semibold">
-              Sobre Nosotros
-              {isOpen ? <ChevronUp width={20} /> : <ChevronDown width={20} />}
-            </CollapsibleTrigger>
-            <CollapsibleContent>Blog</CollapsibleContent>
-            <CollapsibleContent>FAQs</CollapsibleContent>
-            <CollapsibleContent>About us</CollapsibleContent>
-            <CollapsibleContent>Guide to safety measures</CollapsibleContent>
-            <CollapsibleContent>
-              Legal notice, Privacy, Terms and Conditions
-            </CollapsibleContent>
-          </Collapsible>
-          <Separator />
-          <Link href="/" className="font-semibold">
-            Contacto
-          </Link>
-          <Separator />
+          <Accordion type="single" collapsible className="w-full">
+            <AccordionItem value="item-1">
+              <AccordionTrigger className="font-semibold">
+                Particulares
+              </AccordionTrigger>
+              <AccordionContent className="flex flex-col space-y-4 items-start">
+                {particulares.map((seguro, i) => (
+                  <button
+                    key={i}
+                    onClick={() => router.push(`${seguro.route}`)}
+                    className="font-medium text-gray-700"
+                  >
+                    {seguro.title}
+                  </button>
+                ))}
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
         <SheetFooter>
           <SheetClose asChild>

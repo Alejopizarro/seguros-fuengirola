@@ -150,13 +150,13 @@ export const recomendations = [
     title: "Seguro dental",
     description:
       "Los seguros dentales más completos y económicos para utilizar desde el primer día.",
-    route: "particulares/seguro-dental",
+    route: "seguro-dental",
   },
   {
     imageSrc: "/family.webp",
     title: "Seguro de salud",
     description:
       "Los mejores seguros de salud para particulares. Con DKV tendrás acceso a los mejores médicos y hospitales de España.",
-    route: "particulares/seguro-de-salud",
+    route: "seguro-de-salud",
   },
 ];

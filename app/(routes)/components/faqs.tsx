@@ -23,7 +23,9 @@ const Faqs = (props: FaqsProps) => {
           <Accordion key={index} type="single" collapsible className="w-full">
             <AccordionItem className="w-full" value={`item-${index}`}>
               <AccordionTrigger>{faq.question}</AccordionTrigger>
-              <AccordionContent>{faq.answer}</AccordionContent>
+              <AccordionContent className="text-gray-500">
+                {faq.answer}
+              </AccordionContent>
             </AccordionItem>
           </Accordion>
         ))}
