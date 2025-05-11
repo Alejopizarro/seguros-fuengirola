@@ -23,7 +23,7 @@ const Hero = () => {
           seguro que más se adapte a ti, seas particular, profesional o empresa.
         </p>
       </div>
-      <div className="flex px-8 mb-8 sm:mb-0 items-center justify-center w-full lg:w -1/2 h-[50vh] lg:h-[90vh] overflow-hidden">
+      <div className="flex px-8 mb-8 sm:mb-0 items-center justify-center w-full lg:h-[90vh] overflow-hidden">
         <LeadForm />
       </div>
       <div

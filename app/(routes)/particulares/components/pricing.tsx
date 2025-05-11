@@ -5,6 +5,7 @@ import {
   CardHeader,
 } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
+import { Tag } from "lucide-react";
 
 interface Product {
   title: string;
@@ -45,8 +46,8 @@ const Pricing = (props: PricingProps) => {
               </p>
             </CardContent>
             <CardFooter>
-              <p className="text-xl font-bold mb-4 text-gray-800">
-                {product.price} €
+              <p className="flex items-center gap-x-4 text-xl font-bold mb-4 text-gray-800">
+                {product.price} <Tag />
               </p>
             </CardFooter>
           </Card>
