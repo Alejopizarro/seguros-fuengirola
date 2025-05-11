@@ -100,6 +100,9 @@ const Services = () => {
         <CarouselPrevious className="hidden sm:flex" />
         <CarouselNext className="hidden sm:flex" />
       </Carousel>
+      <p className="flex sm:hidden text-gray-500 text-md gap-x-2 items-center text-center py-2">
+        Desliza para ver más seguros <MoveRight />
+      </p>
     </div>
   );
 };

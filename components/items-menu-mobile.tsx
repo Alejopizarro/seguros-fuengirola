@@ -38,6 +38,14 @@ const ItemsMenuMobile = () => {
         <div className="px-4 flex flex-col gap-y-4">
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
+              <button
+                className="font-semibold"
+                onClick={() => router.push("/")}
+              >
+                Inicio
+              </button>
+            </AccordionItem>
+            <AccordionItem value="item-2">
               <AccordionTrigger className="font-semibold">
                 Particulares
               </AccordionTrigger>
