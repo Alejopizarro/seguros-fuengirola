@@ -41,16 +41,16 @@ const MenuList = () => {
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <ListItem href="/category" title="Seguros de salud">
+              <ListItem href="/seguro-de-salud" title="Seguros de salud">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </ListItem>
-              <ListItem href="/offers" title="Seguros dentales">
+              <ListItem href="/seguro-dental" title="Seguros dentales">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </ListItem>
-              <ListItem href="/accesories" title="Seguros de decesos">
+              <ListItem href="/seguro-de-decesos" title="Seguros de decesos">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </ListItem>
-              <ListItem href="/category" title="Seguros de vida">
+              <ListItem href="/seguro-de-vida" title="Seguros de vida">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </ListItem>
               <ListItem href="/offers" title="Seguros de hogar">
@@ -76,7 +76,7 @@ const MenuList = () => {
                   <ListItem
                     key={experience.id}
                     title={experience.title}
-                    // href={`/category/${experience.attributes.slug}`}
+                    // href={experience.route}
                   >
                     {experience.description}
                   </ListItem>

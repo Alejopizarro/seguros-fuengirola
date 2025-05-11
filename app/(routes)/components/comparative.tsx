@@ -13,6 +13,7 @@ interface Comparative {
 
 interface ComparativeProps {
   title: string;
+  description: string;
   comparatives: Comparative[];
 }
 
@@ -27,20 +28,22 @@ const Comparative = (props: ComparativeProps) => {
             key={index}
             className="flex flex-col bg-white rounded-xl shadow-lg"
           >
-            <div className="text-2xl font-medium bg-blue-200/40 rounded-xl m-3 p-8">
-              {comparative.title}
+            <div className="text-2xl font-semibold bg-blue-200/40 rounded-xl m-3 p-8">
+              <h4>{comparative.title}</h4>
             </div>
-            <div className="space-y-4 p-6">
+            <div className="space-y-4 px-3 pt-1 pb-4">
               <p>{comparative.description}</p>
-              <ul>
+              <ul className="space-y-4">
                 {comparative.list.map((li, i) => (
                   <li
                     key={i}
-                    className="flex items-center font-light text-gray-500 space-x-2"
+                    className="flex flex-col font-medium text-gray-950 space-y-2"
                   >
-                    <Check color="green" />
-                    {li.tratamiento}
-                    <span className="font-semibold ml-2 text-gray-950">
+                    <p className="flex items-center gap-x-2">
+                      <Check color="green" />
+                      {li.tratamiento}
+                    </p>
+                    <span className="font-light ml-8 text-gray-500">
                       {li.precio}
                     </span>
                   </li>

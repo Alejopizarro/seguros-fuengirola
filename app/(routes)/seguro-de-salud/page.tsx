@@ -1,9 +1,9 @@
 import Differential from "@/components/differential";
+import LeadForm from "@/components/lead-form";
 import Hero from "../components/hero";
 import Pricing from "../components/pricing";
 import Carencias from "./components/carencias";
 import Faqs from "../components/faqs";
-import LeadForm from "@/components/lead-form";
 import { faqs, products } from "./data";
 
 const Page = () => {

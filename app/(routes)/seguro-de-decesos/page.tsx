@@ -1,14 +1,15 @@
 "use client";
+import LeadForm from "@/components/lead-form";
+import Faqs from "../components/faqs";
 import Features from "../components/features";
 import Hero from "../components/hero";
 import Pricing from "../components/pricing";
-import Comparative from "../components/comparative";
-import Faqs from "../components/faqs";
-import LeadForm from "@/components/lead-form";
-import { comparatives, faqs, features, products, recomendations } from "./data";
+import Table from "../components/table";
+import { faqs, features, products, table, tables } from "./data";
 import Recomendations from "../components/recomendations";
-import { useRef } from "react";
+import { recomendations } from "../seguro-dental/data";
 import ScrollSection from "../components/scroll-section";
+import { useRef } from "react";
 
 interface RefButtons {
   title: string;
@@ -17,45 +18,46 @@ interface RefButtons {
 
 const Page = () => {
   const ventajasRef = useRef<HTMLDivElement>(null);
-  const serviciosRef = useRef<HTMLDivElement>(null);
   const informacionRef = useRef<HTMLDivElement>(null);
+  const serviciosRef = useRef<HTMLDivElement>(null);
   const faqsRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
   const otrosRef = useRef<HTMLDivElement>(null);
 
   const refButtons: RefButtons[] = [
     { title: "Ventajas", ref: ventajasRef },
-    { title: "Servicios", ref: serviciosRef },
-    { title: "Información adicional", ref: informacionRef },
-    { title: "FAQs", ref: faqsRef },
-    { title: "Contacto", ref: contactRef },
+    { title: "Coberturas y servicios", ref: informacionRef },
+    { title: "Seguros", ref: serviciosRef },
+    { title: "Preguntas frecuentes", ref: faqsRef },
+    { title: "Contratar seguro", ref: contactRef },
     { title: "Otros seguros", ref: otrosRef },
   ];
 
   return (
     <div>
       <Hero
-        title="Seguros Dentales"
-        description="Los seguros dentales más completos y económicos para utilizar desde el primer día."
-        description2="Hasta 59 tratamientos dentales gratuitos a tu disposición. El resto de tratamientos con grandes descuentos. Incluye gratis a hijos menores de 14 años."
+        title="Seguro de Decesos"
+        description="El seguro de decesos que acompaña a tu familia en todo momento"
+        description2="Uno de los mejores servicios funerarios. Repatriación al país de origen. Niños GRATIS hasta los 6 años."
         buttonText1="Más información"
         buttonText2="Contactar"
         imageSrc="/family.webp"
-        imageAlt="Seguros dentales para particulares"
+        imageAlt="Seguro de Decesos para particulares"
       />
       <ScrollSection refs={refButtons} />
-      <div className="flex flex-col space-y-8 sm:space-y-16 items-center p-8 sm:py-16 sm:px-20 bg-gradient-to-br from-gray-50 to-gray-100">
+      <div className="flex flex-col space-y-8 sm:space-y-16 items center p-8 sm:py-16 sm:px-20 bg-gradient-to-br from-gray-50 to-gray-100">
         <div ref={ventajasRef}>
-          <Features title="seguro dental" features={features} />
+          <Features title="seguro de decesos" features={features} />
+        </div>
+        <div ref={informacionRef}>
+          <Table
+            title={table.title}
+            description={table.description}
+            tables={tables}
+          />
         </div>
         <div ref={serviciosRef}>
           <Pricing products={products} />
-        </div>
-        <div ref={informacionRef}>
-          <Comparative
-            title="¿Cuál es el coste de los principales tratamientos dentales?"
-            comparatives={comparatives}
-          />
         </div>
         <div ref={faqsRef}>
           <Faqs faqs={faqs} />

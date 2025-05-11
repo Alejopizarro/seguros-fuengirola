@@ -21,7 +21,7 @@ interface PricingProps {
 const Pricing = (props: PricingProps) => {
   const { products } = props;
   return (
-    <div className="flex flex-col items-center max-w-4xl">
+    <div className="flex flex-col items-center">
       <h2 className="text-2xl lg:text-3xl mb-8 text-gray-800">
         Seguros pensados para tí
       </h2>

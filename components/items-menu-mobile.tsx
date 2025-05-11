@@ -18,9 +18,11 @@ import {
 import { Separator } from "./ui/separator";
 import { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const ItemsMenuMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
   return (
     <Sheet>
       <SheetTrigger asChild>
@@ -41,7 +43,9 @@ const ItemsMenuMobile = () => {
               Particulares
               {isOpen ? <ChevronUp width={20} /> : <ChevronDown width={20} />}
             </CollapsibleTrigger>
-            <CollapsibleContent>Seguros de salud</CollapsibleContent>
+            <CollapsibleContent onClick={() => router.push("/seguro-de-salud")}>
+              Seguros de salud
+            </CollapsibleContent>
             <CollapsibleContent>Seguros dentales</CollapsibleContent>
             <CollapsibleContent>Seguros de decesos</CollapsibleContent>
             <CollapsibleContent>Seguros de vida</CollapsibleContent>

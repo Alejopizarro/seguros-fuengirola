@@ -65,7 +65,7 @@ export const comparatives = [
         precio: "80€",
       },
       {
-        tratamiento: "Extracciones dentales símples: ",
+        tratamiento: "Extracción dental simple: ",
         precio: "100€",
       },
       {
@@ -99,7 +99,7 @@ export const comparatives = [
         precio: "GRATIS",
       },
       {
-        tratamiento: "Extracciones dentales símples: ",
+        tratamiento: "Extracción dental simple: ",
         precio: "GRATIS",
       },
       {
