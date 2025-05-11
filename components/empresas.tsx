@@ -21,7 +21,7 @@ const Empresas = () => {
           coberturas y servicios. Nos adaptamos a tus necesidades y las de tu
           empresa.
         </p>
-        <span className="bg-green-500 rounded-xl py-2 px-4 text-lg sm:py-1 sm:px-4 sm:text-sm font-semibold mb-4 text-center text-slate-50">
+        <span className="bg-gradient-to-r from-blue-500 to-violet-500 rounded-xl py-2 px-4 text-lg sm:py-1 sm:px-4 sm:text-sm font-semibold mb-4 text-center text-slate-50">
           Deducción en el Impuesto de Sociedades al 100% del gasto
         </span>
         <Separator />
