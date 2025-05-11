@@ -1,13 +1,19 @@
+"use client";
 import { Phone } from "lucide-react";
 import ItemsMenuMobile from "./items-menu-mobile";
 import MenuList from "./menu-list";
 import { Button } from "./ui/button";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
+  const router = useRouter();
   return (
     <nav className="flex justify-between bg-white items-center px-8 py-4 absolute z-1000 w-full">
       <div>
-        <h1 className="text-md font-extralight">
+        <h1
+          className="text-md font-extralight"
+          onClick={() => router.push("/")}
+        >
           Seguros <span className="text-md font-semibold">Fuengirola</span>
         </h1>
       </div>
