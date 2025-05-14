@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import scrollToSection from "@/lib/scroll-to-section";
 import { MoveLeft, MoveRight } from "lucide-react";
@@ -38,7 +39,7 @@ const Hero = (props: HeroProps) => {
           </p>
           <p className="text-lg font-light text-slate-300">{description2}</p>
         </div>
-        <Button onClick={() => scrollToSection(buttonRef)}>
+        <Button onClick={() => scrollToSection(buttonRef)} className="sm:w-3/4">
           Contratar seguro
           <MoveRight />
         </Button>

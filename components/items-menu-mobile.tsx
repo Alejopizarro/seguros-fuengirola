@@ -39,7 +39,7 @@ const ItemsMenuMobile = () => {
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
               <button
-                className="font-semibold"
+                className="font-semibold mb-4"
                 onClick={() => router.push("/")}
               >
                 Inicio
