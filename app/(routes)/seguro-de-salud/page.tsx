@@ -1,3 +1,4 @@
+"use client";
 import Differential from "@/components/differential";
 import LeadForm from "@/components/lead-form";
 import Hero from "../components/hero";
