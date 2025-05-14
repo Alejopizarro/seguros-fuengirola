@@ -38,10 +38,9 @@ const Page = () => {
         title="Seguros Dentales"
         description="Los seguros dentales más completos y económicos para utilizar desde el primer día."
         description2="Hasta 59 tratamientos dentales gratuitos a tu disposición. El resto de tratamientos con grandes descuentos. Incluye gratis a hijos menores de 14 años."
-        buttonText1="Más información"
-        buttonText2="Contactar"
         imageSrc="/family.webp"
         imageAlt="Seguros dentales para particulares"
+        buttonRef={contactRef}
       />
       <ScrollSection refs={refButtons} />
       <div className="flex flex-col space-y-8 sm:space-y-16 items-center p-8 sm:py-16 sm:px-20 bg-gradient-to-br from-gray-50 to-gray-100">
