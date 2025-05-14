@@ -39,8 +39,7 @@ const Page = () => {
         title="Seguros de Vida"
         description="El seguro de vida que me ofrece la tranquilidad y seguridad económica que deseo para mi familia"
         description2="Indemnización por fallecimiento por cualquier causa. Adelanto de capital ante una enfermedad terminal. Servicio de atención al duelo para afrontar la pérdida de un ser querido. Asistencia familiar en caso de fallecimiento, testamento online y asesoría legal."
-        buttonText1="Más información"
-        buttonText2="Contactar"
+        buttonRef={contactRef}
         imageSrc="/family.webp"
         imageAlt="Seguros de vida para particulares"
       />
