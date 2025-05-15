@@ -23,7 +23,7 @@ const Table = (props: TableProps) => {
       <p className="text-md font-light text-gray-500 text-center">
         {description}
       </p>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 bg-white p-8 rounded-xl shadow-lg">
+      <div className="flex flex-col sm:flex-row gap-8 bg-white p-8 rounded-xl shadow-lg">
         {tables.map((table, i) => (
           <div key={i} className="flex flex-col rounded-xl ">
             <h4 className="text-xl lg:text-2xl font-semibold text-gray-950 mb-4">
