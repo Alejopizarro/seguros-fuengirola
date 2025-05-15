@@ -1,4 +1,4 @@
-import scrollToSection from "@/lib/scroll-to-section";
+import scrollToSection from "@/utils/scroll-to-section";
 
 interface RefButtons {
   title: string;

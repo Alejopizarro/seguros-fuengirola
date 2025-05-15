@@ -3,7 +3,7 @@
 import * as React from "react";
 import Link from "next/link";
 
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/utils";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -12,24 +12,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-
-export const experiences = [
-  {
-    id: 1,
-    title: "Seguros para empresas",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    id: 2,
-    title: "Seguros para autonomos",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    id: 3,
-    title: "Mutualistas y asegurados publicos",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-];
+import { autonomos, empresas, particulares } from "@/utils/data";
 
 const MenuList = () => {
   return (
@@ -41,53 +24,25 @@ const MenuList = () => {
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <ListItem href="/seguro-de-salud" title="Seguros de salud">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </ListItem>
-              <ListItem href="/seguro-dental" title="Seguros dentales">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </ListItem>
-              <ListItem href="/seguro-de-decesos" title="Seguros de decesos">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </ListItem>
-              <ListItem href="/seguro-de-vida" title="Seguros de vida">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </ListItem>
-              <ListItem href="/offers" title="Seguros de hogar">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </ListItem>
-              <ListItem href="/accesories" title="Seguros de accidentes">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </ListItem>
-              <ListItem href="/accesories" title="Seguros de viajes">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </ListItem>
+              {particulares.map((seguro, index) => (
+                <ListItem key={index} href={seguro.route} title={seguro.title}>
+                  {seguro.description}
+                </ListItem>
+              ))}
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-md bg-transparent">
-            Autónomos y Empresas
-          </NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {experiences !== null &&
-                experiences.map((experience) => (
-                  <ListItem
-                    key={experience.id}
-                    title={experience.title}
-                    // href={experience.route}
-                  >
-                    {experience.description}
-                  </ListItem>
-                ))}
-            </ul>
-          </NavigationMenuContent>
+          <Link href={autonomos.route} passHref>
+            <NavigationMenuLink className="text-md font-medium bg-transparent">
+              {autonomos.title}
+            </NavigationMenuLink>
+          </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/docs" passHref>
-            <NavigationMenuLink className="text-md bg-transparent">
-              Blog
+          <Link href={empresas.route} passHref>
+            <NavigationMenuLink className="text-md font-medium bg-transparent">
+              {empresas.title}
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
@@ -104,9 +59,6 @@ const MenuList = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </ListItem>
               <ListItem href="/" title="FAQs">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </ListItem>
-              <ListItem href="/" title="Guide to safety measures">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </ListItem>
               <ListItem

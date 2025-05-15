@@ -17,7 +17,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "./ui/accordion";
-import { particulares } from "@/lib/data";
+import { autonomos, empresas, particulares } from "@/utils/data";
 
 const ItemsMenuMobile = () => {
   const router = useRouter();
@@ -46,7 +46,7 @@ const ItemsMenuMobile = () => {
               </button>
             </AccordionItem>
             <AccordionItem value="item-2">
-              <AccordionTrigger className="font-semibold">
+              <AccordionTrigger className="font-semibold text-md">
                 Particulares
               </AccordionTrigger>
               <AccordionContent className="flex flex-col space-y-4 items-start">
@@ -60,6 +60,22 @@ const ItemsMenuMobile = () => {
                   </button>
                 ))}
               </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3">
+              <button
+                className="font-semibold my-4"
+                onClick={() => router.push(`${autonomos.route}`)}
+              >
+                {autonomos.title}
+              </button>
+            </AccordionItem>
+            <AccordionItem value="item-4">
+              <button
+                className="font-semibold my-4"
+                onClick={() => router.push(`${empresas.route}`)}
+              >
+                {empresas.title}
+              </button>
             </AccordionItem>
           </Accordion>
         </div>

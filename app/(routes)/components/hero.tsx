@@ -1,6 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import scrollToSection from "@/lib/scroll-to-section";
+import scrollToSection from "@/utils/scroll-to-section";
 import { MoveLeft, MoveRight } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
