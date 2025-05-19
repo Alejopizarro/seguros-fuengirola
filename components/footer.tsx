@@ -10,7 +10,7 @@ const Footer = () => {
 
   return (
     <div className="w-full bg-gray-900 text-slate-50">
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 sm:py-16 sm:px-24 text-left gap-4">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 p-4 sm:py-16 sm:px-24 text-left gap-4">
         <div>
           <h5 className="font-bold text-xl mb-4">Seguros Fuengirola</h5>
           <ul className="text-sm font-light text-slate-300 space-y-4">
@@ -27,7 +27,7 @@ const Footer = () => {
               <li key={index}>
                 <button
                   onClick={() => router.push(`${seguro.route}`)}
-                  className="cursor-pointer"
+                  className="cursor-pointer hover:underline"
                 >
                   {seguro.title}
                 </button>
