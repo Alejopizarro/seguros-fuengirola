@@ -18,6 +18,8 @@ import {
 import { Input } from "@/components/ui/input";
 import { Check, LoaderCircle, MoveRight, PhoneCall } from "lucide-react";
 import { useState } from "react";
+import { Checkbox } from "@/components/ui/checkbox";
+import Link from "next/link";
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -28,6 +30,9 @@ const formSchema = z.object({
   }),
   phone: z.string().min(7, {
     message: "El teléfono debe tener al menos 7 caracteres",
+  }),
+  optim: z.literal(true, {
+    errorMap: () => ({ message: "Debes aceptar la política de privacidad" }),
   }),
 });
 
@@ -120,6 +125,31 @@ export function FormController() {
                   tus dudas.
                 </FormDescription>
                 <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="optim"
+            render={({ field }) => (
+              <FormItem className="flex items-start 2xl:items-center mb-4">
+                <FormControl>
+                  <Checkbox
+                    checked={field.value}
+                    onCheckedChange={field.onChange}
+                  />
+                </FormControl>
+                <FormLabel className="font-light text-slate-300">
+                  <p>
+                    He leído y acepto la cláusula de{" "}
+                    <Link
+                      className="font-medium text-slate-50 text-decoration-line: underline"
+                      href="/politica-de-privacidad"
+                    >
+                      protección de datos.
+                    </Link>
+                  </p>
+                </FormLabel>
               </FormItem>
             )}
           />

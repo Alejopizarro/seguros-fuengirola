@@ -1,8 +1,6 @@
 "use client";
 
 import * as React from "react";
-import Link from "next/link";
-
 import { cn } from "@/utils/utils";
 import {
   NavigationMenu,
@@ -33,18 +31,18 @@ const MenuList = () => {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href={autonomos.route} passHref>
+          <a href={autonomos.route}>
             <NavigationMenuLink className="text-md font-medium bg-transparent">
               {autonomos.title}
             </NavigationMenuLink>
-          </Link>
+          </a>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href={empresas.route} passHref>
+          <a href={empresas.route}>
             <NavigationMenuLink className="text-md font-medium bg-transparent">
               {empresas.title}
             </NavigationMenuLink>
-          </Link>
+          </a>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="text-md bg-transparent">
