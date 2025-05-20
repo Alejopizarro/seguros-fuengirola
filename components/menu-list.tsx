@@ -10,7 +10,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import { autonomos, empresas, particulares } from "@/utils/data";
+import { autonomos, empresas, particulares, sobreNosotros } from "@/utils/data";
 
 const MenuList = () => {
   return (
@@ -46,25 +46,15 @@ const MenuList = () => {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="text-md bg-transparent">
-            Sobre Nosotros
+            {sobreNosotros.title}
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-              <ListItem href="/" title="About us">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </ListItem>
-              <ListItem href="/" title="Blog">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </ListItem>
-              <ListItem href="/" title="FAQs">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </ListItem>
-              <ListItem
-                href="/"
-                title="Legal notice, Privacy, Terms and Conditions"
-              >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </ListItem>
+              {sobreNosotros.pages.map((page, i) => (
+                <ListItem key={i} href={page.url} title={page.title}>
+                  {page.description}
+                </ListItem>
+              ))}
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>

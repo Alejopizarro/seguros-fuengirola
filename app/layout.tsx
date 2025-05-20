@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar";
 import BannerContact from "@/components/banner-contact";
 import Footer from "@/components/footer";
+import NextTopLoader from "nextjs-toploader";
 
 const urbanist = Urbanist({
   subsets: ["latin"],
@@ -23,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={urbanist.className}>
+        <NextTopLoader />
         <BannerContact />
         <Navbar />
         {children}

@@ -1,3 +1,4 @@
+import LeadForm from "@/components/lead-form";
 import Contact from "./components/contact";
 import Hero from "./components/hero";
 import Location from "./components/location";
@@ -28,6 +29,7 @@ const Page = () => {
         </div>
         <Location />
         <Contact />
+        <LeadForm />
       </div>
     </div>
   );

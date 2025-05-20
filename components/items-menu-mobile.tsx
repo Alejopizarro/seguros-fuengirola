@@ -17,7 +17,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "./ui/accordion";
-import { autonomos, empresas, particulares } from "@/utils/data";
+import { autonomos, empresas, particulares, sobreNosotros } from "@/utils/data";
 
 const ItemsMenuMobile = () => {
   const router = useRouter();
@@ -76,6 +76,20 @@ const ItemsMenuMobile = () => {
               >
                 {empresas.title}
               </button>
+            </AccordionItem>
+            <AccordionItem value="item-5">
+              <AccordionTrigger>{sobreNosotros.title}</AccordionTrigger>
+              <AccordionContent>
+                {sobreNosotros.pages.map((page, i) => (
+                  <button
+                    key={i}
+                    onClick={() => router.push(`${page.url}`)}
+                    className="font-medium text-gray-700"
+                  >
+                    {page.title}
+                  </button>
+                ))}
+              </AccordionContent>
             </AccordionItem>
           </Accordion>
         </div>

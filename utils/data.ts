@@ -65,10 +65,12 @@ export const sobreNosotros = {
     {
       title: "Quienes somos",
       url: "/sobre-nosotros/quienes-somos",
+      description: "Descubre más acerca de nosotros y como podemos ayudarte",
     },
     {
       title: "Politica de privacidad",
       url: "/sobre-nosotros/politica-de-privacidad",
+      description: "Nuestra politica sobre el manejo de datos y cookies",
     },
   ],
 };

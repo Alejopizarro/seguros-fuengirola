@@ -52,7 +52,7 @@ const Page = () => {
         <div ref={informacionRef}>
           <Carencias />
         </div>
-        <div ref={faqsRef}>
+        <div ref={faqsRef} className="max-w-4xl w-full">
           <Faqs faqs={faqs} />
         </div>
         <div ref={contactRef}>

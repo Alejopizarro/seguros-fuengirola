@@ -44,7 +44,7 @@ const Page = () => {
         imageAlt="Seguro de Decesos para particulares"
       />
       <ScrollSection refs={refButtons} />
-      <div className="flex flex-col space-y-8 sm:space-y-16 items center p-8 sm:py-16 sm:px-20 bg-gradient-to-br from-gray-50 to-gray-100">
+      <div className="flex flex-col space-y-8 sm:space-y-16 items-center p-8 sm:py-16 sm:px-20 bg-gradient-to-br from-gray-50 to-gray-100">
         <div ref={ventajasRef}>
           <Features title="seguro de decesos" features={features} />
         </div>
@@ -58,7 +58,7 @@ const Page = () => {
         <div ref={serviciosRef}>
           <Pricing products={products} />
         </div>
-        <div ref={faqsRef}>
+        <div ref={faqsRef} className="max-w-4xl w-full">
           <Faqs faqs={faqs} />
         </div>
         <div ref={contactRef}>
