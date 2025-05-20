@@ -2,8 +2,9 @@
 import { Instagram, Mail, Phone, Smartphone } from "lucide-react";
 import Link from "next/link";
 import { Separator } from "./ui/separator";
-import { autonomos, empresas, particulares } from "@/utils/data";
+import { autonomos, empresas, particulares, sobreNosotros } from "@/utils/data";
 import { useRouter } from "next/navigation";
+import LinkUrl from "./ui/link-url";
 
 const Footer = () => {
   const router = useRouter();
@@ -12,12 +13,13 @@ const Footer = () => {
     <div className="w-full bg-gray-900 text-slate-50">
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 p-4 sm:py-16 sm:px-24 text-left gap-4">
         <div>
-          <h5 className="font-bold text-xl mb-4">Seguros Fuengirola</h5>
-          <ul className="text-sm font-light text-slate-300 space-y-4">
-            <li>Sobre Nosotros</li>
-            <li>FAQs</li>
-            <li>Blog</li>
-            <li>Legal notice, privacity, terms and conditions</li>
+          <h5 className="font-bold text-xl mb-4">{sobreNosotros.title}</h5>
+          <ul className="space-y-4">
+            {sobreNosotros.pages.map((page, index) => (
+              <li key={index}>
+                <LinkUrl title={page.title} route={page.url} />
+              </li>
+            ))}
           </ul>
         </div>
         <div className="space-y-4">
@@ -25,12 +27,7 @@ const Footer = () => {
           <ul className="font-light text-slate-300 space-y-4 text-sm">
             {particulares.map((seguro, index) => (
               <li key={index}>
-                <button
-                  onClick={() => router.push(`${seguro.route}`)}
-                  className="cursor-pointer hover:underline"
-                >
-                  {seguro.title}
-                </button>
+                <LinkUrl title={seguro.title} route={seguro.route} />
               </li>
             ))}
           </ul>

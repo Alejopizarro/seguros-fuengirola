@@ -58,3 +58,17 @@ export const autonomos = {
   route: "seguro-para-autonomos",
   imageSrc: "/family.webp",
 };
+
+export const sobreNosotros = {
+  title: "Sobre Nosotros",
+  pages: [
+    {
+      title: "Quienes somos",
+      url: "/sobre-nosotros/quienes-somos",
+    },
+    {
+      title: "Politica de privacidad",
+      url: "/sobre-nosotros/politica-de-privacidad",
+    },
+  ],
+};
