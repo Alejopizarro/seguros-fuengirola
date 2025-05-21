@@ -40,7 +40,7 @@ const Page = () => {
         description="DKV Hogar es el seguro de hogar con las mejores coberturas para cuidar y proteger tu vivienda."
         description2="Distintas opciones para elegir tu seguro según las coberturas que necesites. Asistencia en el hogar 24 horas. Servicio manitas y reparación de electrodomésticos."
         buttonRef={contactRef}
-        imageSrc="/family.webp"
+        imageSrc="/vida.webp"
         imageAlt="Seguro de hogar para particulares"
       />
       <ScrollSection refs={refButtons} />

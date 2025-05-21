@@ -1,18 +1,21 @@
+"use client";
 import { Check, MoveRight } from "lucide-react";
 import Image from "next/image";
 import { Button } from "./ui/button";
+import { useRouter } from "next/navigation";
 
 const Particulares = () => {
+  const router = useRouter();
   return (
     <div className="flex flex-col gap-4 sm:flex-row p-8 sm:px-20 sm:py-18 items-center justify-between bg-gray-900">
-      <div className="flex flex-col gap-4 max-w-2xl mb-4 sm:mb-0">
-        <h2 className="text-md font-semibold text-blue-600">
+      <div className="flex flex-col gap-4 max-w-2xl 2xl:max-w-4xl mb-4 sm:mb-0">
+        <h2 className="text-md font-semibold 2xl:text-xl text-green-600">
           Seguros de salud para particulares
         </h2>
-        <p className="font-bold text-3xl sm:text-4xl leading-none tracking-tight sm:w-3/4 text-slate-50">
+        <p className="font-bold text-3xl sm:text-4xl 2xl:text-6xl leading-none tracking-tight sm:w-3/4 text-slate-50">
           Seguros de salud para acceder al mejor servicio de la medicina privada
         </p>
-        <ul className="mt-4 text-lg text-slate-200 space-y-4">
+        <ul className="mt-4 2xl:mt-8 2xl:text-2xl text-lg text-slate-200 space-y-4">
           <li className="flex items-center gap-2">
             <Check color="green" />
             Cuidaremos de tu salud física y emocional.
@@ -26,7 +29,10 @@ const Particulares = () => {
             Te facilitaremos todos los procesos y gestiones.
           </li>
         </ul>
-        <Button className="mt-4 sm:w-1/2 bg-blue-600 text-white hover:bg-blue-700 transition duration-300 ease-in-out">
+        <Button
+          className="mt-4 2xl:mt-8 sm:w-1/2 bg-green-600 text-white hover:bg-green-700 transition duration-300 ease-in-out"
+          onClick={() => router.push("/seguro-de-salud")}
+        >
           Contrata tu seguro <MoveRight />
         </Button>
       </div>

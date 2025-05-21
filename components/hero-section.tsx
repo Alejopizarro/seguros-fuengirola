@@ -4,17 +4,17 @@ const Hero = () => {
   return (
     <div className="relative flex flex-col sm:flex-row min-h-[90vh] pt-18 justify-end lg:justify-between items-center">
       <div className="flex flex-col sm:px-20 px-8 min-h-[43vh] lg:min-h-[90vh] justify-center">
-        <h1 className="text-md font-semibold mb-4 text-gray-800">
+        <h1 className="text-md xl:text-lg 2xl:text-xl font-semibold mb-4 text-gray-800">
           Seguros de Salud, Hogar, Vida y Más
         </h1>
-        <p className="text-4xl sm:text-5xl font-bold mb-8 tracking-tight leading-none">
+        <p className="text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-8 tracking-tight leading-none">
           Contrata tu{" "}
-          <span className="bg-gradient-to-r from-blue-500 to-violet-500 bg-clip-text text-4xl sm:text-5xl font-extrabold text-transparent">
+          <span className="bg-gradient-to-r from-blue-500 to-violet-500 bg-clip-text text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-extrabold text-transparent">
             Seguro en Fuengirola
           </span>{" "}
           con DKV, compañía líder en el sector asegurador.
         </p>
-        <p className="text-md text-gray-500 mb-8">
+        <p className="text-md xl:text-lg 2xl:text-xl text-gray-500 mb-8">
           Somos tu{" "}
           <span className="font-semibold">
             Oficina Comercial DKV en Fuengirola

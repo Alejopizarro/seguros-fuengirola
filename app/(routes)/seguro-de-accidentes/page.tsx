@@ -39,7 +39,7 @@ const Page = () => {
         description="Un seguro de accidentes para protegerte a ti y a los tuyos."
         description2="Indemnización en caso de invalidez. Indemnización por fallecimiento en caso de accidente. Atención médica 24h con nuestros médicos de confianza."
         buttonRef={contactRef}
-        imageSrc="/family.webp"
+        imageSrc="/accidentes.webp"
         imageAlt="Seguro de accidentes para particulares"
       />
       <ScrollSection refs={refButtons} />

@@ -124,8 +124,8 @@ export default function StatsDisplay({
 }: StatsDisplayProps) {
   // Definir los stats por defecto dentro del componente
   const defaultStats: StatItemProps[] = [
-    { value: 10, label: "años de experiencia", color: "text-blue-300" },
-    { value: 1000, label: "clientes asegurados", color: "text-blue-400" },
+    { value: 22, label: "años de experiencia", color: "text-blue-300" },
+    { value: 10000, label: "clientes asegurados", color: "text-blue-400" },
     { value: 200, label: "empresas aseguradas", color: "text-blue-500" },
   ];
 

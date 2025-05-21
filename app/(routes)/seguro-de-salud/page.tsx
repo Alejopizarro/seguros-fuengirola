@@ -38,7 +38,7 @@ const Page = () => {
         description="Los mejores seguros de salud para particulares. Con DKV tendrás acceso a los mejores médicos y hospitales de España."
         description2="Además, podrás disfrutar de un servicio de atención al cliente 24 horas y un asistente personal para resolver todas tus dudas."
         buttonRef={contactRef}
-        imageSrc="/family.webp"
+        imageSrc="/happy.webp"
         imageAlt="Seguros de Salud para Particulares"
       />
       <ScrollSection refs={refButtons} />

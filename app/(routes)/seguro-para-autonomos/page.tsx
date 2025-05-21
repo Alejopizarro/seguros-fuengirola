@@ -41,7 +41,7 @@ const Page = () => {
         description="Proteger tu salud y tu negocio es nuestra prioridad."
         description2="Asistencia médica completa y apoyo económico ante una baja médica. Amplia cobertura con más de 51,000 especialistas y los mejores centros médicos. Agilidad en tus autorizaciones y pagos por baja laboral."
         buttonRef={contactRef}
-        imageSrc="/family.webp"
+        imageSrc="/autonomo.webp"
         imageAlt="Seguros de salud para autonomos"
       />
       <ScrollSection refs={refButtons} />

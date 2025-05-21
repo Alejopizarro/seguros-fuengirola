@@ -40,7 +40,7 @@ const Page = () => {
         description="El seguro de decesos que acompaña a tu familia en todo momento"
         description2="Uno de los mejores servicios funerarios. Repatriación al país de origen. Niños GRATIS hasta los 6 años."
         buttonRef={contactRef}
-        imageSrc="/family.webp"
+        imageSrc="/deceso.webp"
         imageAlt="Seguro de Decesos para particulares"
       />
       <ScrollSection refs={refButtons} />

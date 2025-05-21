@@ -78,8 +78,10 @@ const ItemsMenuMobile = () => {
               </button>
             </AccordionItem>
             <AccordionItem value="item-5">
-              <AccordionTrigger>{sobreNosotros.title}</AccordionTrigger>
-              <AccordionContent>
+              <AccordionTrigger className="font-semibold text-md">
+                {sobreNosotros.title}
+              </AccordionTrigger>
+              <AccordionContent className="flex flex-col items-start space-y-4">
                 {sobreNosotros.pages.map((page, i) => (
                   <button
                     key={i}

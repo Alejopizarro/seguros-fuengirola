@@ -38,7 +38,7 @@ const Page = () => {
         title="Seguros Dentales"
         description="Los seguros dentales más completos y económicos para utilizar desde el primer día."
         description2="Hasta 59 tratamientos dentales gratuitos a tu disposición. El resto de tratamientos con grandes descuentos. Incluye gratis a hijos menores de 14 años."
-        imageSrc="/family.webp"
+        imageSrc="/dental.webp"
         imageAlt="Seguros dentales para particulares"
         buttonRef={contactRef}
       />

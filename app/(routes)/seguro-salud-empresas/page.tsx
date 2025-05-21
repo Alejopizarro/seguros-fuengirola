@@ -39,7 +39,7 @@ const Page = () => {
         description="Seguros de salud para Pymes, con menos de 50 empleados, y Grandes empresas, con más de 50 empleados."
         description2="Acceso directo a los mejores profesionales médicos. Consultas virtuales con especialistas sin desplazamientos. Portal de gestión de empresa para trámites online. Cuidamos la salud de tus empleados y sus familias.​"
         buttonRef={contactRef}
-        imageSrc="/family.webp"
+        imageSrc="/office.webp"
         imageAlt="Seguros médicos para pymes y empresas grande."
       />
       <ScrollSection refs={refButtons} />
