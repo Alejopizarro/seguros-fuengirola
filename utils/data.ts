@@ -9,7 +9,7 @@ export const particulares = [
     title: "Seguro dental",
     description:
       "Los seguros dentales más completos y económicos para utilizar desde el primer día.",
-    route: "seguro-dental",
+    route: `${process.env.HOST}/seguro-dental`,
     imageSrc: "/dental.webp",
   },
   {
