@@ -10,7 +10,7 @@ interface TableItem {
 
 interface TableProps {
   title: string;
-  description: string;
+  description?: string;
   tables: TableItem[];
 }
 

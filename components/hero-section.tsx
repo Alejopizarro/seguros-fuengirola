@@ -27,11 +27,11 @@ const Hero = () => {
         <LeadForm />
       </div>
       <div
-        className="absolute hidden sm:flex -right-0 w-120 h-120 bg-blue-300 opacity-80 z-0 top-18"
+        className="absolute hidden sm:flex -right-0 w-120 h-120 2xl:w-150 2xl:h-150 bg-blue-300 opacity-80 z-0 top-18"
         style={{ clipPath: "circle(52% at 76% 38%)" }}
       ></div>
       <div
-        className="absolute -bottom-0 -right-0 w-150 h-150 bg-blue-500 z-0"
+        className="absolute -bottom-0 -right-0 w-150 h-150 2xl:w-180 2xl:h-180 bg-blue-500 z-0"
         style={{
           clipPath:
             "polygon(100% 33%, 100% 100%, 0% 100%, 14% 74%, 34% 59%, 57% 55%, 68% 42%, 83% 37%)",

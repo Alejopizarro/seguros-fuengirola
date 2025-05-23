@@ -144,7 +144,7 @@ export function FormController() {
                     He leído y acepto la cláusula de{" "}
                     <Link
                       className="font-medium text-slate-50 text-decoration-line: underline"
-                      href="/politica-de-privacidad"
+                      href="/quienes-somos/politica-de-privacidad"
                     >
                       protección de datos.
                     </Link>
