@@ -10,7 +10,7 @@ const Footer = () => {
   const router = useRouter();
 
   return (
-    <div className="w-full bg-gray-900 text-slate-50">
+    <div className="w-full bg-gray-800 text-slate-50">
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 p-4 sm:py-16 sm:px-24 text-left gap-4">
         <div>
           <p className="font-bold text-xl mb-4">{sobreNosotros.title}</p>
@@ -63,7 +63,7 @@ const Footer = () => {
                 <Link
                   href="https://www.instagram.com/segurosfuengirola"
                   className="flex items-center gap-x-2"
-                  title="Instagram de seguros fuengirola"
+                  title="Instagram de Seguros Fuengirola"
                 >
                   <Instagram size={14} />
                   segurosfuengirola
@@ -96,7 +96,7 @@ const Footer = () => {
       </div>
       <div className="p-4 sm:px-24">
         <Separator />
-        <span className="py-4 block text-sm text-gray-500 justify-start dark:text-gray-400">
+        <span className="py-4 block text-sm text-slate-300 justify-start">
           &copy; 2016 - 2025
           <Link href="*"> Seguros Fuengirola</Link> Todos los derechos
           reservados.
