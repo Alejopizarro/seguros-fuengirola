@@ -31,18 +31,20 @@ const MenuList = () => {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <a href={autonomos.route}>
-            <NavigationMenuLink className="text-md font-medium bg-transparent">
-              {autonomos.title}
-            </NavigationMenuLink>
-          </a>
+          <NavigationMenuLink
+            href={autonomos.route}
+            className="text-md font-medium bg-transparent"
+          >
+            {autonomos.title}
+          </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <a href={empresas.route}>
-            <NavigationMenuLink className="text-md font-medium bg-transparent">
-              {empresas.title}
-            </NavigationMenuLink>
-          </a>
+          <NavigationMenuLink
+            href={empresas.route}
+            className="text-md font-medium bg-transparent"
+          >
+            {empresas.title}
+          </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="text-md bg-transparent">

@@ -30,7 +30,7 @@ const Hero = (props: HeroProps) => {
         >
           <MoveLeft /> Volver a la home
         </Button>
-        <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-none">
+        <h1 className="text-3xl lg:text-4xl 2xl:text-5xl font-bold tracking-tight leading-none">
           {title}
         </h1>
         <div>

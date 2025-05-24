@@ -82,6 +82,22 @@ const easeOutQuad = (x: number): number => {
   return 1 - (1 - x) * (1 - x);
 };
 
+function formatStats(value: number): string {
+  if (value >= 1000) {
+    // Si es múltiplo de 1000, muestra sin decimales (10000 -> 10k)
+    if (value % 1000 === 0) {
+      return (value / 1000).toString() + "k";
+    }
+    // Si no, muestra con un decimal (12500 -> 12.5k)
+    const formatted = (value / 1000).toFixed(1);
+    // Elimina el .0 si es decimal cero (por ejemplo, 12.0k -> 12k)
+    return formatted.endsWith(".0")
+      ? formatted.slice(0, -2) + "k"
+      : formatted + "k";
+  }
+  return value.toString();
+}
+
 /**
  * Componente para mostrar un elemento de estadística individual
  */
@@ -101,7 +117,7 @@ const StatItem = memo(
         <div className="flex flex-col items-center text-center">
           <div className={`text-6xl font-bold ${label} ${color}`}>
             {prefix}
-            {count}
+            {formatStats(count)}
           </div>
           <div className="mt-3 text-md font-medium text-slate-50 max-w-xs">
             {label}
@@ -124,9 +140,9 @@ export default function StatsDisplay({
 }: StatsDisplayProps) {
   // Definir los stats por defecto dentro del componente
   const defaultStats: StatItemProps[] = [
-    { value: 22, label: "años de experiencia", color: "text-blue-300" },
-    { value: 10000, label: "clientes asegurados", color: "text-blue-400" },
-    { value: 200, label: "empresas aseguradas", color: "text-blue-500" },
+    { value: 25, label: "años de experiencia", color: "text-blue-300" },
+    { value: 2000000, label: "clientes asegurados", color: "text-blue-400" },
+    { value: 10000, label: "empresas aseguradas", color: "text-blue-500" },
   ];
 
   // Usar los stats proporcionados o los predeterminados
