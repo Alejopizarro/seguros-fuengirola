@@ -34,6 +34,7 @@ const MenuList = () => {
           <NavigationMenuLink
             href={autonomos.route}
             className="text-md font-medium bg-transparent"
+            title={autonomos.titleSeo}
           >
             {autonomos.title}
           </NavigationMenuLink>
@@ -41,6 +42,7 @@ const MenuList = () => {
         <NavigationMenuItem>
           <NavigationMenuLink
             href={empresas.route}
+            title={empresas.titleSeo}
             className="text-md font-medium bg-transparent"
           >
             {empresas.title}

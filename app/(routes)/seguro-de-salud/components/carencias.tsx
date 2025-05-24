@@ -24,7 +24,7 @@ const Carencias = () => {
         A continuación, te presentamos un resumen de las modalidades
         disponibles:
       </p>
-      <div className="flex flex-col sm:flex-row items-start justify-center gap-x-8 max-w-4xl text-gray-700">
+      <div className="flex flex-col sm:flex-row items-start justify-center gap-8 max-w-4xl text-gray-700">
         <Card className="flex flex-col justify-center bg-white rounded-lg shadow-lg md:basis-1/2">
           <CardHeader className="font-bold text-xl text-gray-900">
             Periodos de carencia

@@ -4,6 +4,8 @@ export const particulares = [
     description: "Cuida tu salud y la de tu familia con nuestros seguros.",
     route: "/seguro-de-salud",
     imageSrc: "/happy.webp",
+    titleSeo:
+      "Seguro de salud familiar - Cobertura médica completa y personalizada",
   },
   {
     title: "Seguro dental",
@@ -11,6 +13,7 @@ export const particulares = [
       "Los seguros dentales más completos y económicos para utilizar desde el primer día.",
     route: "/seguro-dental",
     imageSrc: "/dental.webp",
+    titleSeo: "Seguro de dental - Cobertura completa y personalizada",
   },
   {
     title: "Seguro de decesos",
@@ -18,6 +21,7 @@ export const particulares = [
       "El seguro de decesos que acompaña a tu familia en todo momento.",
     route: "/seguro-de-decesos",
     imageSrc: "/deceso.webp",
+    titleSeo: "Seguro de decesos - Cobertura completa y personalizada",
   },
   {
     title: "Seguro de vida",
@@ -25,6 +29,7 @@ export const particulares = [
       "El seguro de vida que me ofrece la tranquilidad y seguridad económica que deseo para mi familia.",
     route: "/seguro-de-vida",
     imageSrc: "/family.webp",
+    titleSeo: "Seguro de vida - Cobertura completa y personalizada",
   },
   {
     title: "Seguro de hogar",
@@ -32,12 +37,14 @@ export const particulares = [
       "DKV Hogar es el seguro de hogar con las mejores coberturas para cuidar y proteger tu vivienda.",
     route: "/seguro-de-hogar",
     imageSrc: "/vida.webp",
+    titleSeo: "Seguro de hogar - Cobertura completa y personalizada",
   },
   {
     title: "Seguro de accidentes",
     description: "Un seguro de accidentes para protegerte a ti y a los tuyos.",
     route: "/seguro-de-accidentes",
     imageSrc: "/accidentes.webp",
+    titleSeo: "Seguro de accidentes - Cobertura completa y personalizada",
   },
 ];
 
@@ -49,6 +56,8 @@ export const empresas = {
   span: "Deducción en el Impuesto de Sociedades al 100% del gasto",
   route: "/seguro-salud-empresas",
   imageSrc: "/office.webp",
+  titleSeo:
+    "Seguros de salud para empresas con una amplia gama de coberturas y servicios.",
 };
 
 export const autonomos = {
@@ -57,6 +66,7 @@ export const autonomos = {
   description: "Proteger tu salud y tu negocio es nuestra prioridad.",
   route: "/seguro-para-autonomos",
   imageSrc: "/autonomo.webp",
+  titleSeo: "Seguros de salud y de baja laboral para autónomos.",
 };
 
 export const sobreNosotros = {

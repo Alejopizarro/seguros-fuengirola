@@ -39,6 +39,7 @@ const Services = () => {
                     src={service.imageSrc}
                     alt={service.title}
                     className="w-full h-48 object-cover rounded-t-lg"
+                    title={service.titleSeo}
                   />
                 </CardHeader>
                 <CardContent>
