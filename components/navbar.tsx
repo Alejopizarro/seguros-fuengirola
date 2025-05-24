@@ -10,12 +10,12 @@ const Navbar = () => {
   return (
     <nav className="flex justify-between bg-white items-center px-8 py-4 absolute z-1000 w-full">
       <div>
-        <h1
+        <h2
           className="text-md font-extralight cursor-pointer"
           onClick={() => router.push("/")}
         >
           Seguros <span className="text-md font-semibold">Fuengirola</span>
-        </h1>
+        </h2>
       </div>
       <div className="hidden lg:flex">
         <MenuList />

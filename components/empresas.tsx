@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 const Empresas = () => {
   const router = useRouter();
   return (
-    <div className="flex flex-col-reverse sm:flex-row p-8 gap-8 sm:px-20 sm:py-18">
+    <div className="grid grid-cols-1 lg:grid-cols-2 items-center p-8 gap-8 sm:px-20 sm:py-18">
       <Image
         src="/office.webp"
         width={500}
@@ -28,15 +28,14 @@ const Empresas = () => {
           Deducción en el Impuesto de Sociedades al 100% del gasto
         </span>
         <Separator />
-        <div className="flex w-full justify-between items-center mt-4 xl:mt-6 2xl:mt-8 gap-4 xl:gap-6 2xl:gap-8">
+        <div className="grid grid-cols-2 mt-4 xl:mt-6 2xl:mt-8 gap-4 xl:gap-6 2xl:gap-8">
           <div className="flex flex-col gap-4">
             <h2 className="font-medium text-lg xl:text-xl 2xl:text-2xl">
               Seguros para Autónomos
             </h2>
-            <p className="text-gray-500 text-sm xl:text-md 2xl:text-lg">
-              Proteger tu salud y tu negocio es nuestra prioridad.{" "}
-            </p>
-            <h3>Seguros de salud y de baja laboral para autónomos.</h3>
+            <h3 className="text-gray-500 text-sm xl:text-md 2xl:text-lg">
+              Seguros de salud y de baja laboral para autónomos.
+            </h3>
             <span
               className="font-medium text-sm xl:text-md 2xl:text-lg text-blue-700 flex items-center gap-2 cursor-pointer"
               onClick={() => router.push("/seguro-para-autonomos")}

@@ -6,13 +6,13 @@ const Hero = () => {
       <div className="flex flex-col sm:px-20 px-8 min-h-[43vh] lg:min-h-[90vh] justify-center">
         <div className="flex flex-col-reverse">
           <div className="text-3xl xl:text-4xl 2xl:text-7xl font-bold mb-8 tracking-tight leading-none">
-            <h2>
+            <h1>
               Contrata tu{" "}
               <span className="bg-gradient-to-r from-blue-500 to-violet-500 bg-clip-text text-3xl xl:text-4xl 2xl:text-7xl font-extrabold text-transparent">
                 Seguro en Fuengirola
               </span>
               <span> con DKV, compañía líder en el sector asegurador.</span>
-            </h2>
+            </h1>
           </div>
           <h2 className="text-md xl:text-lg 2xl:text-xl font-semibold mb-4 text-gray-800">
             Seguros de Salud, Hogar, Vida y Más
