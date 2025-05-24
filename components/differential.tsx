@@ -46,9 +46,9 @@ const Differential = () => {
               className="w-48 h-auto"
             />
             <div>
-              <h4 className="text-xl mb-4 font-semibold">
+              <h3 className="text-xl mb-4 font-semibold">
                 {differential.title}
-              </h4>
+              </h3>
               <p className="text-md text-gray-600">
                 {differential.description}
               </p>

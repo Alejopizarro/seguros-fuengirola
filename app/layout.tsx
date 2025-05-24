@@ -11,7 +11,7 @@ const urbanist = Urbanist({
 });
 
 export const metadata: Metadata = {
-  title: "Seguros Fuengirola",
+  title: "Seguros Fuengirola | Seguros de salud | Seguros médicos privados",
   description:
     "Contrata tu seguro en Fuengirola con DKV, compañía líder en el sector asegurador, la asistencia y los servicios financieros",
 };

@@ -7,9 +7,9 @@ const Dental = () => {
   const router = useRouter();
   return (
     <div className="p-8 sm:px-20 sm:py-18 space-y-8 flex flex-col items-center text-center bg-gray-900 text-slate-50">
-      <h4 className="bg-green-600 py-1 px-8 rounded-xl text-xl font-semibold mb-4">
-        🦷 Seguros Dentales
-      </h4>
+      <h2 className="bg-green-600 py-1 px-8 rounded-xl text-xl font-semibold mb-4">
+        🦷 Seguros Dentales para particulares
+      </h2>
       <p className="font-bold text-3xl lg:text-4xl 2xl:text-5xl leading-none tracking-tight lg:w-3/4 mb-4 2xl:mb-8">
         Los seguros dentales más completos y económicos para utilizar desde el
         primer día.

@@ -13,7 +13,7 @@ const Footer = () => {
     <div className="w-full bg-gray-900 text-slate-50">
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 p-4 sm:py-16 sm:px-24 text-left gap-4">
         <div>
-          <h5 className="font-bold text-xl mb-4">{sobreNosotros.title}</h5>
+          <h4 className="font-bold text-xl mb-4">{sobreNosotros.title}</h4>
           <ul className="space-y-4">
             {sobreNosotros.pages.map((page, index) => (
               <li key={index}>
@@ -23,7 +23,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="space-y-4">
-          <h5 className="font-bold text-xl">Nuestros seguros</h5>
+          <p className="font-bold text-xl">Nuestros seguros</p>
           <ul className="font-light text-slate-300 space-y-4 text-sm">
             {particulares.map((seguro, index) => (
               <li key={index}>
@@ -33,7 +33,7 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h5 className="font-bold text-xl mb-4">Otros seguros</h5>
+          <p className="font-bold text-xl mb-4">Otros seguros</p>
           <ul className="space-y-4 text-sm font-light text-slate-300">
             <li>
               <button
@@ -54,31 +54,39 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h5 className="font-bold text-xl mb-4">Seguros fuengirola</h5>
+          <p className="font-bold text-xl mb-4">Seguros fuengirola</p>
           <ul className="text-sm font-light text-slate-300 space-y-4">
             <li>
-              <Link
-                href="https://www.instagram.com/segurosfuengirola"
-                className="flex items-center gap-x-2"
-              >
-                <Instagram size={14} />
-                segurosfuengirola
-              </Link>
+              <h4>
+                <Link
+                  href="https://www.instagram.com/segurosfuengirola"
+                  className="flex items-center gap-x-2"
+                >
+                  <Instagram size={14} />
+                  segurosfuengirola
+                </Link>
+              </h4>
             </li>
             <li>
-              <p className="text-md flex items-center gap-x-2">
-                <Mail size={14} /> oficina@segurosfuengirola.es
-              </p>
+              <h4>
+                <p className="text-md flex items-center gap-x-2">
+                  <Mail size={14} /> oficina@segurosfuengirola.es
+                </p>
+              </h4>
             </li>
             <li>
-              <p className="text-md gap-x-2 flex items-center">
-                <Phone size={14} /> 951 68 13 83
-              </p>
+              <h4>
+                <p className="text-md gap-x-2 flex items-center">
+                  <Phone size={14} /> 951 68 13 83
+                </p>
+              </h4>
             </li>
             <li>
-              <p className="text-md flex gap-x-2 items-center">
-                <Smartphone size={14} /> 633 10 60 25
-              </p>
+              <h4>
+                <p className="text-md flex gap-x-2 items-center">
+                  <Smartphone size={14} /> 633 10 60 25
+                </p>
+              </h4>
             </li>
           </ul>
         </div>

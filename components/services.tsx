@@ -17,9 +17,9 @@ const Services = () => {
   const router = useRouter();
   return (
     <div className="p-8 sm:px-20 sm:py-18  flex flex-col items-center">
-      <h2 className="text-2xl lg:text-3xl 2xl:text-4xl text-center font-semibold mb-4 text-gray-800">
+      <p className="text-2xl lg:text-3xl 2xl:text-4xl text-center font-semibold mb-4 text-gray-800">
         Seguros pensados para tí
-      </h2>
+      </p>
       <p className="text-lg 2xl:text-xl mb-8 text-center text-gray-500">
         Ofrecemos una amplia gama de servicios para satisfacer todas tus
         necesidades de seguros.
@@ -42,9 +42,9 @@ const Services = () => {
                   />
                 </CardHeader>
                 <CardContent>
-                  <h4 className="font-semibold text-xl mb-2">
+                  <h2 className="font-semibold text-xl mb-2">
                     {service.title}
-                  </h4>
+                  </h2>
                   <p className="text-sm font-light line-clamp-1">
                     {service.description}
                   </p>
