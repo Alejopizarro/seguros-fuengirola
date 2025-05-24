@@ -3,7 +3,7 @@ import LeadForm from "./lead-form";
 const Hero = () => {
   return (
     <div className="relative flex flex-col sm:flex-row min-h-[90vh] pt-18 justify-end lg:justify-between items-center">
-      <div className="flex flex-col sm:px-20 px-8 min-h-[43vh] lg:min-h-[90vh] justify-center">
+      <div className="flex flex-col sm:px-20 px-8 min-h-[43vh] lg:min-h-[90vh] 2xl:min-h-[70vh] justify-center">
         <div className="flex flex-col-reverse">
           <div className="text-3xl xl:text-4xl 2xl:text-7xl font-bold mb-8 tracking-tight leading-none">
             <h1>
