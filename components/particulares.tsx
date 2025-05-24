@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 const Particulares = () => {
   const router = useRouter();
   return (
-    <div className="flex flex-col gap-4 sm:flex-row p-8 sm:px-20 sm:py-18 items-center justify-between bg-gray-900">
+    <div className="flex flex-col gap-4 sm:flex-row p-8 sm:px-20 sm:py-18 items-center justify-between bg-gray-800">
       <div className="flex flex-col gap-4 max-w-2xl 2xl:max-w-4xl mb-4 sm:mb-0">
         <h2 className="text-md font-semibold 2xl:text-xl text-green-600">
           Seguros de salud para particulares
@@ -30,7 +30,7 @@ const Particulares = () => {
           </li>
         </ul>
         <Button
-          className="mt-4 2xl:mt-8 sm:w-1/2 bg-green-600 text-white hover:bg-green-700 transition duration-300 ease-in-out"
+          className="mt-4 2xl:mt-8 sm:w-1/2 bg-green-700 text-white hover:bg-green-800 transition duration-300 ease-in-out"
           onClick={() => router.push("/seguro-de-salud")}
         >
           Contrata tu seguro <MoveRight />

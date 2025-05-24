@@ -63,6 +63,7 @@ const Footer = () => {
                 <Link
                   href="https://www.instagram.com/segurosfuengirola"
                   className="flex items-center gap-x-2"
+                  title="Instagram de seguros fuengirola"
                 >
                   <Instagram size={14} />
                   segurosfuengirola
