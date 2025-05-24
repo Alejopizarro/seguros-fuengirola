@@ -42,7 +42,7 @@ const Particulares = () => {
             src="/happy.webp"
             alt="Imagen de un pediatra"
             width={500}
-            height={300}
+            height={500}
             className="max-h-[80vh] object-cover rounded-lg shadow-lg"
           />
           <Image

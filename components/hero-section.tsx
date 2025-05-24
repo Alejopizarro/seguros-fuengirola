@@ -5,13 +5,15 @@ const Hero = () => {
     <div className="relative flex flex-col sm:flex-row min-h-[90vh] pt-18 justify-end lg:justify-between items-center">
       <div className="flex flex-col sm:px-20 px-8 min-h-[43vh] lg:min-h-[90vh] justify-center">
         <div className="flex flex-col-reverse">
-          <p className="text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-8 tracking-tight leading-none">
-            Contrata tu{" "}
-            <h1 className="bg-gradient-to-r from-blue-500 to-violet-500 bg-clip-text text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-extrabold text-transparent">
-              Seguro en Fuengirola
-            </h1>{" "}
-            con DKV, compañía líder en el sector asegurador.
-          </p>
+          <div className="text-3xl xl:text-4xl 2xl:text-7xl font-bold mb-8 tracking-tight leading-none">
+            <h2>
+              Contrata tu{" "}
+              <span className="bg-gradient-to-r from-blue-500 to-violet-500 bg-clip-text text-3xl xl:text-4xl 2xl:text-7xl font-extrabold text-transparent">
+                Seguro en Fuengirola
+              </span>
+              <span> con DKV, compañía líder en el sector asegurador.</span>
+            </h2>
+          </div>
           <h2 className="text-md xl:text-lg 2xl:text-xl font-semibold mb-4 text-gray-800">
             Seguros de Salud, Hogar, Vida y Más
           </h2>

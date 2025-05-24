@@ -35,8 +35,8 @@ const Empresas = () => {
             </h2>
             <p className="text-gray-500 text-sm xl:text-md 2xl:text-lg">
               Proteger tu salud y tu negocio es nuestra prioridad.{" "}
-              <h3>Seguros de salud y de baja laboral para autónomos.</h3>
             </p>
+            <h3>Seguros de salud y de baja laboral para autónomos.</h3>
             <span
               className="font-medium text-sm xl:text-md 2xl:text-lg text-blue-700 flex items-center gap-2 cursor-pointer"
               onClick={() => router.push("/seguro-para-autonomos")}

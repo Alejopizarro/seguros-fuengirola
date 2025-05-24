@@ -13,11 +13,13 @@ const Footer = () => {
     <div className="w-full bg-gray-900 text-slate-50">
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 p-4 sm:py-16 sm:px-24 text-left gap-4">
         <div>
-          <h4 className="font-bold text-xl mb-4">{sobreNosotros.title}</h4>
+          <h2 className="font-bold text-xl mb-4">{sobreNosotros.title}</h2>
           <ul className="space-y-4">
             {sobreNosotros.pages.map((page, index) => (
               <li key={index}>
-                <LinkUrl title={page.title} route={page.url} />
+                <h4>
+                  <LinkUrl title={page.title} route={page.url} />
+                </h4>
               </li>
             ))}
           </ul>
