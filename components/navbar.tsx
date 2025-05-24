@@ -24,7 +24,7 @@ const Navbar = () => {
         <ItemsMenuMobile />
       </div>
       <div className="hidden lg:flex items-center">
-        <Button className="ml-4">
+        <Button className="ml-4 bg-blue-700">
           <Phone /> Contactar
         </Button>
       </div>
