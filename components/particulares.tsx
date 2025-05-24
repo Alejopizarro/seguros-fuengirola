@@ -43,6 +43,7 @@ const Particulares = () => {
             alt="Imagen de un pediatra"
             width={500}
             height={500}
+            title="Imagen de un pediatra para seguros fuengirola"
             className="max-h-[80vh] object-cover rounded-lg shadow-lg"
           />
           <Image
@@ -50,7 +51,8 @@ const Particulares = () => {
             height={300}
             className="absolute -top-4 -left-12"
             src="https://cdn.rareblocks.xyz/collection/celebration/images/features/1/wavey-lines.svg"
-            alt=""
+            alt="Imagen de ondas para seguros fuengirola"
+            title="Imagen de ondas para seguros fuengirola"
           />
         </div>
       </div>

@@ -12,7 +12,8 @@ const Empresas = () => {
         src="/office.webp"
         width={500}
         height={500}
-        alt="Imagen de un pediatra"
+        alt="Imagen de una persona trabajando"
+        title="Imagen de una persona trabajando - Seguros Fuengirola"
         className="w-full object-cover max-h-[90vh] rounded-lg shadow-lg"
       />
       <div className="flex flex-col">

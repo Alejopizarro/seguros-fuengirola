@@ -6,18 +6,21 @@ export const differentials = [
     title: "Cuadro Medico",
     description: "Más de 51.000 médicos y 1.000 centros.",
     img: "/Pediatra-1.webp",
+    titleSeo: "Cuadro medico de DKV - Seguros Fuengirola",
   },
   {
     id: 2,
     title: "Cobertura Dental",
     description: "Incluida sin coste adicional.",
     img: "/Cobertura dental.webp",
+    titleSeo: "Cobertura Dental de DKV - Seguros Fuengirola",
   },
   {
     id: 3,
     title: "Gestiones Online",
     description: "Videoconsultas y chat médico 24hs.",
     img: "/videoconsulta.webp",
+    titleSeo: "Gestiones Online de DKV - Seguros Fuengirola",
   },
 ];
 
@@ -43,6 +46,7 @@ const Differential = () => {
               height={200}
               src={differential.img}
               alt={differential.title}
+              title={differential.titleSeo}
               className="w-48 h-auto"
             />
             <div>
