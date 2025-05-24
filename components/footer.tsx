@@ -56,22 +56,30 @@ const Footer = () => {
         <div>
           <h5 className="font-bold text-xl mb-4">Seguros fuengirola</h5>
           <ul className="text-sm font-light text-slate-300 space-y-4">
-            <Link
-              href="https://www.instagram.com/segurosfuengirola"
-              className="flex items-center gap-x-2"
-            >
-              <Instagram size={14} />
-              segurosfuengirola
-            </Link>
-            <p className="text-md flex items-center gap-x-2">
-              <Mail size={14} /> oficina@segurosfuengirola.es
-            </p>
-            <p className="text-md gap-x-2 flex items-center">
-              <Phone size={14} /> 951 68 13 83
-            </p>
-            <p className="text-md flex gap-x-2 items-center">
-              <Smartphone size={14} /> 633 10 60 25
-            </p>
+            <li>
+              <Link
+                href="https://www.instagram.com/segurosfuengirola"
+                className="flex items-center gap-x-2"
+              >
+                <Instagram size={14} />
+                segurosfuengirola
+              </Link>
+            </li>
+            <li>
+              <p className="text-md flex items-center gap-x-2">
+                <Mail size={14} /> oficina@segurosfuengirola.es
+              </p>
+            </li>
+            <li>
+              <p className="text-md gap-x-2 flex items-center">
+                <Phone size={14} /> 951 68 13 83
+              </p>
+            </li>
+            <li>
+              <p className="text-md flex gap-x-2 items-center">
+                <Smartphone size={14} /> 633 10 60 25
+              </p>
+            </li>
           </ul>
         </div>
       </div>
