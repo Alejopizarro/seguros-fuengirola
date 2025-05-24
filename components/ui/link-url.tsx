@@ -1,22 +1,22 @@
-"use client";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 interface LinkUrlProps {
   title: string;
   route: string;
+  titleSeo: string;
 }
 
 const LinkUrl = (props: LinkUrlProps) => {
-  const { title, route } = props;
+  const { title, route, titleSeo } = props;
 
-  const router = useRouter();
   return (
-    <button
-      onClick={() => router.push(`${route}`)}
+    <Link
+      href={route}
+      title={titleSeo}
       className="font-light text-sm text-slate-300 cursor-pointer hover:underline"
     >
       {title}
-    </button>
+    </Link>
   );
 };
 

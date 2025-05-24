@@ -118,7 +118,7 @@ export function FormController() {
               <FormItem>
                 <FormLabel>Numero de Telefono</FormLabel>
                 <FormControl>
-                  <Input placeholder="622xxxxxx" {...field} />
+                  <Input placeholder="622333444" {...field} />
                 </FormControl>
                 <FormDescription className="text-sm text-slate-300">
                   Aquí te contactaremos para enviarte más información y resolver
@@ -141,7 +141,7 @@ export function FormController() {
                 </FormControl>
                 <FormLabel className="font-light text-slate-300">
                   <p>
-                    He leído y acepto la cláusula de{" "}
+                    He leído y acepto la politica de{" "}
                     <Link
                       className="font-medium text-slate-50 text-decoration-line: underline"
                       href="/quienes-somos/politica-de-privacidad"

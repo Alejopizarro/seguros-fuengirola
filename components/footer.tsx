@@ -18,7 +18,11 @@ const Footer = () => {
             {sobreNosotros.pages.map((page, index) => (
               <li key={index}>
                 <h4>
-                  <LinkUrl title={page.title} route={page.url} />
+                  <LinkUrl
+                    title={page.title}
+                    route={page.url}
+                    titleSeo={page.description}
+                  />
                 </h4>
               </li>
             ))}
@@ -29,7 +33,13 @@ const Footer = () => {
           <ul className="font-light text-slate-300 space-y-4 text-sm">
             {particulares.map((seguro, index) => (
               <li key={index}>
-                <LinkUrl title={seguro.title} route={seguro.route} />
+                <h4>
+                  <LinkUrl
+                    title={seguro.title}
+                    route={seguro.route}
+                    titleSeo={seguro.titleSeo}
+                  />
+                </h4>
               </li>
             ))}
           </ul>

@@ -17,7 +17,9 @@ export default function Home() {
         <Services />
         <Particulares />
         <Differential />
-        <Separator />
+        <div className="px-8 sm:px-20">
+          <Separator />
+        </div>
         <Empresas />
         <Dental />
         <Faqs />
