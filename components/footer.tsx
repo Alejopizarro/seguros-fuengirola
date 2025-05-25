@@ -83,7 +83,7 @@ const Footer = () => {
             <li>
               <h4>
                 <p className="text-md flex items-center gap-x-2">
-                  <Mail size={14} /> oficina@segurosfuengirola.es
+                  <Mail size={14} /> info@segurosfuengirola.es
                 </p>
               </h4>
             </li>

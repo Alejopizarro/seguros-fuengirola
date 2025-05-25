@@ -39,9 +39,9 @@ const Carencias = () => {
               </li>
               <li className="font-extralight text-gray-700">
                 <span className="font-semibold">
-                  Intervenciones quirúrgicas, hospitalización y prótesis:
+                  Intervenciones quirúrgicas y hospitalización:
                 </span>{" "}
-                8 meses
+                6/8 meses *
               </li>
               <li className="font-extralight text-gray-700">
                 <span className="font-semibold">
@@ -81,6 +81,9 @@ const Carencias = () => {
               </li>
             </ul>
           </CardContent>
+          <CardFooter className="text-sm text-gray-500">
+            * Salvo en casos de urgencia vital o accidentes.
+          </CardFooter>
         </Card>
         <Card className="flex flex-col justify-center bg-white rounded-lg shadow-lg md:basis-1/2">
           <CardHeader className="font-bold text-xl">

@@ -1,6 +1,6 @@
 export const products = [
   {
-    title: "DKV Paramedic Plus",
+    title: "DKV Famedic Plus",
     description:
       "El seguro de salud más económico. Hasta 8 miembros de tu familia por el mismo precio.",
     copago: "Sin copago",

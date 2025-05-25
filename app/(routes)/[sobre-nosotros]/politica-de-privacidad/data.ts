@@ -8,7 +8,7 @@ export const privacyPolicy = {
       content: `Nombre comercial: Seguros Fuengirola
   Responsable legal: Marcelo Fabián Gelibter Maidanik
   Dirección postal: Av. Condes de San Isidro, Nº 80, 29640 Fuengirola
-  Correo electrónico de contacto: oficina@segurosfuengirola.es`,
+  Correo electrónico de contacto: info@segurosfuengirola.es`,
     },
     {
       title: "2. Datos personales que recopilamos",
@@ -52,7 +52,7 @@ export const privacyPolicy = {
   - Limitar u oponerte al tratamiento de tus datos.
   - Retirar tu consentimiento en cualquier momento.
   
-  Puedes ejercer tus derechos enviando un correo electrónico a: oficina@segurosfuengirola.es, indicando el derecho que deseas ejercer y adjuntando copia de tu documento de identidad.`,
+  Puedes ejercer tus derechos enviando un correo electrónico a: info@segurosfuengirola.es, indicando el derecho que deseas ejercer y adjuntando copia de tu documento de identidad.`,
     },
     {
       title: "8. Seguridad de los datos",

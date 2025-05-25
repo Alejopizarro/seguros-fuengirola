@@ -7,7 +7,7 @@ interface medios {
 
 export const medios = [
   {
-    title: "oficina@segurosfuengirola.es",
+    title: "info@segurosfuengirola.es",
     emoji: <Mail size={48} />,
   },
   {

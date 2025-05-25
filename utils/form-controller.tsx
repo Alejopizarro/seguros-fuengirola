@@ -55,7 +55,7 @@ export function FormController() {
     setIsSuccess(false);
     try {
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbzcpdep1PW6SpJspFjPJpcaXinuPeI3-35uJbnorzfe1oZBsnrr1BcwJRl8t19ms22P/exec",
+        process.env.NEXT_PUBLIC_GOOGLE_APPS_SCRIPT_URL || "",
         {
           method: "POST",
           mode: "no-cors", // importante para evitar problemas de CORS con Apps Script
@@ -74,7 +74,7 @@ export function FormController() {
 
       setTimeout(() => {
         setIsSuccess(false);
-      }, 5000);
+      }, 10000);
     } catch (error: any) {
       setError(true);
       console.error(error.message);
