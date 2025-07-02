@@ -32,14 +32,14 @@ export const products = [
     description:
       "Seguro dental con 57 tratamientos incluidos sin coste adicional y otros con un 30% de descuento.",
     copago: "",
-    price: "Desde 7,90€/mes",
+    price: "7,90€",
   },
   {
     title: "DKV Dentisalud Élite",
     description:
       "Seguro dental con 59 tratamientos incluidos sin coste adicional y otros con un 40% de descuento.",
     copago: "",
-    price: "Desde 10,90€/mes",
+    price: "10,90€",
   },
 ];
 

@@ -33,21 +33,21 @@ export const products = [
     description:
       "Aseguro solo los riesgos fundamentales de tu hogar al mejor precio.",
     copago: "",
-    price: "Desde 10,70€/mes",
+    price: "10,70€",
   },
   {
     title: "DKV Hogar Complet",
     description:
       "La mejor respuesta para los riesgos e imprevistos más comunes en tu hogar",
     copago: "",
-    price: "Desde 13,50€/mes",
+    price: "13,50€",
   },
   {
     title: "DKV Hogar Plus",
     description:
       "Seguro de hogar de última generación con las más amplias garantías.",
     copago: "",
-    price: "Desde 15,70€/mes",
+    price: "15,70€",
   },
 ];
 

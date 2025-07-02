@@ -146,21 +146,21 @@ export const products = [
     description:
       "El seguro de decesos que acompaña a tu familia en todo momento.",
     copago: "",
-    price: "Desde 1,80€/mes",
+    price: "1,80€",
   },
   {
     title: "DKV Buen Legado",
     description:
       "Seguro de decesos con el que tú eliges como va a ser tu despedida con bajo impacto medioambiental.",
     copago: "",
-    price: "Desde 2€/mes",
+    price: "2€",
   },
   {
     title: "DKV Protección Familiar con Serviplus",
     description:
       "El seguro de decesos que incluye servicios de salud adicionales pagando un poco más.",
     copago: "",
-    price: "Desde 2,25€/mes",
+    price: "2,25€",
   },
 ];
 

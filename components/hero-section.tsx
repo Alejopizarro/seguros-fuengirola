@@ -2,13 +2,13 @@ import LeadForm from "./lead-form";
 
 const Hero = () => {
   return (
-    <div className="relative flex flex-col sm:flex-row min-h-[90vh] pt-18 justify-end lg:justify-between items-center">
-      <div className="flex flex-col sm:px-20 px-8 min-h-[43vh] lg:min-h-[90vh] 2xl:min-h-[70vh] 2xl:max-h-[80vh] justify-center">
+    <div className="relative flex flex-col lg:flex-row min-h-[90vh] pt-18 justify-end lg:justify-between items-center">
+      <div className="flex flex-col sm:px-20 px-8 py-4 lg:min-h-[90vh] 2xl:min-h-[70vh] 2xl:max-h-[80vh] justify-center z-10">
         <div className="flex flex-col-reverse">
-          <div className="text-3xl xl:text-4xl 2xl:text-7xl font-bold mb-8 tracking-tight leading-none">
+          <div className="text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-8 tracking-tight leading-none">
             <h1>
               Contrata tu{" "}
-              <span className="bg-gradient-to-r from-blue-500 to-violet-500 bg-clip-text text-3xl xl:text-4xl 2xl:text-7xl font-extrabold text-transparent">
+              <span className="bg-gradient-to-r from-blue-500 to-violet-500 bg-clip-text font-extrabold text-transparent">
                 Seguro en Fuengirola
               </span>
               <span> con DKV, compañía líder en el sector asegurador.</span>
@@ -27,15 +27,15 @@ const Hero = () => {
           seguro que más se adapte a ti, seas particular, profesional o empresa.
         </p>
       </div>
-      <div className="flex px-8 mb-8 sm:mb-0 items-center justify-center w-full lg:h-[90vh] overflow-hidden">
+      <div className="flex px-8 py-4 mb-8 sm:mb-0 items-center justify-center w-full lg:h-[90vh] overflow-hidden z-10">
         <LeadForm />
       </div>
       <div
-        className="absolute hidden sm:flex -right-0 w-120 h-120 2xl:w-210 2xl:h-210 bg-blue-300 opacity-80 z-0 top-18"
+        className="absolute hidden lg:flex -right-0 w-120 h-120 bg-blue-300 opacity-80 z-0 top-18"
         style={{ clipPath: "circle(52% at 76% 38%)" }}
       ></div>
       <div
-        className="absolute -bottom-0 -right-0 w-150 h-150 2xl:w-240 2xl:h-240 bg-blue-500 z-0"
+        className="absolute -bottom-0 -right-0 w-150 h-150 bg-blue-500 opacity-90 z-0"
         style={{
           clipPath:
             "polygon(100% 33%, 100% 100%, 0% 100%, 14% 74%, 34% 59%, 57% 55%, 68% 42%, 83% 37%)",

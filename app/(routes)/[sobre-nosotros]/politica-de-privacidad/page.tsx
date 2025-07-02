@@ -2,10 +2,12 @@
 import { Button } from "@/components/ui/button";
 import { privacyPolicy } from "./data";
 import { useRouter } from "next/navigation";
-import { MoveLeft } from "lucide-react";
+import { MoveLeft, Settings } from "lucide-react";
+import { useCookieConsent } from "@/contexts/cookie-consent-contexts";
 
 const Page = () => {
   const router = useRouter();
+  const { openModal } = useCookieConsent();
   return (
     <div className="max-w-6xl space-y-8 mx-auto p-8 pt-24 text-gray-900">
       <Button
@@ -29,6 +31,14 @@ const Page = () => {
           ))}
         </div>
       ))}
+
+      <Button
+        onClick={openModal}
+        variant="outline"
+        className="flex items-center gap-x-2 bg-transparent"
+      >
+        <Settings className="h-4 w-4" /> Configurar Cookies
+      </Button>
     </div>
   );
 };

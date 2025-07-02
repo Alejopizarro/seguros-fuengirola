@@ -1,31 +1,24 @@
 export const products = [
   {
-    title: "DKV Famedic Plus",
-    description:
-      "El seguro de salud más económico. Hasta 8 miembros de tu familia por el mismo precio.",
-    copago: "Sin copago",
-    price: "Desde 25,50€/mes",
-  },
-  {
     title: "DKV Profesional",
     description:
       "Seguro de salud a medida. Contrata las coberturas que necesites y personaliza tu seguro.",
     copago: "Disponible con o sin copago",
-    price: "Desde 8€/mes",
-  },
-  {
-    title: "Personal Doctor",
-    description:
-      "Seguro con servicio de médico personal y un asistente de salud para gestionar todos los trámites.",
-    copago: "Disponible con o sin copago",
-    price: "Desde 16€/mes",
+    price: "8€",
   },
   {
     title: "DKV Integral",
     description:
       "El seguro de cuadro médico más completo. Asegurate la asistencia sanitaria más cómoda y rápida.",
     copago: "Disponible con o sin copago",
-    price: "Desde 18€/mes",
+    price: "18€",
+  },
+  {
+    title: "DKV Famedic Plus",
+    description:
+      "El seguro de salud más económico. Hasta 8 miembros de tu familia por el mismo precio.",
+    copago: "Sin copago",
+    price: "25€",
   },
 ];
 
