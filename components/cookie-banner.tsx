@@ -6,10 +6,10 @@ import { Card } from "@/components/ui/card";
 import { Cookie, Settings } from "lucide-react";
 
 export default function CookieBanner() {
-  const { /*consent*/ openModal } = useCookieConsent();
+  const { consent, openModal } = useCookieConsent();
 
   // No mostrar el banner si ya hay consentimiento
-  //if (consent) return null;
+  if (consent) return null;
 
   return (
     <div className="fixed bottom-4 left-4 right-4 z-1000 md:left-auto md:right-4 md:max-w-md">
