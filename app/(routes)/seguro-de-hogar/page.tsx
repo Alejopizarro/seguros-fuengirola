@@ -8,7 +8,7 @@ import Pricing from "../components/pricing";
 import Table from "../components/table";
 import Faqs from "../components/faqs";
 import Recomendations from "../components/recomendations";
-import { recomendations } from "../seguro-dental/data";
+import { recomendations } from "./data";
 import ScrollSection from "../components/scroll-section";
 
 interface RefButtons {

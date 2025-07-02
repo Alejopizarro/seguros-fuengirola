@@ -9,7 +9,7 @@ import Steps from "../components/steps";
 import Faqs from "../components/faqs";
 import ScrollSection from "../components/scroll-section";
 import Recomendations from "../components/recomendations";
-import { recomendations } from "../seguro-dental/data";
+import { recomendations } from "./data";
 
 interface RefButtons {
   title: string;

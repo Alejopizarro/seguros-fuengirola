@@ -7,7 +7,7 @@ import Pricing from "../components/pricing";
 import Table from "../components/table";
 import { faqs, features, products, table, tables } from "./data";
 import Recomendations from "../components/recomendations";
-import { recomendations } from "../seguro-dental/data";
+import { recomendations } from "../seguro-de-hogar/data";
 import ScrollSection from "../components/scroll-section";
 import { useRef } from "react";
 

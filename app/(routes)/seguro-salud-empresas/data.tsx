@@ -125,3 +125,27 @@ export const faqs = [
       "Las condiciones de contratación son diferentes y el producto se personaliza según las necesidades de tu empresa y sus empleados (número de asegurados, edad, servicios contratados, copagos, etc.)",
   },
 ];
+
+export const recomendations = [
+  {
+    imageSrc: "/autonomo.webp",
+    title: "Seguro para autónomos",
+    description:
+      "Los seguros para autónomos más completos y económicos para proteger tu negocio.",
+    route: "seguro-para-autonomos",
+  },
+  {
+    imageSrc: "/happy.webp",
+    title: "Seguro de salud",
+    description:
+      "Los mejores seguros de salud para particulares. Con DKV tendrás acceso a los mejores médicos y hospitales de España.",
+    route: "seguro-de-salud",
+  },
+  {
+    imageSrc: "/dental.webp",
+    title: "Seguro dental",
+    description:
+      "Los seguros dentales más completos y económicos para utilizar desde el primer día.",
+    route: "seguro-dental",
+  },
+];

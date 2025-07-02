@@ -81,3 +81,27 @@ export const comparatives = [
     ],
   },
 ];
+
+export const recomendations = [
+  {
+    imageSrc: "/office.webp",
+    title: "Seguro médico para empresas grandes y pymes",
+    description:
+      "Los seguros de salud para empresas más completos y económicos para proteger a tus empleados.",
+    route: "seguro-para-autonomos",
+  },
+  {
+    imageSrc: "/happy.webp",
+    title: "Seguro de salud",
+    description:
+      "Los mejores seguros de salud para particulares. Con DKV tendrás acceso a los mejores médicos y hospitales de España.",
+    route: "seguro-de-salud",
+  },
+  {
+    imageSrc: "/dental.webp",
+    title: "Seguro dental",
+    description:
+      "Los seguros dentales más completos y económicos para utilizar desde el primer día.",
+    route: "seguro-dental",
+  },
+];

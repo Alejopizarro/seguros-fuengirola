@@ -172,3 +172,27 @@ export const faqs = [
       "Sí, con el seguro de hogar DKV tendrás cubiertas las cinco primeras horas de la mano de obra, así como los costes de desplazamiento del profesional que repare tu electrodoméstico de antigüedad inferior a siete años (lavadoras, secadoras, lavavajillas, frigorífico y televisión). ¡Solo pagarás la pieza dañada!",
   },
 ];
+
+export const recomendations = [
+  {
+    imageSrc: "/happy.webp",
+    title: "Seguro de salud",
+    description:
+      "Los mejores seguros de salud para particulares. Con DKV tendrás acceso a los mejores médicos y hospitales de España.",
+    route: "seguro-de-salud",
+  },
+  {
+    imageSrc: "/dental.webp",
+    title: "Seguro dental",
+    description:
+      "Los seguros dentales más completos y económicos para utilizar desde el primer día.",
+    route: "seguro-dental",
+  },
+  {
+    imageSrc: "/family.webp",
+    title: "Seguro de vida",
+    description:
+      "Los seguros de vida más completos y económicos para proteger a tu familia.",
+    route: "seguro-de-vida",
+  },
+];

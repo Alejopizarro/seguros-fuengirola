@@ -146,17 +146,24 @@ export const faqs = [
 
 export const recomendations = [
   {
-    imageSrc: "/family.webp",
-    title: "Seguro dental",
-    description:
-      "Los seguros dentales más completos y económicos para utilizar desde el primer día.",
-    route: "seguro-dental",
-  },
-  {
-    imageSrc: "/family.webp",
+    imageSrc: "/happy.webp",
     title: "Seguro de salud",
     description:
       "Los mejores seguros de salud para particulares. Con DKV tendrás acceso a los mejores médicos y hospitales de España.",
     route: "seguro-de-salud",
+  },
+  {
+    imageSrc: "/vida.webp",
+    title: "Seguro de hogar",
+    description:
+      "Los seguros de hogar más completos y económicos para proteger tu vivienda.",
+    route: "seguro-de-hogar",
+  },
+  {
+    imageSrc: "/vida.webp",
+    title: "Seguro de vida",
+    description:
+      "Los seguros de vida más completos y económicos para proteger a tu familia.",
+    route: "seguro-de-vida",
   },
 ];

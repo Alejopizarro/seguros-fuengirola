@@ -7,7 +7,7 @@ import Hero from "../components/hero";
 import Table from "../components/table";
 import { faqs, comparatives, features, table, tables } from "./data";
 import Recomendations from "../components/recomendations";
-import { recomendations } from "../seguro-dental/data";
+import { recomendations } from "./data";
 import { useRef } from "react";
 import ScrollSection from "../components/scroll-section";
 

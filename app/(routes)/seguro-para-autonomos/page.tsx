@@ -8,7 +8,7 @@ import Comparative from "../components/comparative";
 import Faqs from "../components/faqs";
 import { faqs, steps } from "../seguro-salud-empresas/data";
 import Recomendations from "../components/recomendations";
-import { recomendations } from "../seguro-dental/data";
+import { recomendations } from "./data";
 import Steps from "../components/steps";
 import ScrollSection from "../components/scroll-section";
 

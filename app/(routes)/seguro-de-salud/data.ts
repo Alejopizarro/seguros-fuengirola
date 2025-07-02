@@ -44,3 +44,27 @@ export const faqs = [
       "Es el intervalo de tiempo, contado a partir de la entrada en vigor de la póliza, durante el cual no son efectivas algunas de las coberturas. Puedes consultar las carencias en las condiciones generales y particulares de tu póliza o contactando con la compañía.",
   },
 ];
+
+export const recomendations = [
+  {
+    imageSrc: "/dental.webp",
+    title: "Seguro dental",
+    description:
+      "Los seguros dentales más completos y económicos para utilizar desde el primer día.",
+    route: "seguro-dental",
+  },
+  {
+    imageSrc: "/family.webp",
+    title: "Seguro de vida",
+    description:
+      "Los seguros de vida más completos y económicos para proteger a tu familia.",
+    route: "seguro-de-vida",
+  },
+  {
+    imageSrc: "/vida.webp",
+    title: "Seguro de hogar",
+    description:
+      "Los seguros de hogar más completos y económicos para proteger tu vivienda.",
+    route: "seguro-de-hogar",
+  },
+];

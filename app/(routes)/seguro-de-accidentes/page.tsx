@@ -3,7 +3,7 @@ import LeadForm from "@/components/lead-form";
 import Hero from "../components/hero";
 import { useRef } from "react";
 import Recomendations from "../components/recomendations";
-import { recomendations } from "../seguro-dental/data";
+import { recomendations } from "../seguro-de-hogar/data";
 import { comparatives, faqs, features, table, tables } from "./data";
 import Faqs from "../components/faqs";
 import Comparative from "../components/comparative";

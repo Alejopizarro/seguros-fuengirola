@@ -213,3 +213,27 @@ export const faqs = [
       "La prima de seguro se calcula en función de la edad de la persona a asegurar y del capital que se necesita. Cuanto mayor es la edad y/o el capital, más elevada será la prima. Consulta los precios de acuerdo con tus necesidades, la prima puede ser mucho más pequeña de lo que piensas.",
   },
 ];
+
+export const recomendations = [
+  {
+    imageSrc: "/happy.webp",
+    title: "Seguro de salud",
+    description:
+      "Los mejores seguros de salud para particulares. Con DKV tendrás acceso a los mejores médicos y hospitales de España.",
+    route: "seguro-de-salud",
+  },
+  {
+    imageSrc: "/dental.webp",
+    title: "Seguro dental",
+    description:
+      "Los seguros dentales más completos y económicos para utilizar desde el primer día.",
+    route: "seguro-dental",
+  },
+  {
+    imageSrc: "/vida.webp",
+    title: "Seguro de hogar",
+    description:
+      "Los seguros de hogar más completos y económicos para proteger tu vivienda.",
+    route: "seguro-de-hogar",
+  },
+];

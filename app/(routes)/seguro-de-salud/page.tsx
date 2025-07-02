@@ -5,9 +5,10 @@ import Hero from "../components/hero";
 import Pricing from "../components/pricing";
 import Carencias from "./components/carencias";
 import Faqs from "../components/faqs";
-import { faqs, products } from "./data";
+import { faqs, products, recomendations } from "./data";
 import { useRef } from "react";
 import ScrollSection from "../components/scroll-section";
+import Recomendations from "../components/recomendations";
 
 interface RefButtons {
   title: string;
@@ -57,6 +58,9 @@ const Page = () => {
         </div>
         <div ref={contactRef}>
           <LeadForm />
+        </div>
+        <div ref={otrosRef} className="w-full">
+          <Recomendations recomendations={recomendations} />
         </div>
       </div>
     </div>
