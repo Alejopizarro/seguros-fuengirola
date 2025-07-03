@@ -1,4 +1,4 @@
-import { MapPin, Phone } from "lucide-react";
+import { MapPin, Phone, Smartphone } from "lucide-react";
 import Image from "next/image";
 
 const Location = () => {
@@ -20,6 +20,11 @@ const Location = () => {
               Télefono de contacto:
             </span>{" "}
             951 68 13 83
+          </p>
+          <p className="flex items-start flex-wrap gap-2">
+            <Smartphone />
+            <span className="font-medium text-slate-50">WhatsApp:</span> 633 10
+            60 25
           </p>
           <p className="text-sm text-slate-300 font-semibold">
             A tan solo 200m del Ayuntamiento de Fuengirola

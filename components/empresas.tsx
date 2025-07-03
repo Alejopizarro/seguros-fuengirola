@@ -26,7 +26,7 @@ const Empresas = () => {
           empresa.
         </p>
         <span className="bg-gradient-to-r from-blue-500 to-violet-500 rounded-xl py-2 px-4 text-lg sm:py-1 sm:px-4 sm:text-sm font-semibold mb-4 xl:mb-6 2xl:mb-8 text-center text-slate-50">
-          Deducción en el Impuesto de Sociedades al 100% del gasto
+          Deducción en el Impuesto de Sociedades
         </span>
         <Separator />
         <div className="grid grid-cols-2 mt-4 xl:mt-6 2xl:mt-8 gap-4 xl:gap-6 2xl:gap-8">
