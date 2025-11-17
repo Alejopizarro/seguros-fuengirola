@@ -4,18 +4,25 @@ import ItemsMenuMobile from "./items-menu-mobile";
 import MenuList from "./menu-list";
 import { Button } from "./ui/button";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 const Navbar = () => {
   const router = useRouter();
   return (
     <nav className="flex justify-between bg-white items-center px-8 py-4 absolute z-1000 w-full">
       <div>
-        <h2
+        <button
           className="text-md font-extralight cursor-pointer"
           onClick={() => router.push("/")}
         >
-          Seguros <span className="text-md font-semibold">Fuengirola</span>
-        </h2>
+          <Image
+            src="/logo.jpeg"
+            alt="Logo Seguros Fuengirola en vertical"
+            title="Logo seguros fuengirola"
+            width={50}
+            height={50}
+          />
+        </button>
       </div>
       <div className="hidden lg:flex">
         <MenuList />

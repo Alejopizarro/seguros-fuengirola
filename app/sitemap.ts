@@ -17,31 +17,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: "https://www.seguros-fuengirola.com/seguro-dental",
       lastModified: new Date(),
-      changeFrequency: "monthly",
+      changeFrequency: "weekly",
       priority: 0.8,
     },
     {
       url: "https://www.seguros-fuengirola.com/seguro-de-decesos",
       lastModified: new Date(),
-      changeFrequency: "monthly",
+      changeFrequency: "weekly",
       priority: 0.8,
     },
     {
       url: "https://www.seguros-fuengirola.com/seguro-de-hogar",
       lastModified: new Date(),
-      changeFrequency: "monthly",
+      changeFrequency: "weekly",
       priority: 0.8,
     },
     {
       url: "https://www.seguros-fuengirola.com/seguro-de-accidentes",
       lastModified: new Date(),
-      changeFrequency: "monthly",
+      changeFrequency: "weekly",
       priority: 0.8,
     },
     {
       url: "https://www.seguros-fuengirola.com/seguro-de-vida",
       lastModified: new Date(),
-      changeFrequency: "monthly",
+      changeFrequency: "weekly",
       priority: 0.8,
     },
     {
