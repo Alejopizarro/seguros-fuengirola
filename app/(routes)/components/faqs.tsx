@@ -18,10 +18,10 @@ const Faqs = (props: FaqsProps) => {
   return (
     <div className="flex flex-col items-center w-full">
       <h2 className="text-4xl">Preguntas frecuentes</h2>
-      <div className="mt-8 w-full">
+      <div className="mt-8">
         {faqs.map((faq, index) => (
-          <Accordion key={index} type="single" collapsible className="w-full">
-            <AccordionItem className="w-full" value={`item-${index}`}>
+          <Accordion key={index} type="single" collapsible>
+            <AccordionItem value={`item-${index}`}>
               <AccordionTrigger>{faq.question}</AccordionTrigger>
               <AccordionContent className="text-gray-500">
                 {faq.answer}

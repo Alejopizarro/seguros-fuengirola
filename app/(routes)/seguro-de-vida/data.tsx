@@ -4,13 +4,13 @@ export const features = [
   {
     title: "Tú estableces el capital",
     description:
-      "Elige el dinero que recibirá tu familia en caso de fallecimiento.",
+      "Elige el dinero que recibirá tu familia en caso de fallecimiento con DKV Vida.",
     emoji: <Banknote />,
   },
   {
     title: "Asistencia Psicológica",
     description:
-      "Atención al duelo y asistencia psicológica para ti y tu familia.",
+      "Atención al duelo y asistencia psicológica 24h para ti y tu familia.",
     emoji: <HeartPlus />,
   },
   {
@@ -22,7 +22,7 @@ export const features = [
   {
     title: "Asesoría jurídica",
     description:
-      "Testamento online, servicio de asesoría y asistencia jurídica telefónica.",
+      "Testamento online gratis, servicio de asesoría y asistencia jurídica telefónica.",
     emoji: <Briefcase />,
   },
 ];
@@ -135,7 +135,7 @@ export const comparatives = [
     list: [
       {
         tratamiento: "Edad de contratación",
-        precio: "El seguro de vida se puede contratar hasta los 65 años.",
+        precio: "El seguro de vida DKV se puede contratar hasta los 65 años.",
       },
       {
         tratamiento: "Tu decisión",
@@ -158,9 +158,9 @@ export const comparatives = [
     description: "Duración, capital personalizado, prima y forma de pago",
     list: [
       {
-        tratamiento: "Duracion",
+        tratamiento: "Duración",
         precio:
-          "En el seguro de vida el contrato tiene una duración anual y se renueva año a año hasta que cumplas 70 años, siempre que tú no decidas cancelarlo antes. ",
+          "En el seguro de vida el contrato tiene una duración anual y se renueva año a año hasta que cumplas 70 años, siempre que tú no decidas cancelarlo antes.",
       },
       {
         tratamiento: "Capital personalizado",
@@ -188,12 +188,12 @@ export const faqs = [
       "El capital en un seguro de vida debe permitir cubrir los gastos de la familia durante un periodo de tiempo suficiente. Es decir, el que cubre la diferencia entre los ingresos que se reciben (normalmente el salario) y la pensión de jubilación (aproximadamente el 50% del salario).",
   },
   {
-    question: "¿Qué cubre un seguro de vida?",
+    question: "¿Qué cubre un seguro de vida DKV?",
     answer:
       "Un seguro de vida siempre cubre el riesgo de que el titular fallezca. Es la cobertura principal. Pero además se pueden contratar otras coberturas adicionales.",
   },
   {
-    question: "¿Quién deberia contratar un seguro de vida?",
+    question: "¿Quién debería contratar un seguro de vida?",
     answer:
       "El seguro de vida está diseñado para mantener la tranquilidad financiera de las personas que quedan si nosotros faltamos. Por tanto, es importante pensar en los que dependen o pueden depender económicamente de nosotros; pareja, hijos, padres de cierta edad, personas dependientes. Además, si tenemos deudas, hipotecas o algún negocio propio es importante pensar en qué obligaciones tendrían que asumir directamente a nuestros herederos en caso de un infortunio.",
   },
@@ -210,21 +210,21 @@ export const faqs = [
   {
     question: "¿Cómo se calcula un seguro de vida?",
     answer:
-      "La prima de seguro se calcula en función de la edad de la persona a asegurar y del capital que se necesita. Cuanto mayor es la edad y/o el capital, más elevada será la prima. Consulta los precios de acuerdo con tus necesidades, la prima puede ser mucho más pequeña de lo que piensas.",
+      "La prima de seguro se calcula en función de la edad de la persona a asegurar y del capital que se necesita. Cuanto mayor es la edad y/o el capital, más elevada será la prima. Consulta los precios de acuerdo con tus necesidades, la prima puede ser mucho más pequeña de lo que piensas. Llámanos al 633 10 60 25 para obtener tu presupuesto personalizado.",
   },
 ];
 
 export const recomendations = [
   {
     imageSrc: "/happy.webp",
-    title: "Seguro de salud",
+    title: "Seguro de salud DKV",
     description:
       "Los mejores seguros de salud para particulares. Con DKV tendrás acceso a los mejores médicos y hospitales de España.",
     route: "seguro-de-salud",
   },
   {
     imageSrc: "/dental.webp",
-    title: "Seguro dental",
+    title: "Seguro dental DKV",
     description:
       "Los seguros dentales más completos y económicos para utilizar desde el primer día.",
     route: "seguro-dental",

@@ -1,38 +1,48 @@
 import type { Metadata } from "next";
 
 export const decesosMetadata: Metadata = {
-  title: "Seguro de Decesos | Protección Familiar en Fuengirola y Málaga",
+  // CRÍTICO: Title optimizado para "DKV decesos" (keyword principal en posición 43)
+  title: "DKV Decesos | Seguro de Decesos DKV en Fuengirola y Málaga",
+
+  // CRÍTICO: Description optimizada con las keywords que rankean
   description:
-    "Seguro de decesos con repatriación incluida, servicio funerario completo y apoyo psicológico. Niños gratis hasta 6 años. Asistencia médica mundial hasta 18.000€. Presupuesto sin compromiso.",
+    "Seguro de decesos DKV con repatriación incluida y servicio funerario completo. DKV Decesos desde 1,80€/mes. Niños gratis hasta 6 años. Agentes oficiales DKV en Fuengirola. Presupuesto sin compromiso.",
+
   keywords: [
-    // Palabras clave principales
+    // ⭐ CRÍTICO: Keywords que YA están rankeando (prioridad máxima)
+    "dkv decesos",
+    "seguros decesos dkv",
+    "seguros de decesos dkv",
+    "dkv seguro decesos",
+    "dkv decesos coberturas",
+    "decesos dkv",
+
+    // Variaciones de DKV decesos
+    "seguro decesos dkv fuengirola",
+    "dkv decesos málaga",
+    "dkv decesos precio",
+    "contratar dkv decesos",
+    "dkv protección familiar",
+    "dkv buen legado",
+
+    // Keywords locales con DKV
+    "dkv seguros fuengirola",
+    "dkv seguros málaga",
+    "agentes dkv fuengirola",
+
+    // Long-tail con DKV
+    "dkv decesos repatriación",
+    "dkv decesos testamento online",
+    "dkv decesos niños gratis",
+    "dkv decesos sin carencias",
+    "dkv decesos asistencia médica",
+
+    // Keywords generales (menor prioridad)
     "seguro de decesos",
-    "seguro de decesos Fuengirola",
     "seguro funerario",
-
-    // Long-tail keywords
-    "seguro decesos con repatriación",
-    "seguro funerario España",
-    "seguro decesos DKV",
-    "servicio funerario completo",
-    "seguro decesos familia",
-    "testamento online",
-
-    // Palabras clave locales
-    "seguro de decesos Málaga",
-    "seguro funerario Costa del Sol",
-    "seguros decesos Andalucía",
-
-    // Palabras clave relacionadas
-    "repatriación internacional",
-    "apoyo psicológico duelo",
-    "asistencia médica mundial",
-    "planificación funeral",
-    "seguro decesos económico",
-    "cobertura funeraria completa",
-    "traslado nacional internacional",
-    "borrado huella digital",
+    "seguro de decesos Fuengirola",
   ],
+
   robots: {
     index: true,
     follow: true,
@@ -44,51 +54,76 @@ export const decesosMetadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  authors: [{ name: "Seguros Fuengirola" }],
-  creator: "Seguros Fuengirola",
-  publisher: "Seguros Fuengirola",
+
+  // CRÍTICO: Author con DKV
+  authors: [{ name: "DKV Seguros Fuengirola - Agentes Oficiales" }],
+  creator: "DKV Seguros Fuengirola",
+  publisher: "DKV Seguros Fuengirola",
+
   openGraph: {
     type: "website",
     locale: "es_ES",
     url: "https://www.segurosfuengirola.com/seguro-de-decesos",
-    siteName: "Seguros Fuengirola",
-    title: "Seguro de Decesos | Protección y Tranquilidad para tu Familia",
+
+    // CRÍTICO: siteName con DKV
+    siteName: "DKV Seguros Fuengirola",
+
+    // CRÍTICO: Title con "DKV Decesos" al principio
+    title: "DKV Decesos | Seguro Funerario con Repatriación desde 1,80€",
+
+    // CRÍTICO: Description con keywords que rankean
     description:
-      "Seguro de decesos con el mejor servicio funerario, repatriación nacional e internacional incluida, apoyo psicológico y testamento online. Niños gratis hasta 6 años.",
+      "Seguro de decesos DKV Protección Familiar. Repatriación nacional e internacional incluida, apoyo psicológico, testamento online. Niños gratis hasta 6 años. DKV Decesos desde 1,80€/mes. Agentes oficiales DKV.",
+
     images: [
       {
         url: "/deceso.webp",
         width: 1200,
         height: 630,
-        alt: "Seguro de decesos - Protección familiar completa",
+        alt: "DKV Decesos - Seguro de decesos con repatriación incluida",
       },
     ],
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Seguro de Decesos | Protección Familiar en Fuengirola",
+
+    // CRÍTICO: Title con DKV al principio
+    title: "DKV Decesos | Seguro Funerario desde 1,80€",
+
     description:
-      "Servicio funerario completo, repatriación incluida y apoyo psicológico. Niños gratis hasta 6 años. Asistencia médica mundial.",
+      "DKV Decesos con repatriación, apoyo psicológico y testamento online. Niños gratis hasta 6 años. Desde 1,80€/mes.",
+
     images: ["/deceso.webp"],
     creator: "@segurosfuengirola",
   },
+
   alternates: {
     canonical: "https://www.segurosfuengirola.com/seguro-de-decesos",
     languages: {
       "es-ES": "https://www.segurosfuengirola.com/seguro-de-decesos",
     },
   },
-  category: "Seguros",
+
+  category: "Seguros de Decesos",
+
   verification: {
     google: "tu-codigo-de-verificacion-google",
-    // yandex: "tu-codigo-yandex",
-    // bing: "tu-codigo-bing",
   },
+
   other: {
     "og:phone_number": "+34633106025",
     "og:email": "info@segurosfuengirola.com",
     "og:locality": "Fuengirola",
     "og:region": "Málaga",
     "og:country-name": "España",
+
+    // NUEVO: Tags específicos para DKV
+    "og:brand": "DKV Seguros",
+    "product:brand": "DKV",
+    "product:availability": "in stock",
+    "product:condition": "new",
+    "product:price:amount": "1.80",
+    "product:price:currency": "EUR",
   },
 };

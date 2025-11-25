@@ -8,7 +8,12 @@ export default function SchemaOrg() {
       {
         "@type": "InsuranceAgency",
         "@id": "https://www.segurosfuengirola.com/#organization",
-        name: "Seguros Fuengirola",
+
+        // CRÍTICO: Nombre con DKV destacado
+        name: "DKV Seguros Fuengirola - Agentes Oficiales",
+        alternateName: "Agentes DKV Fuengirola",
+        legalName: "Seguros Fuengirola - Distribuidor Autorizado DKV",
+
         url: "https://www.segurosfuengirola.com",
         logo: {
           "@type": "ImageObject",
@@ -17,8 +22,11 @@ export default function SchemaOrg() {
           height: 60,
         },
         image: "https://www.segurosfuengirola.com/deceso.webp",
+
+        // CRÍTICO: Description con "DKV Decesos"
         description:
-          "Agencia de seguros especializada en seguros de decesos, servicios funerarios, repatriación y protección familiar en Fuengirola y Málaga",
+          "Agentes oficiales de DKV Seguros especializados en DKV Decesos, servicios funerarios y repatriación en Fuengirola y Málaga. Más de 10 años asesorando en seguros DKV.",
+
         address: {
           "@type": "PostalAddress",
           addressLocality: "Fuengirola",
@@ -33,19 +41,46 @@ export default function SchemaOrg() {
         areaServed: [
           { "@type": "City", name: "Fuengirola" },
           { "@type": "City", name: "Málaga" },
+          { "@type": "City", name: "Marbella" },
+          { "@type": "City", name: "Torremolinos" },
           { "@type": "State", name: "Andalucía" },
         ],
         priceRange: "€€",
         telephone: "+34633106025",
         email: "info@segurosfuengirola.com",
+
+        // NUEVO: Slogan con DKV
+        slogan: "Tu agencia oficial DKV Decesos en Fuengirola",
+
+        // NUEVO: Brands que representamos
+        brand: {
+          "@type": "Brand",
+          name: "DKV Seguros",
+        },
       },
       {
         "@type": "Product",
         "@id": "https://www.segurosfuengirola.com/seguro-de-decesos#product",
-        name: "Seguro de Decesos",
+
+        // CRÍTICO: Nombre con "DKV Decesos"
+        name: "DKV Decesos - Seguro de Decesos",
+        alternateName: "Seguro de Decesos DKV",
+
+        // CRÍTICO: Description con keywords
         description:
-          "Seguro de decesos con servicio funerario completo, repatriación nacional e internacional incluida, apoyo psicológico, testamento online y asistencia médica mundial hasta 18.000€.",
-        brand: { "@type": "Organization", name: "DKV Seguros" },
+          "DKV Decesos es el seguro de decesos con servicio funerario completo, repatriación nacional e internacional incluida, apoyo psicológico, testamento online y asistencia médica mundial hasta 18.000€. Niños gratis hasta 6 años.",
+
+        brand: {
+          "@type": "Brand",
+          name: "DKV Seguros",
+          logo: "https://www.dkvseguros.com/logo.png",
+        },
+
+        manufacturer: {
+          "@type": "Organization",
+          name: "DKV Seguros",
+        },
+
         offers: {
           "@type": "AggregateOffer",
           availability: "https://schema.org/InStock",
@@ -54,13 +89,37 @@ export default function SchemaOrg() {
           highPrice: "2.25",
           offerCount: "3",
           url: "https://www.segurosfuengirola.com/seguro-de-decesos",
+
+          // NUEVO: Seller con DKV
+          seller: {
+            "@type": "Organization",
+            name: "DKV Seguros Fuengirola",
+          },
         },
+
         category: "Seguro de Decesos",
+
+        // NUEVO: SKU y MPN para productos
+        sku: "DKV-DECESOS-2024",
+        mpn: "DKV-PROTECCION-FAMILIAR",
+
         audience: {
           "@type": "Audience",
           audienceType: "Familias y particulares",
         },
+
+        // CRÍTICO: Keywords en additionalProperty
         additionalProperty: [
+          {
+            "@type": "PropertyValue",
+            name: "Marca",
+            value: "DKV Seguros",
+          },
+          {
+            "@type": "PropertyValue",
+            name: "Producto",
+            value: "DKV Decesos",
+          },
           {
             "@type": "PropertyValue",
             name: "Repatriación",
@@ -76,22 +135,38 @@ export default function SchemaOrg() {
             name: "Asistencia médica mundial",
             value: "Hasta 18.000€",
           },
+          {
+            "@type": "PropertyValue",
+            name: "Testamento online",
+            value: "Incluido gratuito",
+          },
         ],
       },
       {
         "@type": "WebPage",
         "@id": "https://www.segurosfuengirola.com/seguro-de-decesos#webpage",
         url: "https://www.segurosfuengirola.com/seguro-de-decesos",
-        name: "Seguro de Decesos | Protección Familiar en Fuengirola y Málaga",
+
+        // CRÍTICO: Name con DKV al principio
+        name: "DKV Decesos | Seguro de Decesos con Repatriación en Fuengirola",
+
+        // CRÍTICO: Description con keywords
         description:
-          "Seguro de decesos con repatriación incluida, servicio funerario completo y apoyo psicológico. Niños gratis hasta 6 años.",
+          "Contrata DKV Decesos con repatriación incluida, servicio funerario completo y apoyo psicológico. Niños gratis hasta 6 años. Agentes oficiales DKV en Fuengirola.",
+
         inLanguage: "es-ES",
+
+        // NUEVO: Keywords en la página
+        keywords:
+          "dkv decesos, seguros decesos dkv, dkv protección familiar, seguro decesos dkv fuengirola",
+
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.segurosfuengirola.com/#website",
           url: "https://www.segurosfuengirola.com",
-          name: "Seguros Fuengirola",
+          name: "DKV Seguros Fuengirola",
         },
+
         breadcrumb: {
           "@type": "BreadcrumbList",
           itemListElement: [
@@ -104,11 +179,27 @@ export default function SchemaOrg() {
             {
               "@type": "ListItem",
               position: 2,
-              name: "Seguro de Decesos",
+              name: "DKV Decesos",
               item: "https://www.segurosfuengirola.com/seguro-de-decesos",
             },
           ],
         },
+
+        // NUEVO: Mentions de DKV
+        mentions: [
+          {
+            "@type": "Brand",
+            name: "DKV Seguros",
+          },
+          {
+            "@type": "Product",
+            name: "DKV Protección Familiar",
+          },
+          {
+            "@type": "Product",
+            name: "DKV Buen Legado",
+          },
+        ],
       },
       {
         "@type": "FAQPage",
@@ -122,10 +213,21 @@ export default function SchemaOrg() {
       {
         "@type": "Service",
         "@id": "https://www.segurosfuengirola.com/seguro-de-decesos#service",
-        serviceType: "Seguro de Decesos",
+
+        // CRÍTICO: serviceType con DKV
+        serviceType: "DKV Decesos - Seguro de Decesos",
+        name: "DKV Decesos",
+
         provider: {
           "@id": "https://www.segurosfuengirola.com/#organization",
         },
+
+        // NUEVO: Brand del servicio
+        brand: {
+          "@type": "Brand",
+          name: "DKV Seguros",
+        },
+
         areaServed: {
           "@type": "GeoCircle",
           geoMidpoint: {
@@ -135,9 +237,10 @@ export default function SchemaOrg() {
           },
           geoRadius: "50000",
         },
+
         hasOfferCatalog: {
           "@type": "OfferCatalog",
-          name: "Planes de Seguro de Decesos",
+          name: "Planes DKV Decesos",
           itemListElement: [
             {
               "@type": "Offer",
@@ -145,7 +248,8 @@ export default function SchemaOrg() {
                 "@type": "Service",
                 name: "DKV Protección Familiar",
                 description:
-                  "El seguro de decesos que acompaña a tu familia en todo momento",
+                  "El seguro de decesos DKV que acompaña a tu familia en todo momento",
+                brand: "DKV Seguros",
                 offers: {
                   "@type": "Offer",
                   price: "1.80",
@@ -159,7 +263,8 @@ export default function SchemaOrg() {
                 "@type": "Service",
                 name: "DKV Buen Legado",
                 description:
-                  "Seguro de decesos con despedida de bajo impacto medioambiental",
+                  "Seguro de decesos DKV con despedida de bajo impacto medioambiental",
+                brand: "DKV Seguros",
                 offers: {
                   "@type": "Offer",
                   price: "2.00",
@@ -173,7 +278,8 @@ export default function SchemaOrg() {
                 "@type": "Service",
                 name: "DKV Protección Familiar con Serviplus",
                 description:
-                  "Incluye servicios de salud adicionales como chat médico 24h y tratamientos dentales",
+                  "DKV Decesos que incluye servicios de salud adicionales",
+                brand: "DKV Seguros",
                 offers: {
                   "@type": "Offer",
                   price: "2.25",
@@ -183,17 +289,18 @@ export default function SchemaOrg() {
             },
           ],
         },
+
         serviceOutput: {
           "@type": "Service",
-          name: "Servicios incluidos",
+          name: "Servicios DKV Decesos incluidos",
           description:
-            "Servicio funerario completo, repatriación nacional e internacional, apoyo psicológico, testamento online, asistencia médica mundial hasta 18.000€, borrado de huella digital",
+            "DKV Decesos incluye: Servicio funerario completo, repatriación nacional e internacional, apoyo psicológico, testamento online, asistencia médica mundial hasta 18.000€, borrado de huella digital",
         },
       },
       {
         "@type": "ItemList",
         "@id": "https://www.segurosfuengirola.com/seguro-de-decesos#pricing",
-        name: "Planes de Seguro de Decesos",
+        name: "Precios DKV Decesos",
         itemListElement: [
           {
             "@type": "ListItem",
@@ -203,6 +310,7 @@ export default function SchemaOrg() {
               "@type": "Offer",
               price: "1.80",
               priceCurrency: "EUR",
+              description: "DKV Decesos básico",
             },
           },
           {
@@ -213,6 +321,7 @@ export default function SchemaOrg() {
               "@type": "Offer",
               price: "2.00",
               priceCurrency: "EUR",
+              description: "DKV Decesos ecológico",
             },
           },
           {
@@ -223,9 +332,26 @@ export default function SchemaOrg() {
               "@type": "Offer",
               price: "2.25",
               priceCurrency: "EUR",
+              description: "DKV Decesos premium",
             },
           },
         ],
+      },
+
+      // NUEVO: Organization Schema específico para DKV
+      {
+        "@type": "Organization",
+        "@id":
+          "https://www.segurosfuengirola.com/seguro-de-decesos#dkv-partner",
+        name: "DKV Seguros Fuengirola",
+        parentOrganization: {
+          "@type": "Organization",
+          name: "DKV Seguros",
+        },
+        memberOf: {
+          "@type": "Organization",
+          name: "DKV Seguros España",
+        },
       },
     ],
   };

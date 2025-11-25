@@ -36,25 +36,25 @@ export default function ClientPage() {
   return (
     <div>
       <Hero
-        title="Seguro de Decesos"
-        description="El seguro de decesos que acompaña a tu familia en todo momento"
-        description2="Uno de los mejores servicios funerarios. Repatriación al país de origen. Niños GRATIS hasta los 6 años."
+        title="DKV Decesos - Seguro de Decesos"
+        description="El seguro de decesos DKV que acompaña a tu familia en todo momento"
+        description2="Uno de los mejores servicios funerarios. Repatriación al país de origen incluida. Niños GRATIS hasta los 6 años. Llámanos: 633 10 60 25"
         buttonRef={contactRef}
         imageSrc="/deceso.webp"
-        imageAlt="Seguro de Decesos para particulares"
+        imageAlt="DKV Decesos - Seguro de decesos para particulares"
       />
       <ScrollSection refs={refButtons} />
       <div className="flex flex-col space-y-8 sm:space-y-16 items-center p-8 sm:py-16 sm:px-20 bg-gradient-to-br from-gray-50 to-gray-100">
         <section ref={ventajasRef} aria-labelledby="ventajas-heading">
           <h2 id="ventajas-heading" className="sr-only">
-            Ventajas del seguro de decesos
+            Ventajas del seguro de decesos DKV
           </h2>
-          <Features title="seguro de decesos" features={features} />
+          <Features title="seguro de decesos DKV" features={features} />
         </section>
 
         <section ref={informacionRef} aria-labelledby="coberturas-heading">
           <h2 id="coberturas-heading" className="sr-only">
-            Coberturas y servicios del seguro de decesos
+            Coberturas y servicios del seguro de decesos DKV
           </h2>
           <Table
             title={table.title}
@@ -65,7 +65,7 @@ export default function ClientPage() {
 
         <section ref={serviciosRef} aria-labelledby="planes-heading">
           <h2 id="planes-heading" className="sr-only">
-            Planes y precios del seguro de decesos
+            Planes y precios de DKV Decesos
           </h2>
           <Pricing products={products} />
         </section>
@@ -76,21 +76,21 @@ export default function ClientPage() {
           aria-labelledby="faqs-heading"
         >
           <h2 id="faqs-heading" className="sr-only">
-            Preguntas frecuentes sobre seguros de decesos
+            Preguntas frecuentes sobre DKV Decesos
           </h2>
           <Faqs faqs={faqs} />
         </section>
 
         <section ref={contactRef} aria-labelledby="contacto-heading">
           <h2 id="contacto-heading" className="sr-only">
-            Solicita tu presupuesto de seguro de decesos
+            Solicita tu presupuesto de DKV Decesos - Tel: 633 10 60 25
           </h2>
           <LeadForm />
         </section>
 
         <section ref={otrosRef} aria-labelledby="otros-heading">
           <h2 id="otros-heading" className="sr-only">
-            Otros seguros disponibles
+            Otros seguros DKV disponibles
           </h2>
           <Recomendations recomendations={recomendations} />
         </section>

@@ -4,7 +4,7 @@ export const features = [
   {
     title: "Apoyo psicológico",
     description:
-      "Tu familia contará con asistencia psicológica en todo momento.",
+      "Tu familia contará con asistencia psicológica en todo momento del duelo.",
     emoji: <Users />,
   },
   {
@@ -14,7 +14,7 @@ export const features = [
     emoji: <PlaneLanding />,
   },
   {
-    title: "Testamento online",
+    title: "Testamento online gratis",
     description:
       "Podrás redactar tu testamento en cualquier momento a través de una herramienta privada.",
     emoji: <BookOpenCheck />,
@@ -70,7 +70,7 @@ export const tables = [
       {
         title: "Asistencia médica mundial",
         description:
-          "Contarás con hasta 18.000 euros en asistencia mundial por urgencia en viajes de hasta 90 días. ",
+          "Contarás con hasta 18.000 euros en asistencia mundial por urgencia en viajes de hasta 90 días.",
       },
       {
         title: "Borrado de la huella digital",
@@ -144,21 +144,21 @@ export const products = [
   {
     title: "DKV Protección Familiar",
     description:
-      "El seguro de decesos que acompaña a tu familia en todo momento.",
+      "El seguro de decesos DKV que acompaña a tu familia en todo momento.",
     copago: "",
     price: "1,80€",
   },
   {
     title: "DKV Buen Legado",
     description:
-      "Seguro de decesos con el que tú eliges como va a ser tu despedida con bajo impacto medioambiental.",
+      "Seguro de decesos DKV con el que tú eliges cómo va a ser tu despedida con bajo impacto medioambiental.",
     copago: "",
     price: "2€",
   },
   {
     title: "DKV Protección Familiar con Serviplus",
     description:
-      "El seguro de decesos que incluye servicios de salud adicionales pagando un poco más.",
+      "El seguro de decesos DKV que incluye servicios de salud adicionales pagando un poco más.",
     copago: "",
     price: "2,25€",
   },
@@ -166,19 +166,19 @@ export const products = [
 
 export const faqs = [
   {
-    question: "¿Qué es un seguro de decesos?",
+    question: "¿Qué es un seguro de decesos DKV?",
     answer:
-      "El seguro de decesos garantiza la prestación del servicio funerario al ocurrir el fallecimiento de la persona asegurada, así como la gestión de todos los trámites necesarios ante una defunción: administrativos y legales, traslados a cualquier parte del territorio nacional y repatriaciones internacionales. Además, el seguro de decesos incluye una amplia gama de garantías asistenciales y coberturas complementarias que completan el sentido asistencial y familiar del mismo.",
+      "El seguro de decesos DKV garantiza la prestación del servicio funerario al ocurrir el fallecimiento de la persona asegurada, así como la gestión de todos los trámites necesarios ante una defunción: administrativos y legales, traslados a cualquier parte del territorio nacional y repatriaciones internacionales. Además, el seguro de decesos incluye una amplia gama de garantías asistenciales y coberturas complementarias que completan el sentido asistencial y familiar del mismo.",
   },
   {
-    question: "¿Qué cubre el seguro de decesos?",
+    question: "¿Qué cubre el seguro de decesos DKV?",
     answer:
       "El seguro de decesos es un seguro de prestación de servicios, es decir, lo que cubre principalmente es la organización, gestión y ejecución del servicio funerario al ocurrir el fallecimiento de cualquier persona asegurada, así como el coste de dicha prestación.",
   },
   {
-    question: "¿Cómo comunicar un fallecimiento de un asegurado?",
+    question: "¿Cómo comunicar un fallecimiento de un asegurado DKV?",
     answer:
-      "Para comunicar un siniestro de un cliente de decesos de DKV, el teléfono gratuito de asistencia 24 horas es el 900 810 141. Sabemos que la pérdida de un ser querido produce un gran impacto emocional, además de la angustia que supone resolver las gestiones derivadas de la misma. Estamos aquí para acompañaros y ayudaros en todo lo que necesitéis.",
+      "Para comunicar un siniestro de un cliente de decesos de DKV, el teléfono gratuito de asistencia 24 horas es el 900 810 141. Sabemos que la pérdida de un ser querido produce un gran impacto emocional, además de la angustia que supone resolver las gestiones derivadas de la misma. Estamos aquí para acompañaros y ayudaros en todo lo que necesitéis. Para más información, llámanos al 633 10 60 25.",
   },
   {
     question: "¿Por qué contratar un seguro de decesos?",
@@ -187,12 +187,12 @@ export const faqs = [
   },
   {
     question:
-      "Si fallezco en el extranjero, ¿el seguro de decesos cubre mi traslado? Repatriación para extranjeros",
+      "Si fallezco en el extranjero, ¿el seguro de decesos DKV cubre mi traslado? Repatriación para extranjeros",
     answer:
       "Si eres extranjero y resides en España, con DKV Protección Familiar tienes incluido el servicio de repatriación a tu país de origen, viaje de ida y vuelta de un acompañante y otras importantes ventajas. ¡Somos los únicos que lo garantizamos sin sobrecoste en tu póliza de decesos!",
   },
   {
-    question: "¿Tengo asistencia médica en el extranjero?",
+    question: "¿Tengo asistencia médica en el extranjero con DKV Decesos?",
     answer:
       "¿Sabías que con tu póliza de decesos DKV estás cubierto también cuando viajas al extranjero con hasta 18.000 euros para gastos médicos en caso de urgencia? Con el límite marcamos la diferencia.",
   },
