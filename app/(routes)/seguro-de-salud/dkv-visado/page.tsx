@@ -2,7 +2,7 @@ import ClientPage from "./client-page";
 import SchemaOrg from "./schema-org";
 
 // Importar metadata optimizada para SEO
-export { dentalMetadata as metadata } from "./metadata";
+export { extranjeriaMetadata as metadata } from "./metadata";
 
 export default function Page() {
   return (

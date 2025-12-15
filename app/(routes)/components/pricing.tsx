@@ -1,11 +1,17 @@
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 
+interface Feature {
+  text: string;
+  included: boolean;
+}
+
 interface Product {
   title: string;
   description: string;
   copago: string;
   price: string;
+  features?: Feature[];
 }
 
 interface PricingProps {
@@ -52,10 +58,31 @@ const Pricing = (props: PricingProps) => {
               </p>
             </CardContent>
             <Separator className="mx-4 max-w-11/12" />
-            <CardFooter>
+            <CardFooter className="flex-col items-start">
               <p className="text-md font-semibold mb-4 text-gray-800">
                 {product.copago}
               </p>
+              {product.features && product.features.length > 0 && (
+                <ul className="space-y-2 w-full">
+                  {product.features.map((feature, featureIndex) => (
+                    <li
+                      key={featureIndex}
+                      className="flex items-start gap-2 text-sm text-gray-600"
+                    >
+                      <span
+                        className={`flex-shrink-0 font-bold ${
+                          feature.included ? "text-green-600" : "text-red-500"
+                        }`}
+                      >
+                        {feature.included ? "✓" : "✗"}
+                      </span>
+                      <span className={feature.included ? "" : "text-gray-400"}>
+                        {feature.text}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </CardFooter>
           </Card>
         ))}
