@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 
 export const dentalMetadata: Metadata = {
-  title: "Seguro Dental DKV | Precios desde 7,90€ | Agentes DKV Fuengirola",
+  title: "Seguro Dental DKV Dentisalud [Desde 7,90€/mes]",
   description:
-    "✅ Seguro dental DKV Dentisalud desde 7,90€/mes. 59 tratamientos gratis, limpieza dental gratis, sin carencias. Niños menores de 14 años GRATIS. Agentes exclusivos DKV en Fuengirola y Málaga. ☎ 951 68 13 83",
+    "✅ Seguro dental DKV Dentisalud desde 7,90€/mes. 59 tratamientos gratis, limpieza dental gratis, sin carencias. Niños menores de 14 años GRATIS. Agentes exclusivos DKV.",
   keywords: [
     // TIER 1 - Keywords principales (Volumen 1000)
     "seguro dental dkv",
     "seguros dentales dkv",
     "dkv seguro dental",
     "dkv seguros dentales",
-    "seguro dkv dental",
+    "dkv dentisalud",
     "seguros dkv dental",
 
     // TIER 2 - Keywords secundarias (Volumen 140-260)
