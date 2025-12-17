@@ -31,7 +31,10 @@ const Navbar = () => {
         <ItemsMenuMobile />
       </div>
       <div className="hidden lg:flex items-center">
-        <Button className="ml-4 bg-blue-700">
+        <Button
+          className="ml-4 bg-blue-700"
+          onClick={() => window.open("https://wa.me/34633106025", "_blank")}
+        >
           <Phone /> Contactar
         </Button>
       </div>
