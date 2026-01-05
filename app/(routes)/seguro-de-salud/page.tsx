@@ -9,6 +9,7 @@ import { faqs, products, recomendations } from "./data";
 import { useRef } from "react";
 import ScrollSection from "../components/scroll-section";
 import Recomendations from "../components/recomendations";
+import ExtranjeriaBanner from "@/components/extranjeria-banner";
 
 interface RefButtons {
   title: string;
@@ -58,6 +59,9 @@ const Page = () => {
         </div>
         <div ref={contactRef}>
           <LeadForm />
+        </div>
+        <div className="w-full">
+          <ExtranjeriaBanner />
         </div>
         <div ref={otrosRef} className="w-full">
           <Recomendations recomendations={recomendations} />

@@ -8,6 +8,15 @@ export const particulares = [
       "Seguro de salud familiar - Cobertura médica completa y personalizada",
   },
   {
+    title: "Seguro para extranjeros",
+    description:
+      "El seguro médico para extranjeros en España válido para visado y permiso de residencia.",
+    route: "/seguro-de-salud/dkv-visado",
+    imageSrc: "/extranjeria.webp",
+    titleSeo:
+      "Seguro médico para extranjeros en España - DKV Visado y Residencia",
+  },
+  {
     title: "Seguro dental",
     description:
       "Los seguros dentales más completos y económicos para utilizar desde el primer día.",

@@ -72,9 +72,9 @@ export const extranjeriaMetadata: Metadata = {
     locale: "es_ES",
     url: "https://www.segurosfuengirola.es/seguro-salud-extranjeros",
     siteName: "Seguros Fuengirola - Agentes Exclusivos DKV",
-    title: "Seguro Médico para Extranjeros España | Visado y Residencia | DKV",
+    title: "Seguro Médico Extranjeros España | Visado y Residencia",
     description:
-      "Seguro médico para extranjeros válido para visado y permiso de residencia en España. DKV Integral sin copagos, sin carencias. Contratación hasta 3 meses antes. Pago con tarjeta. Agentes DKV en Fuengirola y Málaga.",
+      "Seguro médico para extranjeros válido para visado y permiso de residencia en España. Seguro sin copagos, sin carencias. Agentes DKV en Fuengirola y Málaga.",
     images: [
       {
         url: "https://www.segurosfuengirola.es/extranjeros.webp",
@@ -93,9 +93,9 @@ export const extranjeriaMetadata: Metadata = {
     creator: "@segurosfuengirola",
   },
   alternates: {
-    canonical: "https://www.segurosfuengirola.es/seguro-salud-extranjeros",
+    canonical: "https://www.segurosfuengirola.es/seguro-de-salud/dkv-visado",
     languages: {
-      "es-ES": "https://www.segurosfuengirola.es/seguro-salud-extranjeros",
+      "es-ES": "https://www.segurosfuengirola.es/seguro-de-salud/dkv-visado",
     },
   },
   category: "Seguros Médicos para Extranjeros",
@@ -109,10 +109,10 @@ export const extranjeriaMetadata: Metadata = {
     "og:region": "Málaga",
     "og:postal-code": "29640",
     "og:country-name": "España",
-    "og:street-address": "Av. Condes de San Isidro, Nº 80",
+    "og:street-address": "Av. Condes de San Isidro, n.º 80",
     "og:insurance_provider": "DKV Seguros",
     "og:agent_type": "Agente Exclusivo",
-    "business:contact_data:street_address": "Av. Condes de San Isidro, Nº 80",
+    "business:contact_data:street_address": "Av. Condes de San Isidro, n.º 80",
     "business:contact_data:locality": "Fuengirola",
     "business:contact_data:region": "Málaga",
     "business:contact_data:postal_code": "29640",

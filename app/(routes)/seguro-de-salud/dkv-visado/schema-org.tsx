@@ -28,7 +28,7 @@ export default function SchemaOrg() {
           "Agentes exclusivos DKV en Fuengirola especializados en seguros médicos para extranjeros en España. Seguros válidos para visado, NIE y permiso de residencia. Más de 51.000 médicos en el cuadro médico DKV.",
         address: {
           "@type": "PostalAddress",
-          streetAddress: "Av. Condes de San Isidro, Nº 80",
+          streetAddress: "Av. Condes de San Isidro, n.º 80",
           addressLocality: "Fuengirola",
           addressRegion: "Málaga",
           postalCode: "29640",
@@ -347,7 +347,7 @@ export default function SchemaOrg() {
         email: "info@segurosfuengirola.es",
         address: {
           "@type": "PostalAddress",
-          streetAddress: "Av. Condes de San Isidro, Nº 80",
+          streetAddress: "Av. Condes de San Isidro, n.º 80",
           addressLocality: "Fuengirola",
           addressRegion: "Málaga",
           postalCode: "29640",

@@ -20,9 +20,6 @@ const Recomendations = (props: RecomendationProps) => {
 
   return (
     <div className="flex flex-col items-center gap-y-8">
-      <h2 className="text-3xl lg:text-4xl font-normal text-center">
-        Otros seguros
-      </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {recomendations.map((recomendation, index) => (
           <div key={index} className="flex flex-col gap-y-4">
@@ -34,9 +31,9 @@ const Recomendations = (props: RecomendationProps) => {
               height={200}
             />
             <div className="flex flex-col gap-y-4">
-              <h4 className="font-semibold text-lg text-gray-950">
+              <p className="font-semibold text-lg text-gray-950">
                 {recomendation.title}
-              </h4>
+              </p>
               <p className="font-light text-sm text-gray-500 overflow-hidden overflow-ellipsis line-clamp-2">
                 {recomendation.description}
               </p>

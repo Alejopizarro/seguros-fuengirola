@@ -79,9 +79,9 @@ export default function ClientPage() {
                 className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow"
               >
                 <div className="text-emerald-600 mb-4">{feature.emoji}</div>
-                <h3 className="font-semibold text-gray-800 mb-2">
+                <p className="font-semibold text-gray-800 mb-2 text-lg">
                   {feature.title}
-                </h3>
+                </p>
                 <p className="text-gray-600 text-sm">{feature.description}</p>
               </div>
             ))}
@@ -112,9 +112,9 @@ export default function ClientPage() {
                   key={index}
                   className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border-2 border-emerald-500"
                 >
-                  <h3 className="font-bold text-2xl text-gray-800 mb-2">
+                  <p className="font-bold text-2xl text-gray-800 mb-2">
                     {product.title}
-                  </h3>
+                  </p>
                   <p className="text-emerald-600 font-medium text-lg mb-4">
                     {product.subtitle}
                   </p>
@@ -164,9 +164,9 @@ export default function ClientPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {coberturas.map((cobertura, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-md">
-                <h3 className="font-bold text-lg text-emerald-700 mb-4">
+                <p className="font-bold text-lg text-emerald-700 mb-4">
                   {cobertura.categoria}
-                </h3>
+                </p>
                 <ul className="space-y-2">
                   {cobertura.items.map((item, idx) => (
                     <li
@@ -353,7 +353,7 @@ export default function ClientPage() {
             </p>
             <p>
               Visítanos en nuestra oficina de <strong>Fuengirola</strong> en Av.
-              Condes de San Isidro, Nº 80, o llámanos al{" "}
+              Condes de San Isidro, n.º 80, o llámanos al{" "}
               <strong>951 68 13 83</strong>. Atendemos a extranjeros de toda la
               provincia de <strong>Málaga</strong> y la{" "}
               <strong>Costa del Sol</strong>: Marbella, Torremolinos,
@@ -363,8 +363,8 @@ export default function ClientPage() {
         </section>
 
         {/* SECCIÓN: Otros seguros */}
-        <section ref={otrosRef} aria-labelledby="otros-heading">
-          <h2 id="otros-heading" className="sr-only">
+        <section ref={otrosRef} aria-labelledby="otros-heading" className="w-full max-w-6xl">
+          <h2 id="otros-heading" className="text-3xl font-bold text-center text-gray-800 mb-8">
             Otros seguros DKV disponibles en Fuengirola
           </h2>
           <Recomendations recomendations={recomendations} />

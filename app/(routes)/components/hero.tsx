@@ -21,8 +21,8 @@ const Hero = (props: HeroProps) => {
   const router = useRouter();
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 min-h-[90vh] pt-18 bg-gray-900 justify-end lg:justify-between items-center">
-      <div className="flex flex-col sm:px-20 p-8 min-h-[43vh] lg:min-h-[90vh] justify-center text-slate-50 space-y-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 min-h-[90vh] pt-18 bg-gray-900 justify-end lg:justify-between items-center">
+      <div className="flex flex-col md:px-20 p-8 min-h-[43vh] lg:min-h-[90vh] justify-center text-slate-50 space-y-8">
         <Button
           variant="outline"
           onClick={() => router.push("/")}

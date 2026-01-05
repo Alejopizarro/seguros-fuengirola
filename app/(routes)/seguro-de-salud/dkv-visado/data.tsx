@@ -205,7 +205,7 @@ export const faqs = [
     question:
       "¿Dónde puedo contratar el seguro médico para extranjeros en Fuengirola?",
     answer:
-      "Puedes contratar tu seguro médico para extranjeros en nuestra oficina de agentes exclusivos DKV en Fuengirola, ubicada en Av. Condes de San Isidro, Nº 80, 29640 Fuengirola (Málaga). También atendemos por teléfono al 951 68 13 83 o 633 10 60 25. Asesoramos a extranjeros de toda la Costa del Sol y Málaga.",
+      "Puedes contratar tu seguro médico para extranjeros en nuestra oficina de agentes exclusivos DKV en Fuengirola, ubicada en Av. Condes de San Isidro, n.º 80, 29640 Fuengirola (Málaga). También atendemos por teléfono al 951 68 13 83 o 633 10 60 25. Asesoramos a extranjeros de toda la Costa del Sol y Málaga.",
   },
 ];
 
