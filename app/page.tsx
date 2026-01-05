@@ -1,12 +1,12 @@
 import Dental from "@/components/dental";
 import Differential from "@/components/differential";
 import Empresas from "@/components/empresas";
+import ExtranjeriaBanner from "@/components/extranjeria-banner";
 import Faqs from "@/components/faqs";
 import Hero from "@/components/hero-section";
 import Particulares from "@/components/particulares";
 import Services from "@/components/services";
 import StatsDisplay from "@/components/stats-display";
-import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   return (
@@ -17,11 +17,9 @@ export default function Home() {
         <Services />
         <Particulares />
         <Differential />
-        <div className="px-8 sm:px-20">
-          <Separator />
-        </div>
-        <Empresas />
         <Dental />
+        <Empresas />
+        <ExtranjeriaBanner className="max-w-7xl py-4 px-4 lg:py-8 mx-auto" />
         <Faqs />
       </div>
     </div>

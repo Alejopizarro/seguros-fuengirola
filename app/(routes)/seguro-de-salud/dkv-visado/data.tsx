@@ -19,7 +19,7 @@ export const features = [
   {
     title: "Sin copagos ni carencias",
     description:
-      "Utiliza tu seguro desde el primer día. Sin copagos, sin períodos de espera para la mayoría de servicios. Cobertura completa inmediata.",
+      "Utiliza tu seguro desde el primer día. Sin copagos, sin carencias (excepto parto 8 meses). Cobertura completa inmediata.",
     emoji: <Shield size={32} />,
   },
   {
@@ -43,7 +43,7 @@ export const features = [
   {
     title: "Asistencia internacional",
     description:
-      "Cobertura en viajes de hasta 180 días fuera de España con hasta 20.000€ en gastos médicos de urgencia. Uno de los límites más altos del mercado.",
+      "Cobertura en viajes de hasta 180 días fuera de España con hasta 30.000€ en gastos médicos de urgencia. Uno de los límites más altos del mercado.",
     emoji: <Plane size={32} />,
   },
   {
@@ -65,66 +65,16 @@ export const products = [
     title: "DKV Integral Élite",
     subtitle: "Sin copagos",
     description:
-      "El seguro médico para extranjeros más completo. Sin copagos en ningún servicio. Cobertura total desde el primer día. Ideal para familias y quienes buscan la máxima tranquilidad.",
+      "El único seguro médico válido para extranjería. Sin copagos en ningún servicio. Cobertura total sin carencias (excepto parto 8 meses). Ideal para solicitar tu visado o permiso de residencia en España.",
     copago: "Sin copagos",
     price: "Consultar",
     popular: true,
     features: [
       "Sin copagos en consultas ni pruebas",
+      "Sin carencias (excepto parto)",
       "Hospitalización sin límites",
       "Seguro dental incluido",
-      "Asistencia internacional 20.000€",
-      "Videoconsultas ilimitadas",
-      "Válido para visado y residencia",
-    ],
-  },
-  {
-    title: "DKV Integral Classic",
-    subtitle: "Copago reducido",
-    description:
-      "Seguro médico completo para extranjeros con copagos mínimos. Todas las coberturas esenciales para tu permiso de residencia a un precio más económico.",
-    copago: "Con copago",
-    price: "Consultar",
-    popular: false,
-    features: [
-      "Copagos reducidos",
-      "Hospitalización sin límites",
-      "Seguro dental incluido",
-      "Asistencia internacional 20.000€",
-      "Videoconsultas ilimitadas",
-      "Válido para visado y residencia",
-    ],
-  },
-  {
-    title: "DKV Integral Plus",
-    subtitle: "Equilibrio calidad-precio",
-    description:
-      "La opción intermedia perfecta. Combina coberturas completas con copagos moderados. Excelente relación calidad-precio para tu seguro de extranjería.",
-    copago: "Copago moderado",
-    price: "Consultar",
-    popular: false,
-    features: [
-      "Copagos moderados",
-      "Hospitalización sin límites",
-      "Seguro dental incluido",
-      "Asistencia internacional 20.000€",
-      "Videoconsultas ilimitadas",
-      "Válido para visado y residencia",
-    ],
-  },
-  {
-    title: "DKV Integral Complet",
-    subtitle: "Opción económica",
-    description:
-      "Seguro médico para extranjeros que cumple todos los requisitos de extranjería al mejor precio. Coberturas completas con copagos.",
-    copago: "Con copago",
-    price: "Consultar",
-    popular: false,
-    features: [
-      "Precio más económico",
-      "Hospitalización sin límites",
-      "Seguro dental incluido",
-      "Asistencia internacional 20.000€",
+      "Asistencia internacional 30.000€",
       "Videoconsultas ilimitadas",
       "Válido para visado y residencia",
     ],
@@ -180,19 +130,9 @@ export const coberturas = [
 
 export const carencias = [
   {
-    servicio: "Consultas, urgencias y pruebas básicas",
+    servicio: "Todos los servicios",
     tiempo: "Sin carencia",
     descripcion: "Disponible desde el primer día",
-  },
-  {
-    servicio: "Hospitalización, TAC y RMN",
-    tiempo: "6 meses",
-    descripcion: "Excepto urgencia vital",
-  },
-  {
-    servicio: "Psicoterapia",
-    tiempo: "6 meses",
-    descripcion: "Excepto urgencia vital",
   },
   {
     servicio: "Parto",
@@ -217,18 +157,18 @@ export const faqs = [
   {
     question: "¿Cuánto cuesta el seguro médico para extranjeros en España?",
     answer:
-      "El precio del seguro médico para extranjeros DKV Integral varía según la edad, la zona geográfica y la modalidad elegida (Élite, Classic, Plus o Complet). Te ofrecemos presupuesto personalizado sin compromiso. El pago es anual y puedes pagar con tarjeta aunque no tengas cuenta bancaria en España.",
+      "El precio del seguro médico para extranjeros DKV Integral Élite varía según la edad y la zona geográfica. Te ofrecemos presupuesto personalizado sin compromiso. El pago es anual y puedes pagar con tarjeta aunque no tengas cuenta bancaria en España.",
   },
   {
     question:
       "¿Qué coberturas incluye el seguro DKV Integral para extranjeros?",
     answer:
-      "DKV Integral incluye cobertura completa: asistencia primaria, todas las especialidades médicas, hospitalización y cirugía sin límites, urgencias 24h, pruebas diagnósticas (radiografías, TAC, resonancias), seguro dental incluido, asistencia internacional hasta 20.000€ y servicios de salud digital con videoconsultas.",
+      "DKV Integral incluye cobertura completa: asistencia primaria, todas las especialidades médicas, hospitalización y cirugía sin límites, urgencias 24h, pruebas diagnósticas (radiografías, TAC, resonancias), seguro dental incluido, asistencia internacional hasta 30.000€ y servicios de salud digital con videoconsultas.",
   },
   {
     question: "¿El seguro médico tiene carencias?",
     answer:
-      "La mayoría de servicios están disponibles desde el primer día sin carencias. Solo hay carencia de 6 meses para hospitalización programada, TAC, RMN y psicoterapia, y 8 meses para parto. En caso de urgencia vital, no se aplica ninguna carencia. Es uno de los seguros con menos carencias del mercado.",
+      "Todos los servicios están disponibles desde el primer día sin carencias, excepto el parto que tiene una carencia de 8 meses. En caso de urgencia vital, no se aplica ninguna carencia. Es uno de los seguros con menos carencias del mercado.",
   },
   {
     question: "¿Puedo elegir cualquier médico o hospital?",
@@ -243,7 +183,7 @@ export const faqs = [
   {
     question: "¿Qué pasa si viajo fuera de España?",
     answer:
-      "DKV Integral incluye asistencia sanitaria internacional en viajes de hasta 180 días fuera de España, con una cobertura de hasta 20.000€ en gastos médicos, quirúrgicos, farmacéuticos, hospitalización y repatriación. Es uno de los límites más altos del mercado.",
+      "DKV Integral incluye asistencia sanitaria internacional en viajes de hasta 180 días fuera de España, con una cobertura de hasta 30.000€ en gastos médicos, quirúrgicos, farmacéuticos, hospitalización y repatriación. Es uno de los límites más altos del mercado.",
   },
   {
     question:

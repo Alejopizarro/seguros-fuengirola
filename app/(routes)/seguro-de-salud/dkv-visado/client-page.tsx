@@ -45,7 +45,7 @@ export default function ClientPage() {
       {/* HERO - H1 único y optimizado para SEO */}
       <Hero
         title="Seguro Médico para Extranjeros en España"
-        description="El seguro de salud DKV Integral válido para solicitar tu visado, NIE o permiso de residencia en España. Sin copagos, sin carencias en la mayoría de servicios."
+        description="El seguro de salud DKV Integral Élite válido para solicitar tu visado, NIE o permiso de residencia en España. Sin copagos, sin carencias (excepto parto 8 meses)."
         description2="Contratación disponible hasta 3 meses antes de la fecha de efecto. Pago anual con tarjeta aunque no tengas cuenta bancaria en España. Más de 51.000 médicos y 1.000 centros sanitarios."
         imageSrc="/extranjeros.webp"
         imageAlt="Seguro médico para extranjeros en España - DKV Integral - Válido para visado y permiso de residencia"
@@ -98,51 +98,44 @@ export default function ClientPage() {
             id="planes-heading"
             className="text-3xl font-bold text-center text-gray-800 mb-4"
           >
-            Planes de seguro médico para extranjeros - DKV Integral
+            Plan de seguro médico para extranjeros - DKV Integral Élite
           </h2>
           <p className="text-center text-gray-600 mb-8 max-w-3xl mx-auto">
-            Elige la modalidad que mejor se adapte a tus necesidades. Todos los
-            planes son válidos para solicitar el visado y permiso de residencia
-            en España
+            El único plan válido para extranjería. Sin copagos y sin carencias
+            (excepto parto 8 meses), ideal para solicitar el visado y permiso de
+            residencia en España.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {products.map((product, index) => (
-              <div
-                key={index}
-                className={`bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow relative ${
-                  product.popular ? "ring-2 ring-emerald-500" : ""
-                }`}
-              >
-                {product.popular && (
-                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-emerald-500 text-white text-xs px-3 py-1 rounded-full">
-                    Más popular
-                  </span>
-                )}
-                <h3 className="font-bold text-xl text-gray-800 mb-1">
-                  {product.title}
-                </h3>
-                <p className="text-emerald-600 font-medium text-sm mb-3">
-                  {product.subtitle}
-                </p>
-                <p className="text-gray-600 text-sm mb-4">
-                  {product.description}
-                </p>
-                <ul className="space-y-2 mb-4">
-                  {product.features.map((feature, idx) => (
-                    <li
-                      key={idx}
-                      className="flex items-start gap-2 text-sm text-gray-600"
-                    >
-                      <CheckCircle className="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0" />
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <p className="text-center text-2xl font-bold text-emerald-600">
-                  {product.price}
-                </p>
-              </div>
-            ))}
+          <div className="flex justify-center">
+            <div className="w-full max-w-md">
+              {products.map((product, index) => (
+                <div
+                  key={index}
+                  className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border-2 border-emerald-500"
+                >
+                  <h3 className="font-bold text-2xl text-gray-800 mb-2">
+                    {product.title}
+                  </h3>
+                  <p className="text-emerald-600 font-medium text-lg mb-4">
+                    {product.subtitle}
+                  </p>
+                  <p className="text-gray-600 mb-6">{product.description}</p>
+                  <ul className="space-y-3 mb-6">
+                    {product.features.map((feature, idx) => (
+                      <li
+                        key={idx}
+                        className="flex items-start gap-2 text-gray-600"
+                      >
+                        <CheckCircle className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" />
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="text-center text-3xl font-bold text-emerald-600">
+                    {product.price}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
           <p className="text-center text-gray-500 text-sm mt-6">
             * El precio del seguro médico para extranjeros varía según edad y
@@ -196,8 +189,8 @@ export default function ClientPage() {
             Carencias del seguro médico para extranjeros
           </h2>
           <p className="text-center text-gray-600 mb-6">
-            La mayoría de servicios están disponibles desde el primer día. En
-            caso de urgencia vital, no se aplica ninguna carencia.
+            Todos los servicios están disponibles desde el primer día, excepto el
+            parto. En caso de urgencia vital, no se aplica ninguna carencia.
           </p>
           <div className="bg-white rounded-xl shadow-md overflow-hidden">
             <table className="w-full">
