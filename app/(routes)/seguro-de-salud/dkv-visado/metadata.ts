@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const extranjeriaMetadata: Metadata = {
-  title: "Seguro Médico para Extranjeros en España | DKV Visado y Residencia",
+  title: "Seguro Médico para Extranjeros en España | DKV Visado",
   description:
-    "✅ Seguro médico para extranjeros en España válido para visado y permiso de residencia. DKV Integral sin copagos, sin carencias. Contrátalo hasta 3 meses antes. Pago con tarjeta. Agentes DKV Fuengirola ☎ 951 68 13 83",
+    "✅ Seguro médico para extranjeros en España válido para visado y permiso de residencia. Seguro sin copagos y sin carencias. Agentes DKV Fuengirola ☎ 951 68 13 83",
   keywords: [
     // TIER 1 - Keywords principales (Volumen 500)
     "seguro medico para extranjeros en españa",
