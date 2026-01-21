@@ -12,7 +12,7 @@ export default function SchemaOrg() {
         url: "https://www.segurosfuengirola.com",
         logo: {
           "@type": "ImageObject",
-          url: "https://www.segurosfuengirola.com/logo.png",
+          url: "https://www.segurosfuengirola.com/logo-sf.webp",
           width: 250,
           height: 60,
         },

@@ -5,8 +5,16 @@ import Pricing from "../components/pricing";
 import Comparative from "../components/comparative";
 import Faqs from "../components/faqs";
 import LeadForm from "@/components/lead-form";
-import { comparatives, faqs, features, products, recomendations } from "./data";
+import {
+  comparatives,
+  faqs,
+  features,
+  products,
+  recomendations,
+  testimonials,
+} from "./data";
 import Recomendations from "../components/recomendations";
+import Testimonials from "../components/testimonials";
 import { useRef } from "react";
 import ScrollSection from "../components/scroll-section";
 
@@ -79,7 +87,22 @@ export default function ClientPage() {
           />
         </section>
 
-        {/* SECCIÓN 4: FAQ optimizado para SEO */}
+        {/* SECCIÓN 4: Testimonios y reseñas de clientes */}
+        <section
+          className="w-full flex justify-center"
+          aria-labelledby="testimonios-heading"
+        >
+          <h2 id="testimonios-heading" className="sr-only">
+            Opiniones y reseñas de clientes sobre el seguro dental DKV en
+            Fuengirola
+          </h2>
+          <Testimonials
+            testimonials={testimonials}
+            title="Opiniones de clientes del seguro dental DKV"
+          />
+        </section>
+
+        {/* SECCIÓN 5: FAQ optimizado para SEO */}
         <section
           ref={faqsRef}
           className="w-full max-w-4xl"
@@ -91,7 +114,7 @@ export default function ClientPage() {
           <Faqs faqs={faqs} />
         </section>
 
-        {/* CONTENIDO SEO ADICIONAL - Texto enriquecido para posicionamiento */}
+        {/* SECCIÓN 6: CONTENIDO SEO ADICIONAL - Texto enriquecido para posicionamiento */}
         <section
           className="w-full max-w-4xl"
           aria-labelledby="info-seo-heading"
@@ -133,7 +156,7 @@ export default function ClientPage() {
           </div>
         </section>
 
-        {/* SECCIÓN 5: Formulario de contacto */}
+        {/* SECCIÓN 7: Formulario de contacto */}
         <section ref={contactRef} aria-labelledby="contacto-heading">
           <h2 id="contacto-heading" className="sr-only">
             Solicita presupuesto del seguro dental DKV en Fuengirola
@@ -141,7 +164,7 @@ export default function ClientPage() {
           <LeadForm />
         </section>
 
-        {/* SECCIÓN 6: Otros seguros */}
+        {/* SECCIÓN 8: Otros seguros */}
         <section ref={otrosRef} aria-labelledby="otros-heading">
           <h2 id="otros-heading" className="sr-only">
             Otros seguros DKV disponibles en Fuengirola y Málaga

@@ -1,4 +1,55 @@
 import { Baby, BanknoteX, Handshake, Hospital } from "lucide-react";
+import { Testimonial } from "../components/testimonials";
+
+export const testimonials: Testimonial[] = [
+  {
+    author: "Elena Cobo",
+    rating: 5,
+    text: "Muy contenta por los servicios recibidos en esta oficina. Quiero destacar la excelente atención por parte de Federico, su eficiencia, claridad en la información y amabilidad. ¡Gracias!",
+    date: "Hace 7 meses",
+    isLocalGuide: false,
+    reviewCount: 6,
+  },
+  {
+    author: "Alan Gross",
+    rating: 5,
+    text: "Muy feliz de haber contratado a DKV para que manejen mis seguros. La atención al cliente es fantástica. 100% recomendable.",
+    date: "Hace 7 meses",
+    isLocalGuide: true,
+    reviewCount: 27,
+  },
+  {
+    author: "Diego Pancot",
+    rating: 5,
+    text: "Una gran atención del señor Federico tomando mucho tiempo para explicar cada consulta, todos los beneficios que brindan y enseñando todas las ventajas. Da gusto la atención servicio de esta oficina.",
+    date: "Hace 7 meses",
+    isLocalGuide: false,
+    reviewCount: 12,
+  },
+  {
+    author: "Rosa Molina",
+    rating: 5,
+    text: "Fabián ha estado asesorándome y apoyándome con todo desde hace 6 años siempre ha sido muy amable y está a disposición para atenderme rápidamente en cualquier consulta que tenga.",
+    date: "Hace un mes",
+    isLocalGuide: true,
+    reviewCount: 18,
+  },
+  {
+    author: "Daniel Gonzalez",
+    rating: 5,
+    text: "Fenomenal atención, siempre dispuestos a solucionar y dar respuestas a nuestras necesidades, rapidez, eficiencia, y sobretodo respeto. Una mención especial para Fabián quien siempre muestra una predisposición absoluta a colaborar y darnos un trato inmejorable. Súper recomendable!!",
+    date: "Hace 2 años",
+    isLocalGuide: true,
+    reviewCount: 314,
+  },
+  {
+    author: "Lucas Moreno",
+    rating: 5,
+    text: "La semana pasada me contacté con el señor Federico y me supo informar educada y pacientemente (cosa no muy común hoy en día en la atención al público) sobre ciertos puntos del contrato. ¡Gracias por la paciencia! Recomiendo!",
+    date: "Hace 1 semana",
+    isLocalGuide: false,
+  },
+];
 
 export const features = [
   {

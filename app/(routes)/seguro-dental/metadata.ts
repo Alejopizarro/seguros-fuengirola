@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const dentalMetadata: Metadata = {
-  title: "Seguro Dental DKV Dentisalud [Desde 7,90€/mes]",
+  title: "Seguro Dental DKV Málaga | Desde 7,90€ | 59 Tratamientos Gratis",
   description:
-    "✅ Seguro dental DKV Dentisalud desde 7,90€/mes. 59 tratamientos gratis, limpieza dental gratis, sin carencias. Agentes exclusivos DKV.",
+    "Seguro Dental DKV en Málaga desde 7,90€/mes. 59 tratamientos gratis, limpieza dental sin coste, niños menores de 14 años GRATIS. Sin carencias.",
   keywords: [
     // TIER 1 - Keywords principales (Volumen 1000)
     "seguro dental dkv",
@@ -74,9 +74,9 @@ export const dentalMetadata: Metadata = {
     url: "https://www.segurosfuengirola.es/seguro-dental",
     siteName: "Seguros Fuengirola - Agentes Exclusivos DKV",
     title:
-      "Seguro Dental DKV desde 7,90€ | 59 Tratamientos Gratis | Fuengirola",
+      "Seguro Dental DKV Fuengirola | Desde 7,90€ | 59 Tratamientos Gratis + Niños GRATIS",
     description:
-      "Seguro dental DKV Dentisalud con 59 tratamientos gratis. Limpieza dental gratis, sin carencias, niños menores de 14 años GRATIS. Precios desde 7,90€/mes. Agentes exclusivos DKV en Fuengirola y Málaga.",
+      "Seguro Dental DKV en Fuengirola desde 7,90€/mes. 59 tratamientos gratis, limpieza dental sin coste, niños menores de 14 años GRATIS. Sin carencias. Valoración 5 estrellas en Google. ¡Solicita presupuesto!",
     images: [
       {
         url: "https://www.segurosfuengirola.es/dental.webp",
@@ -88,9 +88,10 @@ export const dentalMetadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Seguro Dental DKV | Desde 7,90€ | Agentes DKV Fuengirola",
+    title:
+      "Seguro Dental DKV Fuengirola | Desde 7,90€ | 59 Tratamientos Gratis",
     description:
-      "59 tratamientos gratis, limpieza dental gratis, niños GRATIS. Sin carencias. DKV Dentisalud desde 7,90€/mes. Agentes exclusivos DKV.",
+      "Seguro Dental DKV desde 7,90€/mes. 59 tratamientos gratis, limpieza dental gratis, niños menores de 14 años GRATIS. Sin carencias. 5 estrellas en Google.",
     images: ["https://www.segurosfuengirola.es/dental.webp"],
     creator: "@segurosfuengirola",
   },

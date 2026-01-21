@@ -19,7 +19,7 @@ export default function SchemaOrg() {
         url: "https://www.segurosfuengirola.es",
         logo: {
           "@type": "ImageObject",
-          url: "https://www.segurosfuengirola.es/logo.png",
+          url: "https://www.segurosfuengirola.es/logo-sf.webp",
           width: 250,
           height: 60,
         },
@@ -342,7 +342,7 @@ export default function SchemaOrg() {
         "@type": "LocalBusiness",
         "@id": "https://www.segurosfuengirola.es/#localbusiness",
         name: "DKV Fuengirola - Seguros para Extranjeros",
-        image: "https://www.segurosfuengirola.es/logo.png",
+        image: "https://www.segurosfuengirola.es/logo-sf.webp",
         telephone: "+34951681383",
         email: "info@segurosfuengirola.es",
         address: {

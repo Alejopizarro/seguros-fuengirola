@@ -1,5 +1,5 @@
 import Script from "next/script";
-import { faqs } from "./data";
+import { faqs, testimonials } from "./data";
 
 export default function SchemaOrg() {
   const schemaData = {
@@ -18,7 +18,7 @@ export default function SchemaOrg() {
         url: "https://www.segurosfuengirola.es",
         logo: {
           "@type": "ImageObject",
-          url: "https://www.segurosfuengirola.es/logo.png",
+          url: "https://www.segurosfuengirola.es/logo-sf.webp",
           width: 250,
           height: 60,
         },
@@ -78,6 +78,26 @@ export default function SchemaOrg() {
             { "@type": "Service", name: "Seguro de Hogar DKV" },
           ],
         },
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "5.0",
+          reviewCount: testimonials.length.toString(),
+          bestRating: "5",
+          worstRating: "1",
+        },
+        review: testimonials.map((t) => ({
+          "@type": "Review",
+          reviewRating: {
+            "@type": "Rating",
+            ratingValue: t.rating.toString(),
+            bestRating: "5",
+          },
+          author: {
+            "@type": "Person",
+            name: t.author,
+          },
+          reviewBody: t.text,
+        })),
       },
 
       // 2. PRODUCTO PRINCIPAL - SEGURO DENTAL DKV
@@ -106,7 +126,7 @@ export default function SchemaOrg() {
           highPrice: "10.90",
           offerCount: "2",
           url: "https://www.segurosfuengirola.es/seguro-dental",
-          priceValidUntil: "2025-12-31",
+          priceValidUntil: "2026-12-31",
           seller: {
             "@id": "https://www.segurosfuengirola.es/#organization",
           },
@@ -153,22 +173,25 @@ export default function SchemaOrg() {
             value: "Toda España - Fuengirola, Málaga, Costa del Sol",
           },
         ],
-        review: {
+        review: testimonials.map((t) => ({
           "@type": "Review",
           reviewRating: {
             "@type": "Rating",
-            ratingValue: "4.8",
+            ratingValue: t.rating.toString(),
             bestRating: "5",
+            worstRating: "1",
           },
           author: {
-            "@type": "Organization",
-            name: "Seguros Fuengirola",
+            "@type": "Person",
+            name: t.author,
           },
-        },
+          reviewBody: t.text,
+          datePublished: t.date,
+        })),
         aggregateRating: {
           "@type": "AggregateRating",
-          ratingValue: "4.7",
-          reviewCount: "128",
+          ratingValue: "5.0",
+          reviewCount: testimonials.length.toString(),
           bestRating: "5",
           worstRating: "1",
         },
@@ -406,7 +429,7 @@ export default function SchemaOrg() {
         "@type": "LocalBusiness",
         "@id": "https://www.segurosfuengirola.es/#localbusiness",
         name: "DKV Fuengirola - Agentes Exclusivos",
-        image: "https://www.segurosfuengirola.es/logo.png",
+        image: "https://www.segurosfuengirola.es/logo-sf.webp",
         telephone: "+34951681383",
         email: "info@segurosfuengirola.es",
         address: {
@@ -432,6 +455,13 @@ export default function SchemaOrg() {
             closes: "20:00",
           },
         ],
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "5.0",
+          reviewCount: testimonials.length.toString(),
+          bestRating: "5",
+          worstRating: "1",
+        },
       },
     ],
   };

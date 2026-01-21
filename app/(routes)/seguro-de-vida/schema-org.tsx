@@ -17,7 +17,7 @@ export default function SchemaOrg() {
         url: "https://www.segurosfuengirola.com",
         logo: {
           "@type": "ImageObject",
-          url: "https://www.segurosfuengirola.com/logo.png",
+          url: "https://www.segurosfuengirola.com/logo-sf.webp",
           width: 250,
           height: 60,
         },
@@ -82,7 +82,7 @@ export default function SchemaOrg() {
         brand: {
           "@type": "Brand",
           name: "DKV Seguros",
-          logo: "https://www.dkvseguros.com/logo.png",
+          logo: "https://www.dkvseguros.com/logo-sf.webp",
         },
 
         manufacturer: {
