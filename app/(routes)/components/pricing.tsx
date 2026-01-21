@@ -23,7 +23,7 @@ const Pricing = (props: PricingProps) => {
   return (
     <div className="flex flex-col items-center">
       <h2 className="text-2xl lg:text-3xl mb-8 text-gray-800">
-        Seguros pensados para tí
+        Seguros pensados para ti
       </h2>
       <div className="flex flex-col sm:flex-row gap-8 w-full">
         {products.map((product, index) => (
@@ -41,9 +41,9 @@ const Pricing = (props: PricingProps) => {
               </div>
             )}
             <CardContent>
-              <h4 className="text-lg font-bold text-blue-500">
+              <p className="text-lg font-bold text-blue-500">
                 {product.title}
-              </h4>
+              </p>
               <div className="flex items-center mt-2 gap-x-4">
                 <p className="flex items-center gap-x-4 text-7xl lg:text-8xl font-medium mb-4 text-gray-800">
                   {product.price}

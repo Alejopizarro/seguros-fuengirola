@@ -26,7 +26,7 @@ const Features = (props: FeaturesProps) => {
           >
             {feature.emoji}
             <div className="flex flex-col gap-y-2">
-              <h4 className="text-lg font-medium">{feature.title}</h4>
+              <p className="text-lg font-medium">{feature.title}</p>
               <p className="text-sm font-light text-gray-500">
                 {feature.description}
               </p>

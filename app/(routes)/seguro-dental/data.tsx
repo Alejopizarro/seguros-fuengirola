@@ -37,7 +37,7 @@ export const testimonials: Testimonial[] = [
   {
     author: "Daniel Gonzalez",
     rating: 5,
-    text: "Fenomenal atención, siempre dispuestos a solucionar y dar respuestas a nuestras necesidades, rapidez, eficiencia, y sobretodo respeto. Una mención especial para Fabián quien siempre muestra una predisposición absoluta a colaborar y darnos un trato inmejorable. Súper recomendable!!",
+    text: "Fenomenal atención, siempre dispuestos a solucionar y dar respuestas a nuestras necesidades, rapidez, eficiencia, y sobre todo respeto. Una mención especial para Fabián quien siempre muestra una predisposición absoluta a colaborar y darnos un trato inmejorable. Súper recomendable!!",
     date: "Hace 2 años",
     isLocalGuide: true,
     reviewCount: 314,

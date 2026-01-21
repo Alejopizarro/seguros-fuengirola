@@ -29,7 +29,7 @@ const Comparative = (props: ComparativeProps) => {
             className="flex flex-col bg-white rounded-xl shadow-lg"
           >
             <div className="text-2xl font-semibold bg-blue-200/40 rounded-xl m-3 p-8">
-              <h4>{comparative.title}</h4>
+              <p>{comparative.title}</p>
             </div>
             <div className="space-y-4 px-6 pt-1 pb-4">
               <p>{comparative.description}</p>

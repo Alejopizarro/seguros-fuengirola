@@ -56,18 +56,18 @@ export default function ClientPage() {
 
       <div className="flex flex-col space-y-8 sm:space-y-16 items-center p-8 sm:py-16 sm:px-20 bg-gradient-to-br from-gray-50 to-gray-100">
         {/* SECCIÓN 1: Ventajas del seguro dental DKV */}
-        <section ref={ventajasRef} aria-labelledby="ventajas-heading">
-          <h2 id="ventajas-heading" className="sr-only">
-            Ventajas del seguro dental DKV Dentisalud
-          </h2>
+        <section
+          ref={ventajasRef}
+          aria-label="Ventajas del seguro dental DKV Dentisalud"
+        >
           <Features title="seguro dental DKV" features={features} />
         </section>
 
         {/* SECCIÓN 2: Precios del seguro dental DKV */}
-        <section ref={preciosRef} aria-labelledby="precios-heading">
-          <h2 id="precios-heading" className="sr-only">
-            Precios del seguro dental DKV - DKV Dentisalud Classic y Élite
-          </h2>
+        <section
+          ref={preciosRef}
+          aria-label="Precios del seguro dental DKV"
+        >
           <Pricing products={products} />
         </section>
 
@@ -75,11 +75,8 @@ export default function ClientPage() {
         <section
           ref={coberturasRef}
           className="w-full"
-          aria-labelledby="coberturas-heading"
+          aria-label="Coberturas y precios de tratamientos dentales DKV"
         >
-          <h2 id="coberturas-heading" className="sr-only">
-            Coberturas y precios de tratamientos dentales DKV
-          </h2>
           <Comparative
             title="Precios de tratamientos dentales con DKV"
             description="Compara el ahorro con el seguro dental DKV Dentisalud Élite frente al precio de mercado"
@@ -90,12 +87,8 @@ export default function ClientPage() {
         {/* SECCIÓN 4: Testimonios y reseñas de clientes */}
         <section
           className="w-full flex justify-center"
-          aria-labelledby="testimonios-heading"
+          aria-label="Opiniones de clientes del seguro dental DKV"
         >
-          <h2 id="testimonios-heading" className="sr-only">
-            Opiniones y reseñas de clientes sobre el seguro dental DKV en
-            Fuengirola
-          </h2>
           <Testimonials
             testimonials={testimonials}
             title="Opiniones de clientes del seguro dental DKV"
@@ -106,9 +99,9 @@ export default function ClientPage() {
         <section
           ref={faqsRef}
           className="w-full max-w-4xl"
-          aria-labelledby="faqs-heading"
+          aria-label="Preguntas frecuentes sobre el seguro dental DKV"
         >
-          <h2 id="faqs-heading" className="sr-only">
+          <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-6 text-center">
             Preguntas frecuentes sobre el seguro dental DKV
           </h2>
           <Faqs faqs={faqs} />
@@ -157,17 +150,17 @@ export default function ClientPage() {
         </section>
 
         {/* SECCIÓN 7: Formulario de contacto */}
-        <section ref={contactRef} aria-labelledby="contacto-heading">
-          <h2 id="contacto-heading" className="sr-only">
-            Solicita presupuesto del seguro dental DKV en Fuengirola
-          </h2>
+        <section
+          ref={contactRef}
+          aria-label="Solicita presupuesto del seguro dental DKV"
+        >
           <LeadForm />
         </section>
 
         {/* SECCIÓN 8: Otros seguros */}
-        <section ref={otrosRef} aria-labelledby="otros-heading">
-          <h2 id="otros-heading" className="sr-only">
-            Otros seguros DKV disponibles en Fuengirola y Málaga
+        <section ref={otrosRef} aria-label="Otros seguros DKV disponibles">
+          <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-6 text-center">
+            Otros seguros que te pueden interesar
           </h2>
           <Recomendations recomendations={recomendations} />
         </section>
