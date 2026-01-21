@@ -60,7 +60,7 @@ export const products = [
         included: true,
       },
       {
-        text: "Líneas médicas telefónicas - Un médico telefónico disponible las 24h (medicina general y pediatría)",
+        text: "Líneas médicas telefónicas - Un médico disponible las 24h (medicina general y pediatría)",
         included: true,
       },
     ],

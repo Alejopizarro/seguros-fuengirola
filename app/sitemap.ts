@@ -24,7 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: "https://www.seguros-fuengirola.com/seguro-dental",
       lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 0.8,
+      priority: 0.9,
     },
     {
       url: "https://www.seguros-fuengirola.com/seguro-de-decesos",

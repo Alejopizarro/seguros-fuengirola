@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const dentalMetadata: Metadata = {
   title: "Seguro Dental DKV Dentisalud [Desde 7,90€/mes]",
   description:
-    "✅ Seguro dental DKV Dentisalud desde 7,90€/mes. 59 tratamientos gratis, limpieza dental gratis, sin carencias. Niños menores de 14 años GRATIS. Agentes exclusivos DKV.",
+    "✅ Seguro dental DKV Dentisalud desde 7,90€/mes. 59 tratamientos gratis, limpieza dental gratis, sin carencias. Agentes exclusivos DKV.",
   keywords: [
     // TIER 1 - Keywords principales (Volumen 1000)
     "seguro dental dkv",

@@ -21,7 +21,7 @@ const Comparative = (props: ComparativeProps) => {
   const { title, comparatives } = props;
   return (
     <div className="flex flex-col items-center gap-y-8">
-      <h1 className="text-2xl lg:text-3xl text-center">{title}</h1>
+      <h2 className="text-2xl lg:text-3xl text-center">{title}</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         {comparatives.map((comparative, index) => (
           <div

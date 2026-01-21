@@ -12,7 +12,7 @@ export const particulares = [
     description:
       "El seguro médico para extranjeros en España válido para visado y permiso de residencia.",
     route: "/seguro-de-salud/dkv-visado",
-    imageSrc: "/extranjeria.webp",
+    imageSrc: "/extranjeros.webp",
     titleSeo:
       "Seguro médico para extranjeros en España - DKV Visado y Residencia",
   },
