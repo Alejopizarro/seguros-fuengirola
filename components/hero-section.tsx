@@ -1,9 +1,11 @@
+import Image from "next/image";
 import LeadForm from "./lead-form";
+import { Medal } from "lucide-react";
 
 const Hero = () => {
   return (
     <div className="relative flex flex-col lg:flex-row min-h-[90vh] pt-18 justify-end lg:justify-between items-center">
-      <div className="flex flex-col sm:px-20 px-8 py-4 lg:min-h-[90vh] 2xl:min-h-[70vh] 2xl:max-h-[80vh] justify-center z-10">
+      <div className="flex flex-col sm:px-20 px-4 py-4 lg:min-h-[90vh] 2xl:min-h-[70vh] 2xl:max-h-[80vh] justify-center z-10">
         <div className="flex flex-col-reverse">
           <div className="text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-8 tracking-tight leading-none">
             <h1>
@@ -14,9 +16,24 @@ const Hero = () => {
               <span> con DKV, compañía líder en el sector asegurador.</span>
             </h1>
           </div>
-          <h2 className="text-md xl:text-lg 2xl:text-xl font-semibold mb-4 text-gray-800">
+          {/* <h2 className="text-md xl:text-lg 2xl:text-xl font-semibold mb-4 text-gray-800">
             Seguros de Salud, Hogar, Vida y Más
-          </h2>
+          </h2> */}
+          <div className="flex items-center mb-2 -ml-1.5">
+            <Image
+              src="/logo-sf.webp"
+              alt="Seguros Fuengirola - Agentes Exclusivos DKV en Fuengirola y Málaga"
+              title="Seguros Fuengirola - Agentes DKV"
+              className="object-contain w-[75px] h-[75px] "
+              width={100}
+              height={100}
+              priority
+            />
+            <p className="text-2xl text-gray-800 flex items-center gap-2 font-semibold tracking-tight leading-none">
+              Agentes Exclusivos DKV{" "}
+              <Medal className="text-yellow-500" size={24} />
+            </p>
+          </div>
         </div>
         <p className="text-md xl:text-lg 2xl:text-xl text-gray-500 mb-8">
           Somos tu{" "}
@@ -27,7 +44,7 @@ const Hero = () => {
           seguro que más se adapte a ti, seas particular, profesional o empresa.
         </p>
       </div>
-      <div className="flex px-8 py-4 mb-8 sm:mb-0 items-center justify-center w-full lg:h-[90vh] overflow-hidden z-10">
+      <div className="flex px-4 py-4 pt-0 mb-8 sm:mb-0 items-center justify-center w-full lg:h-[90vh] overflow-hidden z-10">
         <LeadForm />
       </div>
       <div
