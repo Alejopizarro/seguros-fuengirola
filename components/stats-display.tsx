@@ -28,7 +28,7 @@ type StatsDisplayProps = {
 const useCountAnimation = (
   targetValue: number,
   duration: number,
-  isInView: boolean
+  isInView: boolean,
 ) => {
   const [count, setCount] = useState(0);
 
@@ -125,7 +125,7 @@ const StatItem = memo(
         </div>
       </div>
     );
-  }
+  },
 );
 
 // Asignar un displayName para ayudar con la depuración
@@ -152,7 +152,7 @@ export default function StatsDisplay({
       className={`flex flex-col items-center relative z-100 p-8 bg-gray-900 ${className}`}
       aria-labelledby="stats-heading"
     >
-      <div className="flex flex-col w-full items-center sm:flex-row sm:justify-around">
+      <div className="flex flex-col max-w-[1440px] mx-auto w-full items-center sm:flex-row sm:justify-around">
         {displayStats.map((stat, index) => (
           <StatItem
             key={`stat-${index}`}

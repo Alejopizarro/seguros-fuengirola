@@ -19,7 +19,7 @@ export default function Home() {
         <Differential />
         <Dental />
         <Empresas />
-        <ExtranjeriaBanner className="max-w-7xl py-4 px-4 lg:py-8 mx-auto" />
+        <ExtranjeriaBanner className="max-w-[1440px] py-4 px-4 sm:px-12 lg:py-8 mx-auto" />
         <Faqs />
       </div>
     </div>

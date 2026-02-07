@@ -7,7 +7,7 @@ import {
 
 const Faqs = () => {
   return (
-    <div className="p-8 sm:px-20 sm:py-18 flex flex-col items-center">
+    <div className="p-8 sm:px-12 max-w-[1440px] mx-auto sm:py-18 flex flex-col items-center">
       <h2 className="text-2xl font-semibold mb-4 text-gray-800">
         Preguntas Frecuentes
       </h2>

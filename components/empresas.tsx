@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 const Empresas = () => {
   const router = useRouter();
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 items-center p-8 gap-8 sm:px-20 sm:py-18">
+    <div className="grid grid-cols-1 lg:grid-cols-2 items-center p-8 gap-8 sm:px-12 max-w-[1440px] mx-auto sm:py-18">
       <Image
         src="/office.webp"
         width={500}
@@ -17,7 +17,7 @@ const Empresas = () => {
         className="hidden lg:flex w-full object-cover max-h-[90vh] rounded-lg shadow-lg"
       />
       <div className="flex flex-col">
-        <p className="text-2xl sm:text-3xl xl:text-4xl 2xl:text-5xl font-semibold mb-4 xl:mb-6 2xl:mb-8">
+        <p className="text-2xl sm:text-3xl xl:text-4xl font-semibold mb-4 xl:mb-6 2xl:mb-8">
           Seguros de Salud para Empresas
         </p>
         <p className="text-lg 2xl:text-xl text-gray-500 mb-4 xl:mb-6 2xl:mb-8">

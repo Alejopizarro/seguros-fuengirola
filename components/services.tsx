@@ -16,7 +16,7 @@ import { useRouter } from "next/navigation";
 const Services = () => {
   const router = useRouter();
   return (
-    <div className="p-8 sm:px-20 sm:py-18  flex flex-col items-center">
+    <div className="p-8 sm:px-12 sm:py-18 max-w-[1440px] mx-auto flex flex-col items-center">
       <p className="text-2xl lg:text-3xl 2xl:text-4xl text-center font-semibold mb-4 text-gray-800">
         Seguros pensados para tí
       </p>

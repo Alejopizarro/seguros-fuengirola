@@ -107,7 +107,7 @@ const Footer = () => {
       <div className="p-4 sm:px-24">
         <Separator />
         <span className="py-4 block text-sm text-slate-300 justify-start">
-          &copy; 2016 - 2025
+          &copy; 2016 - 2026
           <Link href="*"> Seguros Fuengirola</Link> Todos los derechos
           reservados.
         </span>

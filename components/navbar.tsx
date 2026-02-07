@@ -4,6 +4,7 @@ import ItemsMenuMobile from "./items-menu-mobile";
 import MenuList from "./menu-list";
 import { Button } from "./ui/button";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 const Navbar = () => {
   const router = useRouter();
@@ -14,7 +15,7 @@ const Navbar = () => {
           className="text-md font-extralight cursor-pointer"
           onClick={() => router.push("/")}
         >
-          {/* <Image
+          <Image
             src="/logo-sf.webp"
             alt="Seguros Fuengirola - Agentes Exclusivos DKV en Fuengirola y Málaga"
             title="Seguros Fuengirola - Agentes DKV"
@@ -23,8 +24,8 @@ const Navbar = () => {
             height={200}
             quality={90}
             priority
-          /> */}
-          <span className="font-semibold">Seguros</span> Fuengirola
+          />
+          {/* <span className="font-semibold">Seguros</span> Fuengirola */}
         </button>
       </div>
       <div className="hidden lg:flex">
