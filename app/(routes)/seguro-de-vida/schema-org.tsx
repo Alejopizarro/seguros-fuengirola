@@ -7,21 +7,21 @@ export default function SchemaOrg() {
     "@graph": [
       {
         "@type": "InsuranceAgency",
-        "@id": "https://www.segurosfuengirola.com/#organization",
+        "@id": "https://www.segurosfuengirola.es/#organization",
 
         // CRÍTICO: Nombre con DKV destacado
         name: "DKV Seguros Fuengirola - Agentes Oficiales",
         alternateName: "Agentes DKV Fuengirola",
         legalName: "Seguros Fuengirola - Distribuidor Autorizado DKV",
 
-        url: "https://www.segurosfuengirola.com",
+        url: "https://www.segurosfuengirola.es",
         logo: {
           "@type": "ImageObject",
-          url: "https://www.segurosfuengirola.com/logo-sf.webp",
+          url: "https://www.segurosfuengirola.es/logo-sf.webp",
           width: 250,
           height: 60,
         },
-        image: "https://www.segurosfuengirola.com/family.webp",
+        image: "https://www.segurosfuengirola.es/family.webp",
 
         // CRÍTICO: Description con "DKV Vida"
         description:
@@ -47,7 +47,7 @@ export default function SchemaOrg() {
         ],
         priceRange: "€€",
         telephone: "+34633106025",
-        email: "info@segurosfuengirola.com",
+        email: "info@segurosfuengirola.es",
 
         // NUEVO: Slogan con DKV Vida
         slogan: "Tu agencia oficial DKV Vida en Fuengirola",
@@ -69,7 +69,7 @@ export default function SchemaOrg() {
       },
       {
         "@type": "Product",
-        "@id": "https://www.segurosfuengirola.com/seguro-de-vida#product",
+        "@id": "https://www.segurosfuengirola.es/seguro-de-vida#product",
 
         // CRÍTICO: Nombre con "DKV Vida"
         name: "DKV Vida - Seguro de Vida",
@@ -94,7 +94,7 @@ export default function SchemaOrg() {
           "@type": "AggregateOffer",
           availability: "https://schema.org/InStock",
           priceCurrency: "EUR",
-          url: "https://www.segurosfuengirola.com/seguro-de-vida",
+          url: "https://www.segurosfuengirola.es/seguro-de-vida",
 
           // NUEVO: Seller con DKV
           seller: {
@@ -161,8 +161,8 @@ export default function SchemaOrg() {
       },
       {
         "@type": "WebPage",
-        "@id": "https://www.segurosfuengirola.com/seguro-de-vida#webpage",
-        url: "https://www.segurosfuengirola.com/seguro-de-vida",
+        "@id": "https://www.segurosfuengirola.es/seguro-de-vida#webpage",
+        url: "https://www.segurosfuengirola.es/seguro-de-vida",
 
         // CRÍTICO: Name con DKV Vida al principio
         name: "DKV Vida | Seguro de Vida DKV en Fuengirola y Málaga",
@@ -179,8 +179,8 @@ export default function SchemaOrg() {
 
         isPartOf: {
           "@type": "WebSite",
-          "@id": "https://www.segurosfuengirola.com/#website",
-          url: "https://www.segurosfuengirola.com",
+          "@id": "https://www.segurosfuengirola.es/#website",
+          url: "https://www.segurosfuengirola.es",
           name: "DKV Seguros Fuengirola",
         },
 
@@ -191,13 +191,13 @@ export default function SchemaOrg() {
               "@type": "ListItem",
               position: 1,
               name: "Inicio",
-              item: "https://www.segurosfuengirola.com",
+              item: "https://www.segurosfuengirola.es",
             },
             {
               "@type": "ListItem",
               position: 2,
               name: "DKV Vida",
-              item: "https://www.segurosfuengirola.com/seguro-de-vida",
+              item: "https://www.segurosfuengirola.es/seguro-de-vida",
             },
           ],
         },
@@ -216,7 +216,7 @@ export default function SchemaOrg() {
       },
       {
         "@type": "FAQPage",
-        "@id": "https://www.segurosfuengirola.com/seguro-de-vida#faq",
+        "@id": "https://www.segurosfuengirola.es/seguro-de-vida#faq",
         mainEntity: faqs.map((faq) => ({
           "@type": "Question",
           name: faq.question,
@@ -225,14 +225,14 @@ export default function SchemaOrg() {
       },
       {
         "@type": "Service",
-        "@id": "https://www.segurosfuengirola.com/seguro-de-vida#service",
+        "@id": "https://www.segurosfuengirola.es/seguro-de-vida#service",
 
         // CRÍTICO: serviceType con DKV Vida
         serviceType: "DKV Vida - Seguro de Vida",
         name: "DKV Vida",
 
         provider: {
-          "@id": "https://www.segurosfuengirola.com/#organization",
+          "@id": "https://www.segurosfuengirola.es/#organization",
         },
 
         // NUEVO: Brand del servicio
@@ -308,12 +308,12 @@ export default function SchemaOrg() {
       {
         "@type": "FinancialProduct",
         "@id":
-          "https://www.segurosfuengirola.com/seguro-de-vida#financial-product",
+          "https://www.segurosfuengirola.es/seguro-de-vida#financial-product",
         name: "DKV Vida - Seguro de Vida",
         description:
           "Protección económica familiar con DKV Vida, capital personalizado y servicios adicionales",
         provider: {
-          "@id": "https://www.segurosfuengirola.com/#organization",
+          "@id": "https://www.segurosfuengirola.es/#organization",
         },
         brand: {
           "@type": "Brand",
@@ -328,7 +328,7 @@ export default function SchemaOrg() {
       // NUEVO: Organization Schema específico para DKV
       {
         "@type": "Organization",
-        "@id": "https://www.segurosfuengirola.com/seguro-de-vida#dkv-partner",
+        "@id": "https://www.segurosfuengirola.es/seguro-de-vida#dkv-partner",
         name: "DKV Seguros Fuengirola",
         telephone: "+34633106025",
         parentOrganization: {
@@ -344,9 +344,9 @@ export default function SchemaOrg() {
       // NUEVO: LocalBusiness para SEO local
       {
         "@type": "LocalBusiness",
-        "@id": "https://www.segurosfuengirola.com/#localbusiness",
+        "@id": "https://www.segurosfuengirola.es/#localbusiness",
         name: "DKV Seguros Fuengirola - Agente Oficial DKV Vida",
-        image: "https://www.segurosfuengirola.com/family.webp",
+        image: "https://www.segurosfuengirola.es/family.webp",
         telephone: "+34633106025",
         address: {
           "@type": "PostalAddress",

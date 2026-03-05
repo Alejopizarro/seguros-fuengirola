@@ -298,11 +298,11 @@ export const recomendations = [
     route: "seguro-de-salud",
   },
   {
-    imageSrc: "/vida.webp",
-    title: "Seguro de hogar DKV",
+    imageSrc: "/deceso.webp",
+    title: "Seguro de decesos DKV",
     description:
-      "Los seguros de hogar más completos y económicos para proteger tu vivienda. Coberturas adaptadas a tus necesidades.",
-    route: "seguro-de-hogar",
+      "Protección de decesos DKV con repatriación incluida y servicio funerario completo. Niños gratis hasta 6 años.",
+    route: "seguro-de-decesos",
   },
   {
     imageSrc: "/family.webp",
@@ -310,5 +310,12 @@ export const recomendations = [
     description:
       "Los seguros de vida más completos para proteger a tu familia. Tranquilidad y seguridad económica para los tuyos.",
     route: "seguro-de-vida",
+  },
+  {
+    imageSrc: "/deceso.webp",
+    title: "Seguro de decesos DKV",
+    description:
+      "Seguro de decesos DKV con repatriación incluida, apoyo psicológico y servicio funerario completo desde 1,80 €/mes.",
+    route: "seguro-de-decesos",
   },
 ];

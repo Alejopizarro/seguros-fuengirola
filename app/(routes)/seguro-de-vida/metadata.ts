@@ -64,7 +64,7 @@ export const vidaMetadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_ES",
-    url: "https://www.segurosfuengirola.com/seguro-de-vida",
+    url: "https://www.segurosfuengirola.es/seguro-de-vida",
 
     // CRÍTICO: siteName con DKV
     siteName: "DKV Seguros Fuengirola",
@@ -100,9 +100,9 @@ export const vidaMetadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://www.segurosfuengirola.com/seguro-de-vida",
+    canonical: "https://www.segurosfuengirola.es/seguro-de-vida",
     languages: {
-      "es-ES": "https://www.segurosfuengirola.com/seguro-de-vida",
+      "es-ES": "https://www.segurosfuengirola.es/seguro-de-vida",
     },
   },
 
@@ -114,7 +114,7 @@ export const vidaMetadata: Metadata = {
 
   other: {
     "og:phone_number": "+34633106025",
-    "og:email": "info@segurosfuengirola.com",
+    "og:email": "info@segurosfuengirola.es",
     "og:locality": "Fuengirola",
     "og:region": "Málaga",
     "og:country-name": "España",

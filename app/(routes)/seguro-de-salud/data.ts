@@ -61,10 +61,10 @@ export const recomendations = [
     route: "seguro-de-vida",
   },
   {
-    imageSrc: "/vida.webp",
-    title: "Seguro de hogar",
+    imageSrc: "/deceso.webp",
+    title: "Seguro de decesos DKV",
     description:
-      "Los seguros de hogar más completos y económicos para proteger tu vivienda.",
-    route: "seguro-de-hogar",
+      "Seguro de decesos en Fuengirola con repatriación incluida y servicio funerario completo desde 1,80 €/mes.",
+    route: "seguro-de-decesos",
   },
 ];

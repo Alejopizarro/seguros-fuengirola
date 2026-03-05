@@ -230,10 +230,10 @@ export const recomendations = [
     route: "seguro-dental",
   },
   {
-    imageSrc: "/vida.webp",
-    title: "Seguro de hogar",
+    imageSrc: "/deceso.webp",
+    title: "Seguro de decesos DKV",
     description:
-      "Los seguros de hogar más completos y económicos para proteger tu vivienda.",
-    route: "seguro-de-hogar",
+      "Protección de decesos DKV con repatriación incluida y servicio funerario completo. Niños gratis hasta 6 años.",
+    route: "seguro-de-decesos",
   },
 ];

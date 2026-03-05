@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
 
 export const decesosMetadata: Metadata = {
-  // CRÍTICO: Title optimizado para "DKV decesos" (keyword principal en posición 43)
-  title: "DKV Decesos | Seguro de Decesos DKV en Fuengirola y Málaga",
+  title: "DKV Decesos Precios y Coberturas | Seguro de Decesos DKV Málaga",
 
-  // CRÍTICO: Description optimizada con las keywords que rankean
   description:
-    "Seguro de decesos DKV con repatriación incluida y servicio funerario completo. DKV Decesos desde 1,80€/mes. Niños gratis hasta 6 años. Agentes oficiales DKV en Fuengirola. Presupuesto sin compromiso.",
+    "Contrata el seguro de decesos DKV Proteccion Familiar con cobertura completa Málaga. Conoce todos los beneficios de DKV Decesos precios y coberturas.",
 
   keywords: [
     // ⭐ CRÍTICO: Keywords que YA están rankeando (prioridad máxima)
@@ -63,7 +61,7 @@ export const decesosMetadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_ES",
-    url: "https://www.segurosfuengirola.com/seguro-de-decesos",
+    url: "https://www.segurosfuengirola.es/seguro-de-decesos",
 
     // CRÍTICO: siteName con DKV
     siteName: "DKV Seguros Fuengirola",
@@ -99,9 +97,9 @@ export const decesosMetadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://www.segurosfuengirola.com/seguro-de-decesos",
+    canonical: "https://www.segurosfuengirola.es/seguro-de-decesos",
     languages: {
-      "es-ES": "https://www.segurosfuengirola.com/seguro-de-decesos",
+      "es-ES": "https://www.segurosfuengirola.es/seguro-de-decesos",
     },
   },
 
@@ -113,7 +111,7 @@ export const decesosMetadata: Metadata = {
 
   other: {
     "og:phone_number": "+34633106025",
-    "og:email": "info@segurosfuengirola.com",
+    "og:email": "info@segurosfuengirola.es",
     "og:locality": "Fuengirola",
     "og:region": "Málaga",
     "og:country-name": "España",

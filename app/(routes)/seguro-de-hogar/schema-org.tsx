@@ -7,16 +7,16 @@ export default function SchemaOrg() {
     "@graph": [
       {
         "@type": "InsuranceAgency",
-        "@id": "https://www.segurosfuengirola.com/#organization",
+        "@id": "https://www.segurosfuengirola.es/#organization",
         name: "Seguros Fuengirola",
-        url: "https://www.segurosfuengirola.com",
+        url: "https://www.segurosfuengirola.es",
         logo: {
           "@type": "ImageObject",
-          url: "https://www.segurosfuengirola.com/logo-sf.webp",
+          url: "https://www.segurosfuengirola.es/logo-sf.webp",
           width: 250,
           height: 60,
         },
-        image: "https://www.segurosfuengirola.com/vida.webp",
+        image: "https://www.segurosfuengirola.es/vida.webp",
         description:
           "Agencia de seguros especializada en seguros de hogar, protección de viviendas y servicios de asistencia 24h en Fuengirola y Málaga",
         address: {
@@ -37,11 +37,11 @@ export default function SchemaOrg() {
         ],
         priceRange: "€€",
         telephone: "+34633106025",
-        email: "info@segurosfuengirola.com",
+        email: "info@segurosfuengirola.es",
       },
       {
         "@type": "Product",
-        "@id": "https://www.segurosfuengirola.com/seguro-de-hogar#product",
+        "@id": "https://www.segurosfuengirola.es/seguro-de-hogar#product",
         name: "Seguro de Hogar DKV",
         description:
           "Seguro de hogar completo con cobertura de incendio, robo, daños por agua, responsabilidad civil, asistencia 24h, servicio manitas y reparación de electrodomésticos incluidos.",
@@ -53,7 +53,7 @@ export default function SchemaOrg() {
           lowPrice: "10.70",
           highPrice: "15.70",
           offerCount: "3",
-          url: "https://www.segurosfuengirola.com/seguro-de-hogar",
+          url: "https://www.segurosfuengirola.es/seguro-de-hogar",
         },
         category: "Seguro de Hogar",
         audience: {
@@ -85,16 +85,16 @@ export default function SchemaOrg() {
       },
       {
         "@type": "WebPage",
-        "@id": "https://www.segurosfuengirola.com/seguro-de-hogar#webpage",
-        url: "https://www.segurosfuengirola.com/seguro-de-hogar",
+        "@id": "https://www.segurosfuengirola.es/seguro-de-hogar#webpage",
+        url: "https://www.segurosfuengirola.es/seguro-de-hogar",
         name: "Seguro de Hogar | Protege tu Vivienda en Fuengirola y Málaga",
         description:
           "Seguro de hogar con cobertura completa, asistencia 24h, servicio manitas y reparación de electrodomésticos gratis. Desde 10,70€/mes.",
         inLanguage: "es-ES",
         isPartOf: {
           "@type": "WebSite",
-          "@id": "https://www.segurosfuengirola.com/#website",
-          url: "https://www.segurosfuengirola.com",
+          "@id": "https://www.segurosfuengirola.es/#website",
+          url: "https://www.segurosfuengirola.es",
           name: "Seguros Fuengirola",
         },
         breadcrumb: {
@@ -104,20 +104,20 @@ export default function SchemaOrg() {
               "@type": "ListItem",
               position: 1,
               name: "Inicio",
-              item: "https://www.segurosfuengirola.com",
+              item: "https://www.segurosfuengirola.es",
             },
             {
               "@type": "ListItem",
               position: 2,
               name: "Seguro de Hogar",
-              item: "https://www.segurosfuengirola.com/seguro-de-hogar",
+              item: "https://www.segurosfuengirola.es/seguro-de-hogar",
             },
           ],
         },
       },
       {
         "@type": "FAQPage",
-        "@id": "https://www.segurosfuengirola.com/seguro-de-hogar#faq",
+        "@id": "https://www.segurosfuengirola.es/seguro-de-hogar#faq",
         mainEntity: faqs.map((faq) => ({
           "@type": "Question",
           name: faq.question,
@@ -126,10 +126,10 @@ export default function SchemaOrg() {
       },
       {
         "@type": "Service",
-        "@id": "https://www.segurosfuengirola.com/seguro-de-hogar#service",
+        "@id": "https://www.segurosfuengirola.es/seguro-de-hogar#service",
         serviceType: "Seguro de Hogar",
         provider: {
-          "@id": "https://www.segurosfuengirola.com/#organization",
+          "@id": "https://www.segurosfuengirola.es/#organization",
         },
         areaServed: {
           "@type": "GeoCircle",
@@ -197,7 +197,7 @@ export default function SchemaOrg() {
       },
       {
         "@type": "ItemList",
-        "@id": "https://www.segurosfuengirola.com/seguro-de-hogar#pricing",
+        "@id": "https://www.segurosfuengirola.es/seguro-de-hogar#pricing",
         name: "Planes de Seguro de Hogar",
         itemListElement: [
           {

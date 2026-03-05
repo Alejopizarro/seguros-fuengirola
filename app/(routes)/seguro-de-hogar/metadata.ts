@@ -50,7 +50,7 @@ export const hogarMetadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_ES",
-    url: "https://www.segurosfuengirola.com/seguro-de-hogar",
+    url: "https://www.segurosfuengirola.es/seguro-de-hogar",
     siteName: "Seguros Fuengirola",
     title: "Seguro de Hogar | Protección Completa para tu Vivienda",
     description:
@@ -73,9 +73,9 @@ export const hogarMetadata: Metadata = {
     creator: "@segurosfuengirola",
   },
   alternates: {
-    canonical: "https://www.segurosfuengirola.com/seguro-de-hogar",
+    canonical: "https://www.segurosfuengirola.es/seguro-de-hogar",
     languages: {
-      "es-ES": "https://www.segurosfuengirola.com/seguro-de-hogar",
+      "es-ES": "https://www.segurosfuengirola.es/seguro-de-hogar",
     },
   },
   category: "Seguros",
@@ -86,7 +86,7 @@ export const hogarMetadata: Metadata = {
   },
   other: {
     "og:phone_number": "+34633106025",
-    "og:email": "info@segurosfuengirola.com",
+    "og:email": "info@segurosfuengirola.es",
     "og:locality": "Fuengirola",
     "og:region": "Málaga",
     "og:country-name": "España",

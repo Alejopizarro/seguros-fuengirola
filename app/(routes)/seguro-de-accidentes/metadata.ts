@@ -41,7 +41,7 @@ export const accidentesMetadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_ES",
-    url: "https://www.segurosfuengirola.com/seguro-de-accidentes",
+    url: "https://www.segurosfuengirola.es/seguro-de-accidentes",
     siteName: "Seguros Fuengirola",
     title: "Seguro de Accidentes | Protección Total 24 Horas",
     description:
@@ -64,9 +64,9 @@ export const accidentesMetadata: Metadata = {
     creator: "@segurosfuengirola",
   },
   alternates: {
-    canonical: "https://www.segurosfuengirola.com/seguro-de-accidentes",
+    canonical: "https://www.segurosfuengirola.es/seguro-de-accidentes",
     languages: {
-      "es-ES": "https://www.segurosfuengirola.com/seguro-de-accidentes",
+      "es-ES": "https://www.segurosfuengirola.es/seguro-de-accidentes",
     },
   },
   category: "Seguros",
@@ -77,7 +77,7 @@ export const accidentesMetadata: Metadata = {
   },
   other: {
     "og:phone_number": "+34633106025",
-    "og:email": "info@segurosfuengirola.com",
+    "og:email": "info@segurosfuengirola.es",
     "og:locality": "Fuengirola",
     "og:region": "Málaga",
     "og:country-name": "España",

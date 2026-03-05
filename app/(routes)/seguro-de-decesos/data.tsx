@@ -166,14 +166,25 @@ export const products = [
 
 export const faqs = [
   {
-    question: "¿Qué es un seguro de decesos DKV?",
+    question: "¿Cuánto cuesta el seguro de decesos DKV?",
     answer:
-      "El seguro de decesos DKV garantiza la prestación del servicio funerario al ocurrir el fallecimiento de la persona asegurada, así como la gestión de todos los trámites necesarios ante una defunción: administrativos y legales, traslados a cualquier parte del territorio nacional y repatriaciones internacionales. Además, el seguro de decesos incluye una amplia gama de garantías asistenciales y coberturas complementarias que completan el sentido asistencial y familiar del mismo.",
+      "El precio del seguro de decesos DKV varía según la edad del asegurado y el plan elegido. DKV Protección Familiar parte desde 1,80 €/mes, DKV Buen Legado desde 2,00 €/mes y DKV Protección Familiar con Serviplus desde 2,25 €/mes. Los niños están incluidos gratis hasta los 6 años. Contacta con nuestros agentes en Fuengirola al 633 10 60 25 para obtener un presupuesto personalizado sin compromiso.",
   },
   {
     question: "¿Qué cubre el seguro de decesos DKV?",
     answer:
-      "El seguro de decesos es un seguro de prestación de servicios, es decir, lo que cubre principalmente es la organización, gestión y ejecución del servicio funerario al ocurrir el fallecimiento de cualquier persona asegurada, así como el coste de dicha prestación.",
+      "El seguro de decesos DKV cubre el traslado nacional e internacional del féretro, la repatriación al país de origen sin coste adicional, la organización completa del servicio funerario, las gestiones administrativas y legales, el apoyo psicológico para familiares durante el duelo, testamento online gratuito, asesoramiento jurídico telefónico, borrado de huella digital y asistencia médica mundial de hasta 18.000 € en viajes de urgencia.",
+  },
+  {
+    question:
+      "¿Qué diferencia hay entre DKV Protección Familiar y el seguro de decesos estándar?",
+    answer:
+      "DKV Protección Familiar es el plan más completo del seguro de decesos DKV. Mientras que un seguro de decesos estándar cubre únicamente el servicio funerario básico y el traslado nacional, DKV Protección Familiar incluye además repatriación internacional, apoyo psicológico extendido, testamento online, asistencia médica mundial hasta 18.000 €, borrado de huella digital y la posibilidad de añadir coberturas opcionales como Serviplus (tratamientos dentales, chat médico 24h y consultas con especialistas a precios reducidos).",
+  },
+  {
+    question: "¿Qué es un seguro de decesos DKV?",
+    answer:
+      "El seguro de decesos DKV garantiza la prestación del servicio funerario al ocurrir el fallecimiento de la persona asegurada, así como la gestión de todos los trámites necesarios ante una defunción: administrativos y legales, traslados a cualquier parte del territorio nacional y repatriaciones internacionales. Además, el seguro de decesos incluye una amplia gama de garantías asistenciales y coberturas complementarias que completan el sentido asistencial y familiar del mismo.",
   },
   {
     question: "¿Cómo comunicar un fallecimiento de un asegurado DKV?",

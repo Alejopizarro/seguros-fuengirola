@@ -7,21 +7,21 @@ export default function SchemaOrg() {
     "@graph": [
       {
         "@type": "InsuranceAgency",
-        "@id": "https://www.segurosfuengirola.com/#organization",
+        "@id": "https://www.segurosfuengirola.es/#organization",
 
         // CRÍTICO: Nombre con DKV destacado
         name: "DKV Seguros Fuengirola - Agentes Oficiales",
         alternateName: "Agentes DKV Fuengirola",
         legalName: "Seguros Fuengirola - Distribuidor Autorizado DKV",
 
-        url: "https://www.segurosfuengirola.com",
+        url: "https://www.segurosfuengirola.es",
         logo: {
           "@type": "ImageObject",
-          url: "https://www.segurosfuengirola.com/logo-sf.webp",
+          url: "https://www.segurosfuengirola.es/logo-sf.webp",
           width: 250,
           height: 60,
         },
-        image: "https://www.segurosfuengirola.com/deceso.webp",
+        image: "https://www.segurosfuengirola.es/deceso.webp",
 
         // CRÍTICO: Description con "DKV Decesos"
         description:
@@ -47,7 +47,7 @@ export default function SchemaOrg() {
         ],
         priceRange: "€€",
         telephone: "+34633106025",
-        email: "info@segurosfuengirola.com",
+        email: "info@segurosfuengirola.es",
 
         // NUEVO: Slogan con DKV
         slogan: "Tu agencia oficial DKV Decesos en Fuengirola",
@@ -57,10 +57,26 @@ export default function SchemaOrg() {
           "@type": "Brand",
           name: "DKV Seguros",
         },
+
+        hasOfferCatalog: {
+          "@type": "OfferCatalog",
+          name: "Seguros de Decesos DKV",
+          itemListElement: [
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Seguro de Decesos DKV",
+                description:
+                  "Seguro de decesos DKV con repatriación incluida, servicio funerario completo y apoyo psicológico en Fuengirola y Málaga.",
+              },
+            },
+          ],
+        },
       },
       {
         "@type": "Product",
-        "@id": "https://www.segurosfuengirola.com/seguro-de-decesos#product",
+        "@id": "https://www.segurosfuengirola.es/seguro-de-decesos#product",
 
         // CRÍTICO: Nombre con "DKV Decesos"
         name: "DKV Decesos - Seguro de Decesos",
@@ -88,7 +104,7 @@ export default function SchemaOrg() {
           lowPrice: "1.80",
           highPrice: "2.25",
           offerCount: "3",
-          url: "https://www.segurosfuengirola.com/seguro-de-decesos",
+          url: "https://www.segurosfuengirola.es/seguro-de-decesos",
 
           // NUEVO: Seller con DKV
           seller: {
@@ -144,8 +160,8 @@ export default function SchemaOrg() {
       },
       {
         "@type": "WebPage",
-        "@id": "https://www.segurosfuengirola.com/seguro-de-decesos#webpage",
-        url: "https://www.segurosfuengirola.com/seguro-de-decesos",
+        "@id": "https://www.segurosfuengirola.es/seguro-de-decesos#webpage",
+        url: "https://www.segurosfuengirola.es/seguro-de-decesos",
 
         // CRÍTICO: Name con DKV al principio
         name: "DKV Decesos | Seguro de Decesos con Repatriación en Fuengirola",
@@ -162,8 +178,8 @@ export default function SchemaOrg() {
 
         isPartOf: {
           "@type": "WebSite",
-          "@id": "https://www.segurosfuengirola.com/#website",
-          url: "https://www.segurosfuengirola.com",
+          "@id": "https://www.segurosfuengirola.es/#website",
+          url: "https://www.segurosfuengirola.es",
           name: "DKV Seguros Fuengirola",
         },
 
@@ -174,13 +190,13 @@ export default function SchemaOrg() {
               "@type": "ListItem",
               position: 1,
               name: "Inicio",
-              item: "https://www.segurosfuengirola.com",
+              item: "https://www.segurosfuengirola.es",
             },
             {
               "@type": "ListItem",
               position: 2,
               name: "DKV Decesos",
-              item: "https://www.segurosfuengirola.com/seguro-de-decesos",
+              item: "https://www.segurosfuengirola.es/seguro-de-decesos",
             },
           ],
         },
@@ -203,7 +219,7 @@ export default function SchemaOrg() {
       },
       {
         "@type": "FAQPage",
-        "@id": "https://www.segurosfuengirola.com/seguro-de-decesos#faq",
+        "@id": "https://www.segurosfuengirola.es/seguro-de-decesos#faq",
         mainEntity: faqs.map((faq) => ({
           "@type": "Question",
           name: faq.question,
@@ -212,14 +228,14 @@ export default function SchemaOrg() {
       },
       {
         "@type": "Service",
-        "@id": "https://www.segurosfuengirola.com/seguro-de-decesos#service",
+        "@id": "https://www.segurosfuengirola.es/seguro-de-decesos#service",
 
         // CRÍTICO: serviceType con DKV
         serviceType: "DKV Decesos - Seguro de Decesos",
         name: "DKV Decesos",
 
         provider: {
-          "@id": "https://www.segurosfuengirola.com/#organization",
+          "@id": "https://www.segurosfuengirola.es/#organization",
         },
 
         // NUEVO: Brand del servicio
@@ -299,7 +315,7 @@ export default function SchemaOrg() {
       },
       {
         "@type": "ItemList",
-        "@id": "https://www.segurosfuengirola.com/seguro-de-decesos#pricing",
+        "@id": "https://www.segurosfuengirola.es/seguro-de-decesos#pricing",
         name: "Precios DKV Decesos",
         itemListElement: [
           {
@@ -341,8 +357,7 @@ export default function SchemaOrg() {
       // NUEVO: Organization Schema específico para DKV
       {
         "@type": "Organization",
-        "@id":
-          "https://www.segurosfuengirola.com/seguro-de-decesos#dkv-partner",
+        "@id": "https://www.segurosfuengirola.es/seguro-de-decesos#dkv-partner",
         name: "DKV Seguros Fuengirola",
         parentOrganization: {
           "@type": "Organization",
