@@ -19,14 +19,14 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical:
-      "https://seguros-fuengirola.es/blog/que-es-seguro-de-decesos-dkv-guia-completa-malaga",
+      "https://segurosfuengirola.es/blog/que-es-seguro-de-decesos-dkv-guia-completa-malaga",
   },
   openGraph: {
     title:
       "¿Qué es el seguro de decesos DKV y qué cubre? Guía completa para familias en Málaga",
     description:
       "Descubre qué cubre el seguro de decesos DKV, cuánto cuesta y por qué es la mejor opción para familias en Fuengirola y Málaga.",
-    url: "https://seguros-fuengirola.es/blog/que-es-seguro-de-decesos-dkv-guia-completa-malaga",
+    url: "https://segurosfuengirola.es/blog/que-es-seguro-de-decesos-dkv-guia-completa-malaga",
     siteName: "Seguros Fuengirola",
     locale: "es_ES",
     type: "article",
@@ -66,21 +66,21 @@ const articleSchema = {
   author: {
     "@type": "Organization",
     name: "Seguros Fuengirola",
-    url: "https://seguros-fuengirola.es",
+    url: "https://segurosfuengirola.es",
   },
   publisher: {
     "@type": "Organization",
     name: "Seguros Fuengirola",
-    url: "https://seguros-fuengirola.es",
+    url: "https://segurosfuengirola.es",
     logo: {
       "@type": "ImageObject",
-      url: "https://seguros-fuengirola.es/images/logo.png",
+      url: "https://segurosfuengirola.es/images/logo.png",
     },
   },
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id":
-      "https://seguros-fuengirola.es/blog/que-es-seguro-de-decesos-dkv-guia-completa-malaga",
+      "https://segurosfuengirola.es/blog/que-es-seguro-de-decesos-dkv-guia-completa-malaga",
   },
   keywords:
     "dkv decesos, seguro de decesos dkv, seguros de decesos malaga, dkv decesos precios",
@@ -147,19 +147,19 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Inicio",
-      item: "https://seguros-fuengirola.es",
+      item: "https://segurosfuengirola.es",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Blog",
-      item: "https://seguros-fuengirola.es/blog",
+      item: "https://segurosfuengirola.es/blog",
     },
     {
       "@type": "ListItem",
       position: 3,
       name: "¿Qué es el seguro de decesos DKV?",
-      item: "https://seguros-fuengirola.es/blog/que-es-seguro-de-decesos-dkv-guia-completa-malaga",
+      item: "https://segurosfuengirola.es/blog/que-es-seguro-de-decesos-dkv-guia-completa-malaga",
     },
   ],
 };

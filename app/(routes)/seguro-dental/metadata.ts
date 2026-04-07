@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const dentalMetadata: Metadata = {
-  title: "Seguro Dental DKV Málaga | Desde 7,90€ | Tratamientos Gratis",
+  title: "Seguro Dental DKV Málaga | Desde 7,90€ | DKV Dentisalud",
   description:
-    "Seguro Dental DKV en Málaga desde 7,90€/mes. 59 tratamientos gratis, limpieza dental sin coste, niños menores de 14 años GRATIS. Sin carencias.",
+    "Seguro Dental DKV en Málaga desde 7,90€/mes. 59 tratamientos gratis, limpieza dental sin coste. DKV Dentisalud sin carencias.",
   keywords: [
     // TIER 1 - Keywords principales (Volumen 1000)
     "seguro dental dkv",
-    "seguros dentales dkv",
+    "dkv dentisalud",
     "dkv seguro dental",
     "dkv seguros dentales",
     "dkv dentisalud",
