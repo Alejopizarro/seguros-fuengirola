@@ -3,7 +3,7 @@ import Differential from "@/components/differential";
 import Empresas from "@/components/empresas";
 import ExtranjeriaBanner from "@/components/extranjeria-banner";
 import Faqs from "@/components/faqs";
-import Hero from "@/components/hero-section";
+import HeroIi from "@/components/hero-ii";
 import Particulares from "@/components/particulares";
 import Services from "@/components/services";
 import StatsDisplay from "@/components/stats-display";
@@ -11,7 +11,7 @@ import StatsDisplay from "@/components/stats-display";
 export default function Home() {
   return (
     <div>
-      <Hero />
+      <HeroIi />
       <div className="bg-gradient-to-br from-gray-50 to-gray-100">
         <StatsDisplay />
         <Services />

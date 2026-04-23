@@ -36,7 +36,11 @@ const formSchema = z.object({
   }),
 });
 
-export function FormController() {
+interface FormControllerProps {
+  variant?: "default" | "banner";
+}
+
+export function FormController({ variant = "default" }: FormControllerProps) {
   const [isLoading, setIsLoading] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [error, setError] = useState(false);
@@ -80,6 +84,137 @@ export function FormController() {
       console.error(error.message);
     }
   };
+
+  if (variant === "banner") {
+    return (
+      <Form {...form}>
+        {!error && !isSuccess && (
+          <form onSubmit={form.handleSubmit(onSubmit)} className="w-full">
+            {/* Fila de inputs + botón */}
+            <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-end">
+              <FormField
+                control={form.control}
+                name="name"
+                render={({ field }) => (
+                  <FormItem className="flex-1 min-w-0">
+                    <FormLabel className="text-xs text-blue-200 font-medium">
+                      Nombre
+                    </FormLabel>
+                    <FormControl>
+                      <Input
+                        placeholder="Juan Pérez"
+                        className="bg-white/10 border-white/20 text-white placeholder:text-blue-300 focus:border-white h-10"
+                        {...field}
+                      />
+                    </FormControl>
+                    <FormMessage className="text-xs text-red-300" />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="email"
+                render={({ field }) => (
+                  <FormItem className="flex-1 min-w-0">
+                    <FormLabel className="text-xs text-blue-200 font-medium">
+                      Email
+                    </FormLabel>
+                    <FormControl>
+                      <Input
+                        placeholder="juan@gmail.com"
+                        className="bg-white/10 border-white/20 text-white placeholder:text-blue-300 focus:border-white h-10"
+                        {...field}
+                      />
+                    </FormControl>
+                    <FormMessage className="text-xs text-red-300" />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="phone"
+                render={({ field }) => (
+                  <FormItem className="flex-1 min-w-0">
+                    <FormLabel className="text-xs text-blue-200 font-medium">
+                      Teléfono
+                    </FormLabel>
+                    <FormControl>
+                      <Input
+                        placeholder="622 333 444"
+                        className="bg-white/10 border-white/20 text-white placeholder:text-blue-300 focus:border-white h-10"
+                        {...field}
+                      />
+                    </FormControl>
+                    <FormMessage className="text-xs text-red-300" />
+                  </FormItem>
+                )}
+              />
+              <Button
+                type="submit"
+                className="h-10 w-full sm:w-auto shrink-0 bg-white text-blue-900 font-semibold hover:bg-blue-50 sm:self-end mt-auto"
+              >
+                {isLoading ? (
+                  <span className="flex items-center gap-1.5">
+                    Enviando <LoaderCircle className="animate-spin w-4 h-4" />
+                  </span>
+                ) : (
+                  <span className="flex items-center gap-1.5">
+                    Solicitar info <MoveRight className="w-4 h-4" />
+                  </span>
+                )}
+              </Button>
+            </div>
+
+            {/* Checkbox privacidad */}
+            <FormField
+              control={form.control}
+              name="optim"
+              render={({ field }) => (
+                <FormItem className="flex items-center gap-2 mt-3">
+                  <FormControl>
+                    <Checkbox
+                      checked={field.value}
+                      onCheckedChange={field.onChange}
+                      className="border-white/40 data-[state=checked]:bg-white data-[state=checked]:text-blue-900"
+                    />
+                  </FormControl>
+                  <FormLabel className="text-xs font-light text-blue-200 leading-tight cursor-pointer">
+                    He leído y acepto la{" "}
+                    <Link
+                      href="/quienes-somos/politica-de-privacidad"
+                      className="underline text-white"
+                    >
+                      política de protección de datos.
+                    </Link>
+                  </FormLabel>
+                  <FormMessage className="text-xs text-red-300" />
+                </FormItem>
+              )}
+            />
+          </form>
+        )}
+        {error && (
+          <div className="flex flex-col space-y-2 text-white">
+            <p className="font-medium">Ha habido un problema al enviar el formulario.</p>
+            <p className="flex items-center gap-2 font-semibold">
+              <PhoneCall className="w-4 h-4" /> 951 68 13 83
+            </p>
+          </div>
+        )}
+        {isSuccess && (
+          <div className="flex items-center gap-4 text-white">
+            <Check className="w-10 h-10 border-2 rounded-full p-2 shrink-0" />
+            <div>
+              <p className="font-semibold">¡Formulario enviado!</p>
+              <p className="text-sm text-blue-200">
+                Te contactaremos en las próximas 24/48 h hábiles.
+              </p>
+            </div>
+          </div>
+        )}
+      </Form>
+    );
+  }
 
   return (
     <Form {...form}>
