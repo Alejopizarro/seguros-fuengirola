@@ -45,6 +45,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: "https://www.segurosfuengirola.com/blog",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: "https://www.segurosfuengirola.com/blog/por-que-contratar-seguro-con-agente-local-fuengirola",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
       url: "https://www.segurosfuengirola.com/seguro-de-hogar",
       lastModified: new Date(),
       changeFrequency: "weekly",
