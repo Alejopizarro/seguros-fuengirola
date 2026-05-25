@@ -82,6 +82,12 @@ export const sobreNosotros = {
   title: "Sobre Nosotros",
   pages: [
     {
+      title: "Blog",
+      url: "/blog",
+      description:
+        "Visita nuestro blog para conocer las últimas noticias y consejos sobre seguros.",
+    },
+    {
       title: "Quienes somos",
       url: "/sobre-nosotros/quienes-somos",
       description: "Descubre más acerca de nosotros y como podemos ayudarte",
