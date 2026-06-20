@@ -1,3 +1,4 @@
+import BlogSection from "@/components/blog-section";
 import Dental from "@/components/dental";
 import Differential from "@/components/differential";
 import Empresas from "@/components/empresas";
@@ -20,6 +21,7 @@ export default function Home() {
         <Dental />
         <Empresas />
         <ExtranjeriaBanner className="max-w-[1440px] py-4 px-4 sm:px-12 lg:py-8 mx-auto" />
+        <BlogSection />
         <Faqs />
       </div>
     </div>

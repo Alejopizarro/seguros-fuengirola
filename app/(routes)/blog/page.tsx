@@ -56,6 +56,17 @@ const breadcrumbSchema = {
 // ─────────────────────────────────────────────
 const articles = [
   {
+    href: "/blog/seguro-de-salud-para-mayores-de-75-fuengirola",
+    category: "Seguros de salud",
+    categoryColor: "bg-blue-100 text-blue-700",
+    date: "20 de junio de 2026",
+    readTime: "6 min",
+    title: "Seguro de salud para mayores de 75 años en Fuengirola",
+    excerpt:
+      "¿Te han dicho que ya no puedes contratar un seguro de salud por tu edad? Te explicamos qué opciones reales existen sin límite de edad, incluso para mayores de 75 años, y cómo bajar la cuota con un plan de copago.",
+    tags: ["Mayores", "Sin límite de edad", "DKV"],
+  },
+  {
     href: "/blog/por-que-contratar-seguro-con-agente-local-fuengirola",
     category: "Seguros de salud",
     categoryColor: "bg-blue-100 text-blue-700",
