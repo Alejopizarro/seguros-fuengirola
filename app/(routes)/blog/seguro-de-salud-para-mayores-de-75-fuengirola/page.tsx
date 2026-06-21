@@ -317,7 +317,7 @@ export default function SeguroSaludMayoresPage() {
         <article className="max-w-3xl mx-auto px-5 py-12 md:py-16">
           {/* Intro */}
           <p className="text-lg text-slate-600 leading-relaxed mb-6 border-l-4 border-blue-600 pl-5 bg-blue-50 py-4 pr-4 rounded-r-xl">
-            "A partir de cierta edad los seguros ya no te quieren." Es una
+            &quot;A partir de cierta edad los seguros ya no te quieren.&quot; Es una
             frase que escuchamos constantemente, y es verdad que muchas
             compañías dejan de aceptar nuevas contrataciones a partir de
             cierta edad. Pero en{" "}
@@ -368,8 +368,8 @@ export default function SeguroSaludMayoresPage() {
             </h2>
 
             <p className="text-slate-600 leading-relaxed mb-4">
-              Es una frase horrible, pero la escuchamos muy a menudo: "dada
-              cierta edad, los seguros ya no nos quieren". Y, lamentablemente,
+              Es una frase horrible, pero la escuchamos muy a menudo: &quot;dada
+              cierta edad, los seguros ya no nos quieren&quot;. Y, lamentablemente,
               suele pasar. Muchas compañías establecen una edad máxima de
               contratación porque a partir de ahí el riesgo estadístico de
               siniestralidad sube y deciden simplemente cerrar la puerta a
@@ -433,7 +433,7 @@ export default function SeguroSaludMayoresPage() {
 
             <p className="text-slate-600 leading-relaxed mb-6">
               Esto es especialmente importante para quienes ya han recibido un
-              "no" de otra compañía y asumen que ya no tienen ninguna opción.
+              &quot;no&quot; de otra compañía y asumen que ya no tienen ninguna opción.
               En la mayoría de esos casos, sí la tienen — simplemente no con
               esa aseguradora en concreto.
             </p>
@@ -451,7 +451,7 @@ export default function SeguroSaludMayoresPage() {
             <p className="text-slate-600 leading-relaxed mb-4">
               A partir de los 75 años contamos con un producto especial,
               diseñado específicamente para este perfil. No es un seguro
-              "reducido": incluye hospitalización, cirugía y acceso a
+              &quot;reducido&quot;: incluye hospitalización, cirugía y acceso a
               especialistas, exactamente lo que necesita una persona mayor en
               caso de tener que ser atendida.
             </p>
